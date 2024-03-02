@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/khanhtruong126/adn-precisionworks/static/css/main.1ccd8d53.css",
+    "main.js": "/khanhtruong126/adn-precisionworks/static/js/main.8185a625.js",
+    "static/js/787.197b6eb6.chunk.js": "/khanhtruong126/adn-precisionworks/static/js/787.197b6eb6.chunk.js",
+    "static/media/home-item.png": "/khanhtruong126/adn-precisionworks/static/media/home-item.03e61c389800adb467ab.png",
+    "static/media/3d_printing.png": "/khanhtruong126/adn-precisionworks/static/media/3d_printing.422ff5f32910260ae307.png",
+    "static/media/cnc_milling_capabilities__1_.png": "/khanhtruong126/adn-precisionworks/static/media/cnc_milling_capabilities__1_.b8d2bd671ccb292893be.png",
+    "static/media/technologies_im_homepage.png": "/khanhtruong126/adn-precisionworks/static/media/technologies_im_homepage.e95e84f25f726db1c8a8.png",
+    "static/media/sheet_metal_fabrication.png": "/khanhtruong126/adn-precisionworks/static/media/sheet_metal_fabrication.4ea2bdb6aedfa74124d2.png",
+    "static/media/app-map-marker.png": "/khanhtruong126/adn-precisionworks/static/media/app-map-marker.de536b9e0dd0b952c036.png",
+    "static/media/nav-logo.svg": "/khanhtruong126/adn-precisionworks/static/media/nav-logo.8da0d5b58c6ab5f9e53063f8f58db226.svg",
+    "static/media/slick.svg": "/khanhtruong126/adn-precisionworks/static/media/slick.2630a3e3eab21c607e21.svg",
+    "static/media/slick.eot": "/khanhtruong126/adn-precisionworks/static/media/slick.a4e97f5a2a64f0ab1323.eot",
+    "static/media/slick.ttf": "/khanhtruong126/adn-precisionworks/static/media/slick.c94f7671dcc99dce43e2.ttf",
+    "static/media/main-logo.svg": "/khanhtruong126/adn-precisionworks/static/media/main-logo.ddff1d2ed508e9f88a77d5eb1fa0e3b7.svg",
+    "static/media/slick.woff": "/khanhtruong126/adn-precisionworks/static/media/slick.295183786cd8a1389865.woff",
+    "index.html": "/khanhtruong126/adn-precisionworks/index.html",
+    "main.1ccd8d53.css.map": "/khanhtruong126/adn-precisionworks/static/css/main.1ccd8d53.css.map",
+    "main.8185a625.js.map": "/khanhtruong126/adn-precisionworks/static/js/main.8185a625.js.map",
+    "787.197b6eb6.chunk.js.map": "/khanhtruong126/adn-precisionworks/static/js/787.197b6eb6.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1ccd8d53.css",
+    "static/js/main.8185a625.js"
+  ]
+}
