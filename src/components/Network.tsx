@@ -1,50 +1,74 @@
 import { Row, Col } from "antd";
-import React from "react";
 import styled from "styled-components";
 import { SECTION_ID } from "../App";
+import NetworkMap from "./NetworkMap";
+import SectionTitle from "./SectionTitle";
 
 const Network = () => {
+  const highlightTextClass = "text-app-red font-semibold";
+
   return (
-    <Row id={SECTION_ID.NETWORKS}>
-      <Col span={16}>
-        <ul>
-          <li>
-            We, một nhóm những doanh nghiệp nhỏ chuyên về lĩnh vực CNC, Metal…
-            có chung chí hướng về việc phát triển vương ra thế giới, đem tiêu
-            chí chất lượng dịch vụ tới khách hang2 nhằm tạo nên tiếng tăm và lợi
-            nhaận.
-          </li>
-          <li>
-            Chung tôi gồm 4 CNC shop tại HCM, trung tâm cong nghe Khoa Hoc KT
-            hang đầu việt nam và 2 CNC shop ờ Hà Nội, cho phép chung tôi tiếp
-            cận với nguồn nguyên vật liệu dồi dào từ các thị trường khác . Tất
-            cả shop đảm bảo tuan thủ tiêu chuẩn chat luong ISO9001.
-          </li>
-          <li>
-            Tiêu chuẩn hóa qui trình kiểm soát và communicate để đảm bảo tiến độ
-            và chất lượng sản phầm. Certified ISO 9001
-          </li>
-          <li>Da dạng production từ low volumn to production</li>
-          <li>
-            Hỗ trợ nhanh chóng dat mục tiêu instant quote and fast production
-          </li>
-          <li>
-            Support on material sourcing, Techincal testsss by experience
-            Engineers
-          </li>
-          <li>
-            Delivery and Order overall mange by Distribution Team located in
-            HCM.
-          </li>
-          <li>Compliance: ISO 9001 : 2015</li>
-        </ul>
-      </Col>
-      <Col span={8}></Col>
-    </Row>
+    <>
+      <SectionTitle title="About Us" />
+      <Row align="middle" id={SECTION_ID.HOWITWORK} className="px-64 py-4">
+        <Col span={17} className="pr-10">
+          <ul
+            style={{
+              listStyleType: "disc",
+              textAlign: "justify",
+              lineHeight: "30px",
+              fontSize: "1rem",
+            }}
+          >
+            <li>
+              <span className={highlightTextClass}>
+                ADN Precision Works (APW)
+              </span>
+              , we are specialized in procurement of machined parts,
+              manufactured at local CNC shops located in{" "}
+              <span className={`${highlightTextClass} italic`}>
+                Ho Chi Minh and Ha Noi
+              </span>
+              , Vietnam
+            </li>
+            <li>
+              <span className={highlightTextClass}>Our networks</span> are
+              experienced and expertise people in CNC manufacturing and
+              Industrial management, have many years working with customers from
+              different countries such as Japan, German, USA…
+            </li>
+            <li>
+              <ul className="list-disc list-inside">
+                <span className={highlightTextClass}>
+                  Together, we are diversity team
+                </span>
+                , provide different services in
+                <li>CNC Machining</li>
+                <li>Sheet Metal Fabrication</li>
+                <li>Swiss lathes machining</li>
+                <li>
+                  Secondary processes to make provide finished products to
+                  customer
+                </li>
+              </ul>
+            </li>
+            <li>
+              <span className={highlightTextClass}>
+                @APW, work toward one goal
+              </span>
+              , is to provide customer satisfaction, support each others, aims
+              to growth more together
+            </li>
+          </ul>
+        </Col>
+        <Col span={7}>
+          <NetworkMap />
+        </Col>
+      </Row>
+    </>
   );
 };
 
 export default Network;
 
-const Networks = styled.div`
-`;
+const Networks = styled.div``;

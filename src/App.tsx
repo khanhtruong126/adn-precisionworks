@@ -1,29 +1,45 @@
 import React from "react";
 import { Col, ConfigProvider, Layout, Menu, Row, Space } from "antd";
-import Capacity from "./components/Capacity";
-import Home from "./components/Home";
-import AboutUs from "./components/AboutUs";
-import Network from "./components/Network";
 import NavLogo from "./assets/nav-logo.svg";
 import { apwRed } from "./colors";
+import { Link, Route, Routes, useNavigate } from "react-router-dom";
+import { router } from "./router";
 
 const { Header, Content, Footer } = Layout;
 
 export const SECTION_ID = Object.freeze({
   HOME: "home",
   CAPACITY: "capacity",
-  NETWORKS: "networks",
+  HOWITWORK: "howitwork",
   ABOUT_US: "about-us",
+  CONTACT_US: "contact-us",
 });
 
 const items = [
   { key: SECTION_ID.HOME, label: "Home" },
-  { key: SECTION_ID.CAPACITY, label: "Capacity" },
-  { key: SECTION_ID.NETWORKS, label: "Our Networks" },
-  { key: SECTION_ID.ABOUT_US, label: "Contact Us" },
+  {
+    key: SECTION_ID.CAPACITY,
+    label: "Capacity",
+    children: [
+      {
+        label: "Milling",
+        key: "milling",
+      },
+      {
+        label: "Material",
+        key: "material",
+      },
+      ,
+    ],
+  },
+  { key: SECTION_ID.HOWITWORK, label: "How It Work" },
+  { key: SECTION_ID.ABOUT_US, label: "About Us" },
+  { key: SECTION_ID.CONTACT_US, label: "Contact Us" },
 ];
 
 const App: React.FC = () => {
+  const navigate = useNavigate();
+
   const handleClickScroll = (key: string) => {
     const element = document.getElementById(key);
     if (element) {
@@ -44,7 +60,7 @@ const App: React.FC = () => {
         },
       }}
     >
-      <Layout>
+      <Layout className="overflow-visible max-w-[100vw]">
         <Header
           style={{
             position: "sticky",
@@ -57,7 +73,9 @@ const App: React.FC = () => {
           }}
         >
           <div>
-            <img src={NavLogo} alt="App Logo" width={200} />
+            <Link to="/">
+              <img src={NavLogo} alt="App Logo" width={150} />
+            </Link>
           </div>
           <Menu
             className="mx-5"
@@ -66,28 +84,32 @@ const App: React.FC = () => {
             items={items}
             style={{ flex: 1, minWidth: 0, fontSize: "1.2rem" }}
             onClick={(menuItem) => {
-              handleClickScroll(menuItem.key);
+              // handleClickScroll(menuItem.key);
+              let path = menuItem.keyPath.reverse().join('/');
+              if(path === "home") {
+                path = "/"
+              }
+              navigate(path);
+              console.log(menuItem.keyPath)
             }}
           />
         </Header>
-        <Content className="p-12">
+        <Content>
           <div
             style={{
-              padding: 24,
+              paddingTop: "2rem",
               minHeight: 380,
               backgroundColor: "white",
-              borderRadius: 10,
             }}
           >
-            <Space size="large" direction="vertical">
-              <Home />
-              <Capacity />
-              <Network />
-              <AboutUs />
-            </Space>
+            <Routes>
+              {router.map((route) => (
+                <Route {...route} />
+              ))}
+            </Routes>
           </div>
         </Content>
-        <Footer style={{ textAlign: "center", paddingTop: 0 }}>ADN Precision Works</Footer>
+        {/* <Footer style={{ textAlign: "center", paddingTop: 0 }}>ADN Precision Works</Footer> */}
       </Layout>
     </ConfigProvider>
   );
