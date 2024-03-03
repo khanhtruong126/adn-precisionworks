@@ -17,6 +17,19 @@ export const router: RouteProps[] = [
     errorElement: <Error />,
   },
   {
+    path: "/adn-precisionworks",
+    element: (
+      <Space size={[0, 30]} direction="vertical">
+        <Home />
+        <Capacity />
+        <HowItWork />
+        <Network />
+        <AboutUs />
+      </Space>
+    ),
+    errorElement: <Error />,
+  },
+  {
     path: "/",
     element: (
       <Space size={[0, 30]} direction="vertical">
