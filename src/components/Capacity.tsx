@@ -1,4 +1,4 @@
-import { Row, Col, Card, Typography } from "antd";
+import { Row, Col, Card } from "antd";
 import { SECTION_ID } from "../App";
 import cncMilling from "../assets/cnc_milling_capabilities__1_.png";
 import turning from "../assets/3d_printing.png";
@@ -7,24 +7,35 @@ import sheetMetal from "../assets/sheet_metal_fabrication.png";
 import { LeftOutlined, RightOutlined } from "@ant-design/icons";
 import { useRef } from "react";
 import Slider from "react-slick";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
 import styled from "styled-components";
-import { apwRed } from "../colors";
-import SectionTitle from "./SectionTitle";
+import { useNavigate } from "react-router-dom";
+import { CAPACITY_URLS } from "../router";
 
 const { Meta } = Card;
-const { Title } = Typography;
 
 interface CardProps {
   title: string;
   description: string;
   cover: string;
+  url: string;
 }
 
-const CapacityCard = ({ title, description, cover }: CardProps) => {
+const CapacityCard = ({ title, description, cover, url }: CardProps) => {
+  const navigate = useNavigate();
+
   return (
-    <Card hoverable cover={<img alt={title} src={cover} />}>
+    <Card
+      hoverable
+      cover={
+        <img
+          alt={title}
+          src={cover}
+          onClick={() => {
+            navigate(url);
+          }}
+        />
+      }
+    >
       <Meta title={title} description={description} />
     </Card>
   );
@@ -37,30 +48,35 @@ const Capacity = () => {
       description:
         "description description description description description",
       cover: cncMilling,
+      url: CAPACITY_URLS.MILLING_AND_TURNING,
     },
     {
       title: "Auto lathes/Swiss machines",
       description:
         "description description description description description",
       cover: turning,
+      url: CAPACITY_URLS.AUTO_LATHES,
     },
     {
       title: "Sheet metal Fabricate",
       description:
         "description description description description description",
       cover: material,
+      url: CAPACITY_URLS.SHEET_METAL_FABRICATE,
     },
     {
       title: "Material",
       description:
         "description description description description description",
       cover: sheetMetal,
+      url: CAPACITY_URLS.MATERIAL,
     },
     {
       title: "Coating and Surface finishing",
       description:
         "description description description description description",
       cover: sheetMetal,
+      url: CAPACITY_URLS.COATING_SURFACE_FINISHING,
     },
   ];
 
@@ -102,15 +118,14 @@ const Capacity = () => {
         breakpoint: 480,
         settings: {
           slidesToShow: 1,
-          slidesToScroll: 1
-        }
-      }
+          slidesToScroll: 1,
+        },
+      },
     ],
   };
 
   return (
     <>
-      <SectionTitle title="Capacity" />
       <Row
         id={SECTION_ID.CAPACITY}
         // gutter={30}

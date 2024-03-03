@@ -4,10 +4,11 @@ import { apwRed, gray } from "../colors";
 import { SECTION_ID } from "../App";
 import { Button, Col, Row, Typography } from "antd";
 import { PhoneOutlined, MailOutlined } from "@ant-design/icons";
+import NetworkMap from "./NetworkMap";
 
 const { Title } = Typography;
 
-const AboutUs = () => {
+const ContactUs = () => {
   return (
     <About id={SECTION_ID.ABOUT_US}>
       {/* <Row justify="center">
@@ -46,22 +47,28 @@ const AboutUs = () => {
           </Row>
         </Col>
       </Row> */}
-      <div className="text-8xl text-app-red font-bold mb-6">
-        LET'S <br /> CONNECT <br /> WITH US{" "}
-      </div>
-      <p>Ho Chi Minh, Vietnam</p>
-      <p>Adnprecisionworks.com</p>
-      <p>quote@adnprecisionworks.com</p>
-      <p>Est.2023</p>
+      <Col span={12} lg={12} md={24} sm={24}>
+        <div className="text-8xl text-app-red font-bold mb-6">
+          LET'S <br /> CONNECT <br /> WITH US{" "}
+        </div>
+        <p>Ho Chi Minh, Vietnam</p>
+        <p>Adnprecisionworks.com</p>
+        <p>quote@adnprecisionworks.com</p>
+        <p>Est.2023</p>
+      </Col>
+      <Col span={12} lg={12} md={24} sm={24}>
+        <NetworkMap />
+      </Col>
     </About>
   );
 };
 
-export default AboutUs;
+export default ContactUs;
 
 const About = styled.div`
   padding: 2rem 10rem;
   background-color: ${gray};
+  display: flex;
 
   a {
     color: ${apwRed};

@@ -1,6 +1,5 @@
 import { apwRed } from "../colors";
 import styled from "styled-components";
-import { Typography } from "antd";
 
 const SectionTitle = ({ title }: { title: string }) => {
   return (

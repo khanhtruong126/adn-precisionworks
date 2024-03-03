@@ -3,14 +3,15 @@ import styled from "styled-components";
 import { SECTION_ID } from "../App";
 import NetworkMap from "./NetworkMap";
 import SectionTitle from "./SectionTitle";
+import Capacity from "./Capacity";
 
 const Network = () => {
   const highlightTextClass = "text-app-red font-semibold";
 
   return (
     <>
-      <SectionTitle title="About Us" />
-      <Row align="middle" id={SECTION_ID.HOWITWORK} className="px-64 py-4">
+      <SectionTitle title="Gallery" />
+      {/* <Row align="middle" id={SECTION_ID.HOWITWORK} className="px-64 py-4">
         <Col span={17} className="pr-10">
           <ul
             style={{
@@ -64,7 +65,8 @@ const Network = () => {
         <Col span={7}>
           <NetworkMap />
         </Col>
-      </Row>
+      </Row> */}
+      <Capacity/>
     </>
   );
 };

@@ -3,7 +3,7 @@ import { Col, ConfigProvider, Layout, Menu, Row, Space } from "antd";
 import NavLogo from "./assets/nav-logo.svg";
 import { apwRed } from "./colors";
 import { Link, Route, Routes, useNavigate } from "react-router-dom";
-import { router } from "./router";
+import { CAPACITY_URLS, router } from "./router";
 
 const { Header, Content, Footer } = Layout;
 
@@ -12,6 +12,7 @@ export const SECTION_ID = Object.freeze({
   CAPACITY: "capacity",
   HOWITWORK: "howitwork",
   ABOUT_US: "about-us",
+  GALLERY: "gallery",
   CONTACT_US: "contact-us",
 });
 
@@ -22,30 +23,34 @@ const items = [
     label: "Capacity",
     children: [
       {
-        label: "Milling",
-        key: "milling",
+        label: "Milling And Turning",
+        key: CAPACITY_URLS.MILLING_AND_TURNING,
+      },
+      {
+        label: "Auto lathes/Swiss machines",
+        key: CAPACITY_URLS.AUTO_LATHES,
+      },
+      {
+        label: "Sheet metal Fabricate",
+        key: CAPACITY_URLS.SHEET_METAL_FABRICATE,
       },
       {
         label: "Material",
-        key: "material",
+        key: CAPACITY_URLS.MATERIAL,
       },
-      ,
+      {
+        label: "Coating and Surface finishing",
+        key: CAPACITY_URLS.COATING_SURFACE_FINISHING,
+      },
     ],
   },
   { key: SECTION_ID.HOWITWORK, label: "How It Work" },
-  { key: SECTION_ID.ABOUT_US, label: "About Us" },
+  { key: SECTION_ID.GALLERY, label: "Product Gallery" },
   { key: SECTION_ID.CONTACT_US, label: "Contact Us" },
 ];
 
 const App: React.FC = () => {
   const navigate = useNavigate();
-
-  const handleClickScroll = (key: string) => {
-    const element = document.getElementById(key);
-    if (element) {
-      element.scrollIntoView({ behavior: "smooth" });
-    }
-  };
 
   return (
     <ConfigProvider
@@ -84,13 +89,11 @@ const App: React.FC = () => {
             items={items}
             style={{ flex: 1, minWidth: 0, fontSize: "1.2rem" }}
             onClick={(menuItem) => {
-              // handleClickScroll(menuItem.key);
-              let path = menuItem.keyPath.reverse().join('/');
-              if(path === "home") {
-                path = "/"
+              let path = menuItem.keyPath.reverse().join("/");
+              if (path === "home") {
+                path = "/";
               }
               navigate(path);
-              console.log(menuItem.keyPath)
             }}
           />
         </Header>
