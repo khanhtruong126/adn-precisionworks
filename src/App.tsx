@@ -4,7 +4,7 @@ import NavLogo from "./assets/nav-logo.svg";
 import { apwRed } from "./colors";
 import { Link, Route, Routes, useNavigate } from "react-router-dom";
 import { CAPACITY_URLS, router } from "./router";
-import './fonts/Termina.ttf';
+import "./fonts/Termina.ttf";
 
 const { Header, Content, Footer } = Layout;
 
@@ -23,26 +23,9 @@ const items = [
     key: SECTION_ID.CAPACITY,
     label: "Capacity",
     children: [
-      {
-        label: "Milling And Turning",
-        key: CAPACITY_URLS.MILLING_AND_TURNING,
-      },
-      {
-        label: "Auto lathes/Swiss machines",
-        key: CAPACITY_URLS.AUTO_LATHES,
-      },
-      {
-        label: "Sheet metal Fabricate",
-        key: CAPACITY_URLS.SHEET_METAL_FABRICATE,
-      },
-      {
-        label: "Material",
-        key: CAPACITY_URLS.MATERIAL,
-      },
-      {
-        label: "Coating and Surface finishing",
-        key: CAPACITY_URLS.COATING_SURFACE_FINISHING,
-      },
+      CAPACITY_URLS.CNC_MACHINING,
+      CAPACITY_URLS.SHEET_METAL_FABRICATION,
+      CAPACITY_URLS.MATERIAL,
     ],
   },
   { key: SECTION_ID.HOWITWORK, label: "How It Work" },
@@ -88,7 +71,12 @@ const App: React.FC = () => {
             mode="horizontal"
             defaultSelectedKeys={[SECTION_ID.HOME]}
             items={items}
-            style={{ flex: 1, minWidth: 0, fontSize: "1.2rem", fontFamily: 'Termina' }}
+            style={{
+              flex: 1,
+              minWidth: 0,
+              fontSize: "1.2rem",
+              fontFamily: "Termina",
+            }}
             onClick={(menuItem) => {
               let path = menuItem.keyPath.reverse().join("/");
               if (path === "home") {

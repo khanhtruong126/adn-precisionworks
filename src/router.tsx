@@ -11,37 +11,31 @@ import SheetMetalFabricate from "./components/capacities/SheetMetalFabricate";
 import CoatingAndSurfaceFinishing from "./components/capacities/CoatingAndSurfaceFinishing";
 
 export const CAPACITY_URLS = Object.freeze({
-  MILLING_AND_TURNING: "milling-and-turning",
-  AUTO_LATHES: "auto-lathes",
-  SHEET_METAL_FABRICATE: "sheet-metal-fabricate",
-  MATERIAL: "material",
-  COATING_SURFACE_FINISHING: "coating-and-surface-finishing",
+  CNC_MACHINING: { key: "cnc-machining", label: "CNC Machining" },
+  SHEET_METAL_FABRICATION: {
+    key: "sheet-metal-fabrication",
+    label: "Sheet Metal Fabrication",
+  },
+  MATERIAL: {
+    key: "material-and-coating-finishing",
+    label: "Material and Coating/Finising",
+  },
 });
 
 export const router: RouteProps[] = [
   {
-    path: `/capacity/${CAPACITY_URLS.MILLING_AND_TURNING}`,
+    path: `/capacity/${CAPACITY_URLS.CNC_MACHINING.key}`,
     element: <MillingAndTurning />,
     errorElement: <Error />,
   },
   {
-    path: `/capacity/${CAPACITY_URLS.AUTO_LATHES}`,
-    element: <AutoLathes />,
-    errorElement: <Error />,
-  },
-  {
-    path: `/capacity/${CAPACITY_URLS.SHEET_METAL_FABRICATE}`,
+    path: `/capacity/${CAPACITY_URLS.SHEET_METAL_FABRICATION.key}`,
     element: <SheetMetalFabricate />,
     errorElement: <Error />,
   },
   {
-    path: "/capacity/material",
+    path: `/capacity/${CAPACITY_URLS.MATERIAL.key}`,
     element: <Material />,
-    errorElement: <Error />,
-  },
-  {
-    path: `/capacity/${CAPACITY_URLS.COATING_SURFACE_FINISHING}`,
-    element: <CoatingAndSurfaceFinishing />,
     errorElement: <Error />,
   },
   {

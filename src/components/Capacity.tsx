@@ -44,39 +44,25 @@ const CapacityCard = ({ title, description, cover, url }: CardProps) => {
 const Capacity = () => {
   const capacities = [
     {
-      title: "Milling and Turning",
+      title: CAPACITY_URLS.CNC_MACHINING.label,
       description:
         "description description description description description",
       cover: cncMilling,
-      url: CAPACITY_URLS.MILLING_AND_TURNING,
+      url: CAPACITY_URLS.CNC_MACHINING.key,
     },
     {
-      title: "Auto lathes/Swiss machines",
-      description:
-        "description description description description description",
-      cover: turning,
-      url: CAPACITY_URLS.AUTO_LATHES,
-    },
-    {
-      title: "Sheet metal Fabricate",
+      title: CAPACITY_URLS.SHEET_METAL_FABRICATION.label,
       description:
         "description description description description description",
       cover: material,
-      url: CAPACITY_URLS.SHEET_METAL_FABRICATE,
+      url: CAPACITY_URLS.SHEET_METAL_FABRICATION.key,
     },
     {
-      title: "Material",
+      title: CAPACITY_URLS.MATERIAL.label,
       description:
         "description description description description description",
       cover: sheetMetal,
-      url: CAPACITY_URLS.MATERIAL,
-    },
-    {
-      title: "Coating and Surface finishing",
-      description:
-        "description description description description description",
-      cover: sheetMetal,
-      url: CAPACITY_URLS.COATING_SURFACE_FINISHING,
+      url: CAPACITY_URLS.MATERIAL.key,
     },
   ];
 
@@ -97,7 +83,7 @@ const Capacity = () => {
     speed: 500,
     prevArrow: <></>,
     nextArrow: <></>,
-    slidesToShow: 5,
+    slidesToShow: 3,
     slidesToScroll: 1,
     responsive: [
       {
@@ -133,7 +119,7 @@ const Capacity = () => {
         align="middle"
         className="py-5"
       >
-        <Col span={1}>
+        <Col span={1} lg={{ span: 1, offset: 0 }} xs={{ span: 3 }}>
           <LeftOutlined
             style={{ fontSize: "2rem" }}
             onClick={() => {
@@ -157,7 +143,7 @@ const Capacity = () => {
           </SliderContainer>
         </Col>
 
-        <Col span={1}>
+        <Col span={1} lg={{ span: 1, offset: 0 }} xs={{ span: 3, offset: 1 }}>
           <RightOutlined
             style={{ fontSize: "2rem" }}
             onClick={() => {
