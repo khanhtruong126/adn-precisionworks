@@ -19,6 +19,10 @@
   h2 {
     @apply highlight-title text-3xl;
   }
+
+  h3 {
+    @apply font-bold text-xl;
+  }
 }
 
 @layer components {
