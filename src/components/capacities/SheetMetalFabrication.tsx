@@ -1,9 +1,9 @@
 import React from 'react'
 
-const SheetMetalFabricate = () => {
+const SheetMetalFabrication = () => {
   return (
     <div>SheetMetalFabricate</div>
   )
 }
 
-export default SheetMetalFabricate
+export default SheetMetalFabrication

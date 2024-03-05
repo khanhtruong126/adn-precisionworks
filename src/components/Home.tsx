@@ -8,7 +8,6 @@ import homeItem from "../assets/home-item.jpg";
 import AppLogo from "../assets/main-logo.svg";
 import { CaretRightFilled } from "@ant-design/icons";
 
-
 const Home = () => {
 
   return (

@@ -5,10 +5,8 @@ import Main from "./components/Main";
 import HowItWork from "./components/HowItWork";
 import ContactUs from "./components/ContactUs";
 import ProductGallery from "./components/ProductGallery";
-import MillingAndTurning from "./components/capacities/MillingAndTurning";
-import AutoLathes from "./components/capacities/AutoLathes";
-import SheetMetalFabricate from "./components/capacities/SheetMetalFabricate";
-import CoatingAndSurfaceFinishing from "./components/capacities/CoatingAndSurfaceFinishing";
+import SheetMetalFabrication from "./components/capacities/SheetMetalFabrication";
+import CNCMachining from "./components/capacities/CNCMachining";
 
 export const CAPACITY_URLS = Object.freeze({
   CNC_MACHINING: { key: "cnc-machining", label: "CNC Machining" },
@@ -25,12 +23,12 @@ export const CAPACITY_URLS = Object.freeze({
 export const router: RouteProps[] = [
   {
     path: `/capacity/${CAPACITY_URLS.CNC_MACHINING.key}`,
-    element: <MillingAndTurning />,
+    element: <CNCMachining />,
     errorElement: <Error />,
   },
   {
     path: `/capacity/${CAPACITY_URLS.SHEET_METAL_FABRICATION.key}`,
-    element: <SheetMetalFabricate />,
+    element: <SheetMetalFabrication />,
     errorElement: <Error />,
   },
   {
