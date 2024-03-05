@@ -6,17 +6,36 @@
 @import "slick-carousel/slick/slick-theme.css";
 @import "leaflet/dist/leaflet.css";
 
+@font-face {
+  font-family: "Termina";
+  src: local("Termina"), url("./fonts/Termina.ttf") format("truetype");
+}
+
+@layer base {
+  h1 {
+    @apply highlight-title text-5xl;
+  }
+
+  h2 {
+    @apply highlight-title text-3xl;
+  }
+}
+
+@layer components {
+  .highlight-title {
+    @apply text-app-red font-bold font-termina;
+  }
+}
+
 body {
   margin: 0;
   font-size: 12px;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  /* font-family: -apple-system, BlinkMacSystemFont, "Termina"; */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }

@@ -38,7 +38,7 @@ const HowItWork = () => {
 
   return (
     <div className="px-10 py-6 bg-gray">
-      <div className="text-5xl text-app-red font-bold mb-5">How It Work</div>
+      <h1 className="mb-5">How It Work</h1>
       <Row justify="space-between" className="px-20 gap-y-4">
         {data.map((item) => (
           <Col span={11}>

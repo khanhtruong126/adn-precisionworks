@@ -10,6 +10,9 @@ module.exports = {
       'app-red': '#BB401D',
       'gray': '#eaeaea'
     },
+    fontFamily: {
+      'termina': ['Termina']
+    }
   },
   plugins: [],
 }

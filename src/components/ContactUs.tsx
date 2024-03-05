@@ -48,7 +48,7 @@ const ContactUs = () => {
         </Col>
       </Row> */}
       <Col span={12} lg={12} md={24} sm={24}>
-        <div className="text-8xl text-app-red font-bold mb-6">
+        <div className="text-8xl highlight-title mb-6">
           LET'S <br /> CONNECT <br /> WITH US{" "}
         </div>
         <p>Ho Chi Minh, Vietnam</p>
@@ -66,7 +66,7 @@ const ContactUs = () => {
 export default ContactUs;
 
 const About = styled.div`
-  padding: 2rem 10rem;
+  padding: 2rem 5rem;
   background-color: ${gray};
   display: flex;
 

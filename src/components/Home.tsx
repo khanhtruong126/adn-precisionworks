@@ -32,9 +32,7 @@ const Home = () => {
               <Title level={4}>Contact Us</Title>
             </Button> */}
             <p>
-              <p className="text-3xl text-app-red font-bold mb-2">
-                Reliable and Flexible
-              </p>
+              <h2 className="mb-2">Reliable and Flexible</h2>
               <span className="text-lg">
                 ADN Precision Works (APW), we are specialized in procurement of
                 machined parts, manufactured at local CNC shops located in Ho
@@ -46,21 +44,15 @@ const Home = () => {
                 <div className="ml-5 mt-2">
                   <div className="flex gap-2">
                     <img src={AppLogo} alt="main_logo" width={25} height={25} />
-                    <span className="text-3xl text-app-red font-bold">
-                      Low cost
-                    </span>
+                    <h2>Low cost</h2>
                   </div>
                   <div className="flex gap-2">
                     <img src={AppLogo} alt="main_logo" width={25} height={25} />
-                    <span className="text-3xl text-app-red font-bold">
-                      Short leadtime
-                    </span>
+                    <h2>Short leadtime</h2>
                   </div>
                   <div className="flex gap-2">
                     <img src={AppLogo} alt="main_logo" width={25} height={25} />
-                    <span className="text-3xl text-app-red font-bold">
-                      High performance products
-                    </span>
+                    <h2>High performance products</h2>
                   </div>
                 </div>
               </span>

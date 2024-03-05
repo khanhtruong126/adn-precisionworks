@@ -4,6 +4,7 @@ import NavLogo from "./assets/nav-logo.svg";
 import { apwRed } from "./colors";
 import { Link, Route, Routes, useNavigate } from "react-router-dom";
 import { CAPACITY_URLS, router } from "./router";
+import './fonts/Termina.ttf';
 
 const { Header, Content, Footer } = Layout;
 
@@ -87,7 +88,7 @@ const App: React.FC = () => {
             mode="horizontal"
             defaultSelectedKeys={[SECTION_ID.HOME]}
             items={items}
-            style={{ flex: 1, minWidth: 0, fontSize: "1.2rem" }}
+            style={{ flex: 1, minWidth: 0, fontSize: "1.2rem", fontFamily: 'Termina' }}
             onClick={(menuItem) => {
               let path = menuItem.keyPath.reverse().join("/");
               if (path === "home") {
