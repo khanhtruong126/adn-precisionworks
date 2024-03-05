@@ -4,7 +4,7 @@ import homeBackground from "../assets/home-background.png";
 import hubCNC from "../assets/hubs_cnc.png";
 import { SECTION_ID } from "../App";
 import { apwRed, gray } from "../colors";
-import homeItem from "../assets/home-item.png";
+import homeItem from "../assets/home-item.jpg";
 import AppLogo from "../assets/main-logo.svg";
 import { CaretRightFilled } from "@ant-design/icons";
 
@@ -70,7 +70,7 @@ const Home = () => {
             </p>
           </div>
         </Col>
-        <Col id="home-panel" lg={10} md={24} sm={24}></Col>
+        <Col id="home-panel" offset={1} lg={9} md={24} sm={24}></Col>
       </Row>
     </HomeContanier>
   );
