@@ -44,7 +44,7 @@ const HowItWorkHome = () => {
           <>
             <Col span={5}>
               <Card
-                className="text-center"
+                className="text-center cursor-default"
                 hoverable
                 cover={<div className="text-5xl pt-4">{item.imgSrc}</div>}
               >

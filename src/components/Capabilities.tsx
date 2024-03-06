@@ -31,7 +31,7 @@ const CapacityCard = ({ title, description, cover, url }: CardProps) => {
           alt={title}
           src={cover}
           onClick={() => {
-            navigate(url);
+            navigate("/capabilities/" + url);
           }}
         />
       }
