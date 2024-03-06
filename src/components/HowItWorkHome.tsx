@@ -1,6 +1,11 @@
 import { Card, Col, Row } from "antd";
-import { ArrowRightOutlined } from "@ant-design/icons";
-import image from '../assets/home-item.jpg'
+import {
+  FormOutlined,
+  InteractionOutlined,
+  ProjectOutlined,
+  RocketOutlined,
+} from "@ant-design/icons";
+import arrow from "../assets/arrow.svg";
 
 const { Meta } = Card;
 
@@ -10,25 +15,25 @@ const HowItWorkHome = () => {
       title: "Request a quote",
       description:
         "description description description description description",
-      imgSrc: image,
+      imgSrc: <FormOutlined />,
     },
     {
       title: "Project Consultation",
       description:
         "description description description description description",
-      imgSrc: image,
+      imgSrc: <InteractionOutlined />,
     },
     {
       title: "Oversight production",
       description:
         "description description description description description",
-      imgSrc: image,
+      imgSrc: <ProjectOutlined />,
     },
     {
       title: "Parts are delivered",
       description:
         "description description description description description",
-      imgSrc: image,
+      imgSrc: <RocketOutlined />,
     },
   ];
   return (
@@ -41,14 +46,17 @@ const HowItWorkHome = () => {
               <Card
                 className="text-center"
                 hoverable
-                cover={<img alt="chart-image" src={item.imgSrc} />}
+                cover={<div className="text-5xl pt-4">{item.imgSrc}</div>}
               >
-                <Meta title={item.title} description={item.description} />
+                <Meta
+                  title={<p className="font-bold text-app-red capitalize">{item.title}</p>}
+                  description={item.description}
+                />
               </Card>
             </Col>
             {index !== cardData.length - 1 && (
-              <Col span={1} style={{ paddingLeft: '12px !important'}} >
-                <ArrowRightOutlined className="text-5xl" />
+              <Col span={1} className="!px-0">
+                <img src={arrow} alt="arrow" />
               </Col>
             )}
           </>

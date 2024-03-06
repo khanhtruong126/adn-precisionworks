@@ -75,7 +75,6 @@ const App: React.FC = () => {
               flex: 1,
               minWidth: 0,
               fontSize: "1.2rem",
-              fontFamily: "Termina",
             }}
             onClick={(menuItem) => {
               let path = menuItem.keyPath.reverse().join("/");

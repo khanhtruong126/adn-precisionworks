@@ -1,15 +1,15 @@
-import { Row, Col, Button, Typography } from "antd";
+import { Row, Col } from "antd";
 import styled from "styled-components";
-import homeBackground from "../assets/home-background.png";
-import hubCNC from "../assets/hubs_cnc.png";
+// import homeBackground from "../assets/home-background.png";
+// import hubCNC from "../assets/hubs_cnc.png";
 import { SECTION_ID } from "../App";
 import { apwRed, gray } from "../colors";
-import homeItem from "../assets/home-item.jpg";
+// import homeItem from "../assets/home-item.jpg";
 import AppLogo from "../assets/main-logo.svg";
 import { CaretRightFilled } from "@ant-design/icons";
+import item from "../assets/home-image.png";
 
 const Home = () => {
-
   return (
     <HomeContanier id={SECTION_ID.HOME}>
       <Row>
@@ -43,8 +43,8 @@ const Home = () => {
                   <CaretRightFilled />
                   <span>
                     We do service{" "}
-                    <span className="highlight-title">from prototype</span> to
-                    productions
+                    <span className="highlight-title">from prototype</span>{" "}
+                    <b>to productions</b>
                   </span>
                 </div>
                 <div className="flex">
@@ -79,11 +79,12 @@ export default Home;
 
 const HomeContanier = styled.div`
   background-color: ${gray};
+  padding: 2rem 0;
 
   #home-panel {
     width: 100%;
     height: 30rem;
-    background: url(${homeItem}) center no-repeat;
+    background: url(${item}) center no-repeat;
     background-size: cover;
     position: relative;
   }

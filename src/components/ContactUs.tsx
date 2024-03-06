@@ -66,7 +66,7 @@ const ContactUs = () => {
 export default ContactUs;
 
 const About = styled.div`
-  padding: 2rem 5rem;
+  padding: 2rem 10rem;
   background-color: ${gray};
   display: flex;
 
