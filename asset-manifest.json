@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/adn-precisionworks/static/css/main.2fc60259.css",
+    "main.css": "/adn-precisionworks/static/css/main.e22ce81d.css",
     "main.js": "/adn-precisionworks/static/js/main.3cb082a7.js",
     "static/js/787.197b6eb6.chunk.js": "/adn-precisionworks/static/js/787.197b6eb6.chunk.js",
     "static/media/home-image.png": "/adn-precisionworks/static/media/home-image.142352bb87341b000cd5.png",
@@ -17,12 +17,12 @@
     "static/media/slick.woff": "/adn-precisionworks/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/adn-precisionworks/index.html",
     "static/media/arrow.svg": "/adn-precisionworks/static/media/arrow.8516489debb6abc3b5ff686c0ee4c62b.svg",
-    "main.2fc60259.css.map": "/adn-precisionworks/static/css/main.2fc60259.css.map",
+    "main.e22ce81d.css.map": "/adn-precisionworks/static/css/main.e22ce81d.css.map",
     "main.3cb082a7.js.map": "/adn-precisionworks/static/js/main.3cb082a7.js.map",
     "787.197b6eb6.chunk.js.map": "/adn-precisionworks/static/js/787.197b6eb6.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.2fc60259.css",
+    "static/css/main.e22ce81d.css",
     "static/js/main.3cb082a7.js"
   ]
 }
