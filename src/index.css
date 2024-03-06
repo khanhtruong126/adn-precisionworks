@@ -27,7 +27,7 @@
 
 @layer components {
   .highlight-title {
-    @apply text-app-red font-bold font-termina;
+    @apply text-app-red font-bold;
   }
 }
 
