@@ -41,7 +41,7 @@ const CapacityCard = ({ title, description, cover, url }: CardProps) => {
   );
 };
 
-const Capacity = () => {
+const Capabilities = () => {
   const capacities = [
     {
       title: CAPACITY_URLS.CNC_MACHINING.label,
@@ -113,7 +113,7 @@ const Capacity = () => {
   return (
     <>
       <Row
-        id={SECTION_ID.CAPACITY}
+        id={SECTION_ID.CAPABILITIES}
         // gutter={30}
         justify="center"
         align="middle"
@@ -156,7 +156,7 @@ const Capacity = () => {
   );
 };
 
-export default Capacity;
+export default Capabilities;
 
 const SliderContainer = styled.div`
   width: 100%;

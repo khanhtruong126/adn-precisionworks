@@ -22,17 +22,17 @@ export const CAPACITY_URLS = Object.freeze({
 
 export const router: RouteProps[] = [
   {
-    path: `/capacity/${CAPACITY_URLS.CNC_MACHINING.key}`,
+    path: `/capabilities/${CAPACITY_URLS.CNC_MACHINING.key}`,
     element: <CNCMachining />,
     errorElement: <Error />,
   },
   {
-    path: `/capacity/${CAPACITY_URLS.SHEET_METAL_FABRICATION.key}`,
+    path: `/capabilities/${CAPACITY_URLS.SHEET_METAL_FABRICATION.key}`,
     element: <SheetMetalFabrication />,
     errorElement: <Error />,
   },
   {
-    path: `/capacity/${CAPACITY_URLS.MATERIAL.key}`,
+    path: `/capabilities/${CAPACITY_URLS.MATERIAL.key}`,
     element: <Material />,
     errorElement: <Error />,
   },

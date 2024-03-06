@@ -8,7 +8,8 @@ module.exports = {
     colors: {
       'white': '#ffffff',
       'app-red': '#BB401D',
-      'gray': '#eaeaea'
+      'light-gray': '#eaeaea',
+      'gray': 'rgb(115 115 115)'
     },
     fontFamily: {
       'termina': ['Termina']

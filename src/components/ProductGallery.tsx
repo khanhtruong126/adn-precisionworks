@@ -1,11 +1,11 @@
-import Capacity from "./Capacity";
+import Capabilities from "./Capabilities";
 import SectionTitle from "./SectionTitle";
 
 const ProductGallery = () => {
   return (
     <>
       <SectionTitle title="Product Gallery" />
-      <Capacity />
+      <Capabilities />
     </>
   );
 };

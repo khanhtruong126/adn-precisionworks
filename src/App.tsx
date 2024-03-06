@@ -10,7 +10,7 @@ const { Header, Content, Footer } = Layout;
 
 export const SECTION_ID = Object.freeze({
   HOME: "home",
-  CAPACITY: "capacity",
+  CAPABILITIES: "capabilities",
   HOWITWORK: "howitwork",
   ABOUT_US: "about-us",
   GALLERY: "gallery",
@@ -20,8 +20,8 @@ export const SECTION_ID = Object.freeze({
 const items = [
   { key: SECTION_ID.HOME, label: "Home" },
   {
-    key: SECTION_ID.CAPACITY,
-    label: "Capacity",
+    key: SECTION_ID.CAPABILITIES,
+    label: "Capabilities",
     children: [
       CAPACITY_URLS.CNC_MACHINING,
       CAPACITY_URLS.SHEET_METAL_FABRICATION,

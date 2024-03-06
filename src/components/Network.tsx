@@ -3,7 +3,7 @@ import styled from "styled-components";
 import { SECTION_ID } from "../App";
 import NetworkMap from "./NetworkMap";
 import SectionTitle from "./SectionTitle";
-import Capacity from "./Capacity";
+import Capabilities from "./Capabilities";
 
 const Network = () => {
   const highlightTextClass = "text-app-red font-semibold";
@@ -66,7 +66,7 @@ const Network = () => {
           <NetworkMap />
         </Col>
       </Row> */}
-      <Capacity/>
+      <Capabilities/>
     </>
   );
 };

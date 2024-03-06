@@ -1,4 +1,3 @@
-import React from "react";
 import { CaretRightFilled } from "@ant-design/icons";
 import styled from "styled-components";
 
