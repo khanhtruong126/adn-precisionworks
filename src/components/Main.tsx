@@ -3,7 +3,6 @@ import Home from "./Home";
 import ContactUs from "./ContactUs";
 import Capabilities from "./Capabilities";
 import SectionTitle from "./SectionTitle";
-import ProductGallery from "./ProductGallery";
 import HowItWorkHome from "./HowItWorkHome";
 
 const Main = () => {
@@ -13,7 +12,6 @@ const Main = () => {
       <SectionTitle title="Capabilities" />
       <Capabilities />
       <HowItWorkHome />
-      <ProductGallery/>
       <ContactUs />
     </Space>
   );

@@ -1,9 +1,8 @@
 import { Row, Col, Card } from "antd";
 import { SECTION_ID } from "../App";
-import cncMilling from "../assets/cnc_milling_capabilities__1_.png";
-import turning from "../assets/3d_printing.png";
-import material from "../assets/technologies_im_homepage.png";
-import sheetMetal from "../assets/sheet_metal_fabrication.png";
+import cncMachining from "../assets/cnc-machining/cnc-machining-background.jpg";
+import material from "../assets/material/material-background.jpg";
+import sheetMetal from "../assets/sheet-metal-fabrication/sheet-metal-fabrication-background.jpg";
 import { LeftOutlined, RightOutlined } from "@ant-design/icons";
 import { useRef } from "react";
 import Slider from "react-slick";
@@ -47,21 +46,21 @@ const Capabilities = () => {
       title: CAPACITY_URLS.CNC_MACHINING.label,
       description:
         "description description description description description",
-      cover: cncMilling,
+      cover: cncMachining,
       url: CAPACITY_URLS.CNC_MACHINING.key,
     },
     {
       title: CAPACITY_URLS.SHEET_METAL_FABRICATION.label,
       description:
         "description description description description description",
-      cover: material,
+      cover: sheetMetal,
       url: CAPACITY_URLS.SHEET_METAL_FABRICATION.key,
     },
     {
       title: CAPACITY_URLS.MATERIAL.label,
       description:
         "description description description description description",
-      cover: sheetMetal,
+      cover: material,
       url: CAPACITY_URLS.MATERIAL.key,
     },
   ];
@@ -167,8 +166,12 @@ const SliderContainer = styled.div`
       gap: 1rem;
 
       div.ant-card {
-        height: 300px !important;
+        height: 370px !important;
       }
     }
+  }
+
+  .slick-dots {
+    bottom: -40px;
   }
 `;

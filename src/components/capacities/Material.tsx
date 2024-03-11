@@ -1,10 +1,11 @@
-import material from "../../assets/technologies_im_homepage.png";
 import { Col, Row } from "antd";
 import { CaretRightFilled } from "@ant-design/icons";
+import img1 from '../../assets/material/material-background.jpg';
+import img2 from '../../assets/material/material.jpg';
 
-const Material = () => {
+const Material = ({ id }: { id: string }) => {
   return (
-    <div className="w-[80vw] m-auto flex flex-col gap-5">
+    <div id={id} className="px-40 m-auto flex flex-col gap-5">
       <h1 className="text-center">Material</h1>
       <div className="text-lg text-justify">
         <p className="mb-5">
@@ -50,27 +51,12 @@ const Material = () => {
         </p>
       </div>
 
-      <Row justify="space-between" className="gap-2 px-20">
-        <Col span={7}>
-          <img src={material} alt="material" />
+      <Row justify="space-between">
+        <Col span={11}>
+          <img src={img1} alt="material"  className="h-[400px]" />
         </Col>
-        <Col span={7}>
-          <img src={material} alt="material" />
-        </Col>
-        <Col span={7}>
-          <img src={material} alt="material" />
-        </Col>
-        <Col span={7}>
-          <img src={material} alt="material" />
-        </Col>
-        <Col span={7}>
-          <img src={material} alt="material" />
-        </Col>
-        <Col span={7}>
-          <img src={material} alt="material" />
-        </Col>
-        <Col span={7}>
-          <img src={material} alt="material" />
+        <Col span={11}>
+          <img src={img2} alt="material"  className="h-[400px]" />
         </Col>
       </Row>
     </div>

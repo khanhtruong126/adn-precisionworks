@@ -1,12 +1,10 @@
 import { RouteProps } from "react-router-dom";
 import Error from "./Error";
-import Material from "./components/capacities/Material";
 import Main from "./components/Main";
 import HowItWork from "./components/HowItWork";
 import ContactUs from "./components/ContactUs";
 import ProductGallery from "./components/ProductGallery";
-import SheetMetalFabrication from "./components/capacities/SheetMetalFabrication";
-import CNCMachining from "./components/capacities/CNCMachining";
+import Capabilitiy from "./components/Capabilitiy";
 
 export const CAPACITY_URLS = Object.freeze({
   CNC_MACHINING: { key: "cnc-machining", label: "CNC Machining" },
@@ -23,17 +21,17 @@ export const CAPACITY_URLS = Object.freeze({
 export const router: RouteProps[] = [
   {
     path: `/capabilities/${CAPACITY_URLS.CNC_MACHINING.key}`,
-    element: <CNCMachining />,
+    element: <Capabilitiy />,
     errorElement: <Error />,
   },
   {
     path: `/capabilities/${CAPACITY_URLS.SHEET_METAL_FABRICATION.key}`,
-    element: <SheetMetalFabrication />,
+    element: <Capabilitiy />,
     errorElement: <Error />,
   },
   {
     path: `/capabilities/${CAPACITY_URLS.MATERIAL.key}`,
-    element: <Material />,
+    element: <Capabilitiy />,
     errorElement: <Error />,
   },
   {

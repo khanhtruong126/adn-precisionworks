@@ -12,7 +12,7 @@ import item from "../assets/home-image.png";
 const Home = () => {
   return (
     <HomeContanier id={SECTION_ID.HOME}>
-      <Row>
+      <Row className="px-20">
         <Col
           lg={14}
           md={24}
@@ -53,16 +53,16 @@ const Home = () => {
                 </div>
                 <div className="ml-5 mt-2">
                   <div className="flex gap-2">
-                    <img src={AppLogo} alt="main_logo" width={25} height={25} />
-                    <h2>HIGH QUALITY PRODUCTS</h2>
+                    <img src={AppLogo} alt="main_logo" width={15} height={15} />
+                    <h3>HIGH QUALITY PRODUCTS</h3>
                   </div>
                   <div className="flex gap-2">
-                    <img src={AppLogo} alt="main_logo" width={25} height={25} />
-                    <h2>FASTER</h2>
+                    <img src={AppLogo} alt="main_logo" width={15} height={15} />
+                    <h3>FASTER</h3>
                   </div>
                   <div className="flex gap-2">
-                    <img src={AppLogo} alt="main_logo" width={25} height={25} />
-                    <h2>REASONABLE COST</h2>
+                    <img src={AppLogo} alt="main_logo" width={15} height={15} />
+                    <h3>REASONABLE COST</h3>
                   </div>
                 </div>
               </div>
@@ -83,9 +83,9 @@ const HomeContanier = styled.div`
 
   #home-panel {
     width: 100%;
-    height: 30rem;
+    height: 22rem;
     background: url(${item}) center no-repeat;
-    background-size: cover;
+    background-size: 400px 550px;
     position: relative;
   }
 

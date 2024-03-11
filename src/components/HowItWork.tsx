@@ -37,7 +37,7 @@ const HowItWork = () => {
   ];
 
   return (
-    <div className="px-10 py-6 bg-gray">
+    <div className="px-10 py-6 bg-light-gray">
       <h1 className="mb-5">How It Work</h1>
       <Row justify="space-between" className="px-20 gap-y-4">
         {data.map((item) => (

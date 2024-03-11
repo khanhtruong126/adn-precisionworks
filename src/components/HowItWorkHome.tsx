@@ -37,7 +37,7 @@ const HowItWorkHome = () => {
     },
   ];
   return (
-    <div className="px-20 my-10">
+    <div className="px-20 mb-10">
       <h1 className="mb-5">How It Work</h1>
       <Row gutter={50} justify="space-between" align="middle">
         {cardData.map((item, index) => (
@@ -46,10 +46,10 @@ const HowItWorkHome = () => {
               <Card
                 className="text-center cursor-default"
                 hoverable
-                cover={<div className="text-5xl pt-4">{item.imgSrc}</div>}
+                cover={<div className="text-5xl pt-4 text-app-red">{item.imgSrc}</div>}
               >
                 <Meta
-                  title={<p className="font-bold text-app-red capitalize">{item.title}</p>}
+                  title={<p className="font-bold capitalize">{item.title}</p>}
                   description={item.description}
                 />
               </Card>

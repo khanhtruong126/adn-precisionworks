@@ -1,14 +1,37 @@
-import React from "react";
 import styled from "styled-components";
 import { apwRed, gray } from "../colors";
 import { SECTION_ID } from "../App";
-import { Button, Col, Row, Typography } from "antd";
-import { PhoneOutlined, MailOutlined } from "@ant-design/icons";
+import { Col, Row } from "antd";
 import NetworkMap from "./NetworkMap";
 
-const { Title } = Typography;
-
 const ContactUs = () => {
+  const data = [
+    {
+      colName: "Office",
+      content:
+        "Dreamplex Building, 42 Ngô Quang Huy Street, District 2, HCMC, Vietnam",
+    },
+    {
+      colName: "Warehouse",
+      content: "10, No.4 Street, Thu Duc City, HCMC, Vietnam",
+    },
+    {
+      colName: "Email",
+      content: "quotes@adnprecisionworks.com",
+    },
+    {
+      colName: "Whatsapp",
+      content: "+84 908629977",
+    },
+    {
+      colName: "LinkedIn",
+      content: "",
+    },
+    {
+      colName: "Twitter",
+      content: "",
+    },
+  ];
   return (
     <About id={SECTION_ID.ABOUT_US}>
       {/* <Row justify="center">
@@ -47,16 +70,20 @@ const ContactUs = () => {
           </Row>
         </Col>
       </Row> */}
-      <Col span={12} lg={12} md={24} sm={24}>
-        <div className="text-8xl highlight-title mb-6">
+      <Col span={16} lg={16} md={24} sm={24}>
+        <div className="text-7xl highlight-title mb-6">
           LET'S <br /> CONNECT <br /> WITH US{" "}
         </div>
-        <p>Ho Chi Minh, Vietnam</p>
-        <p>Adnprecisionworks.com</p>
-        <p>quote@adnprecisionworks.com</p>
-        <p>Est.2023</p>
+        <div className="text-base font-semibold">
+          {data.map((item) => (
+            <Row>
+              <Col span={4}>{item.colName}:</Col>
+              <Col span={20}>{item.content}</Col>
+            </Row>
+          ))}
+        </div>
       </Col>
-      <Col span={12} lg={12} md={24} sm={24}>
+      <Col span={8} lg={8} md={24} sm={24}>
         <NetworkMap />
       </Col>
     </About>
@@ -66,7 +93,7 @@ const ContactUs = () => {
 export default ContactUs;
 
 const About = styled.div`
-  padding: 2rem 10rem;
+  padding: 2rem 15rem;
   background-color: ${gray};
   display: flex;
 

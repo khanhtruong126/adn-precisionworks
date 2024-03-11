@@ -9,7 +9,7 @@ module.exports = {
       'white': '#ffffff',
       'app-red': '#BB401D',
       'light-gray': '#eaeaea',
-      'gray': 'rgb(115 115 115)'
+      'gray': 'rgb(80 80 80)'
     },
     fontFamily: {
       'termina': ['Termina']

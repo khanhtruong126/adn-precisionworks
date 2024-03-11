@@ -1,8 +1,17 @@
 import { CaretRightFilled } from "@ant-design/icons";
+import { Col, Row } from "antd";
+import img1 from "../../assets/sheet-metal-fabrication/img1.png";
+import img2 from "../../assets/sheet-metal-fabrication/img2.jpg";
+import img3 from "../../assets/sheet-metal-fabrication/img3.jpg";
+import img4 from "../../assets/sheet-metal-fabrication/img4.jpg";
+import img5 from "../../assets/sheet-metal-fabrication/img5.jpg";
+import img6 from "../../assets/sheet-metal-fabrication/img6.jpg";
 
-const SheetMetalFabrication = () => {
+const SheetMetalFabrication = ({ id }: { id: string }) => {
+  const images = [img3, img1, img6, img4, img5, img2];
+
   return (
-    <div className="mx-5 lg:mx-40">
+    <div id={id} className="mx-5 lg:mx-40">
       <h1 className="text-center">Sheet Metal Fabrication</h1>
       <div className="mt-5 text-lg text-justify">
         <p className="mb-4">
@@ -38,6 +47,14 @@ const SheetMetalFabrication = () => {
           <li>Factories are certified to ISO 9001: 2015</li>
         </ol>
       </div>
+
+      <Row justify="space-between" className="mt-8 gap-y-5">
+        {images.map((img) => (
+          <Col span={7}>
+            <img src={img} alt="sheet-metal-fabrication" className="h-[250px] w-full" />
+          </Col>
+        ))}
+      </Row>
     </div>
   );
 };

@@ -1,12 +1,12 @@
 import React from "react";
-import { Col, ConfigProvider, Layout, Menu, Row, Space } from "antd";
+import { ConfigProvider, Layout, Menu } from "antd";
 import NavLogo from "./assets/nav-logo.svg";
 import { apwRed } from "./colors";
 import { Link, Route, Routes, useNavigate } from "react-router-dom";
 import { CAPACITY_URLS, router } from "./router";
 import "./fonts/Termina.ttf";
 
-const { Header, Content, Footer } = Layout;
+const { Header, Content } = Layout;
 
 export const SECTION_ID = Object.freeze({
   HOME: "home",
@@ -24,8 +24,8 @@ const items = [
     label: "Capabilities",
     children: [
       CAPACITY_URLS.CNC_MACHINING,
-      CAPACITY_URLS.SHEET_METAL_FABRICATION,
       CAPACITY_URLS.MATERIAL,
+      CAPACITY_URLS.SHEET_METAL_FABRICATION,
     ],
   },
   { key: SECTION_ID.HOWITWORK, label: "How It Work" },
@@ -82,6 +82,12 @@ const App: React.FC = () => {
                 path = "/";
               }
               navigate(path);
+              const el = document.getElementById(menuItem.key);
+              if (el) {
+                setTimeout(() => {
+                  el.scrollIntoView({ behavior: "smooth", block: "end" });
+                }, 500);
+              }
             }}
           />
         </Header>
