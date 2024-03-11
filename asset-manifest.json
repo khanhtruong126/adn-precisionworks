@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.b486960b.css",
-    "main.js": "/static/js/main.311672c5.js",
+    "main.css": "/static/css/main.732050a2.css",
+    "main.js": "/static/js/main.bab2d2a1.js",
     "static/js/787.197b6eb6.chunk.js": "/static/js/787.197b6eb6.chunk.js",
     "static/media/sheet-metal-fabrication-background.jpg": "/static/media/sheet-metal-fabrication-background.3bfb210bfa054fb6864f.jpg",
     "static/media/material.jpg": "/static/media/material.0fa2ba24d6077af9c5d0.jpg",
@@ -10,11 +10,23 @@
     "static/media/img3.jpg": "/static/media/img3.dec61ee3e24c2018877e.jpg",
     "static/media/material-background.jpg": "/static/media/material-background.09f0cf8ddff6b72e875c.jpg",
     "static/media/img1.png": "/static/media/img1.23d33b8e215bbf516c2b.png",
+    "static/media/11.jpg": "/static/media/11.aeedd45e7ade73f80652.jpg",
+    "static/media/7.jpg": "/static/media/7.2af5d644e80e3a4f0d5e.jpg",
+    "static/media/3.jpg": "/static/media/3.41351c481ee50f406fae.jpg",
     "static/media/cnc-machining-background.jpg": "/static/media/cnc-machining-background.269e631547295ab57dc1.jpg",
+    "static/media/10.jpg": "/static/media/10.b28854edb783abebd125.jpg",
+    "static/media/1.jpg": "/static/media/1.535e456c69f9bf659ea6.jpg",
+    "static/media/4.jpg": "/static/media/4.799b70a9a22811a685d7.jpg",
     "static/media/img6.jpg": "/static/media/img6.e2bbf0f24f1393a96c43.jpg",
     "static/media/home-item.jpg": "/static/media/home-item.752240af7690bcd261d3.jpg",
     "static/media/img5.jpg": "/static/media/img5.8357670874a5a80b49bc.jpg",
     "static/media/img2.jpg": "/static/media/img2.19b4ccc15d5362e3b2c2.jpg",
+    "static/media/9.jpg": "/static/media/9.757788444d87f1899961.jpg",
+    "static/media/6.jpg": "/static/media/6.c40da684d27e1cba5fc2.jpg",
+    "static/media/12.jpg": "/static/media/12.3d7d33832d777757f0d6.jpg",
+    "static/media/2.jpg": "/static/media/2.f75b22cedf375cbfccfb.jpg",
+    "static/media/8.jpg": "/static/media/8.83d87762f29def4fa88f.jpg",
+    "static/media/5.jpg": "/static/media/5.f349224e0fe834163277.jpg",
     "static/media/Termina.ttf": "/static/media/Termina.a5fc85530cde5525bcd5.ttf",
     "static/media/img4.jpg": "/static/media/img4.1952fd08ff5837cf79a1.jpg",
     "static/media/app-map-marker.png": "/static/media/app-map-marker.de536b9e0dd0b952c036.png",
@@ -26,12 +38,12 @@
     "static/media/slick.woff": "/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/index.html",
     "static/media/arrow.svg": "/static/media/arrow.8516489debb6abc3b5ff686c0ee4c62b.svg",
-    "main.b486960b.css.map": "/static/css/main.b486960b.css.map",
-    "main.311672c5.js.map": "/static/js/main.311672c5.js.map",
+    "main.732050a2.css.map": "/static/css/main.732050a2.css.map",
+    "main.bab2d2a1.js.map": "/static/js/main.bab2d2a1.js.map",
     "787.197b6eb6.chunk.js.map": "/static/js/787.197b6eb6.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.b486960b.css",
-    "static/js/main.311672c5.js"
+    "static/css/main.732050a2.css",
+    "static/js/main.bab2d2a1.js"
   ]
 }
