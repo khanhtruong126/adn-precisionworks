@@ -10,10 +10,12 @@ import img3 from "../../assets/cnc-machining/img3.jpg";
 const CNCMachining = ({ id }: { id: string }) => {
   return (
     <Container>
-      <h1 id={id} className="text-center">CNC Machining</h1>
+      <h1 id={id} className="text-center">
+        CNC Machining
+      </h1>
       <div className="my-10 px-20">
-        <Row align="middle">
-          <Col span={16}>
+        <Row align="middle" gutter={[30, 30]} className="mb-5">
+          <Col span={16} lg={16} xs={24}>
             <div className="text-justify mt-7 text-lg">
               <p>
                 <CaretRightFilled />
@@ -33,19 +35,19 @@ const CNCMachining = ({ id }: { id: string }) => {
               </p>
             </div>
           </Col>
-          <Col span={8}>
-            <img src={cncMachining} alt="cnc-machining" className="float-right h-[250px]" />
-          </Col>
-        </Row>
-        <Row align="middle">
-          <Col span={8}>
+          <Col span={8} lg={8} xs={24}>
             <img
-              src={image}
+              src={cncMachining}
               alt="cnc-machining"
-              className=" h-[250px]"
+              className="float-right h-[250px] w-full"
             />
           </Col>
-          <Col span={16}>
+        </Row>
+        <Row align="middle" gutter={[30, 30]}>
+          <Col span={8} lg={8} xs={24}>
+            <img src={image} alt="cnc-machining" className="w-full h-[250px]" />
+          </Col>
+          <Col span={16} lg={16} xs={24}>
             <div className="text-justify mt-5 text-lg">
               <div>
                 <p>
@@ -82,10 +84,10 @@ const CNCMachining = ({ id }: { id: string }) => {
             </div>
           </Col>
         </Row>
-        <Row justify="space-between" className="mt-10">
+        <Row justify="space-between" gutter={[30, 30]} className="mt-10">
           {[img1, img2, img3].map((img, index) => (
-            <Col span={7} key={`image${index}`} >
-              <img src={img} alt="cnc-machining" className="h-[250px]" />
+            <Col span={8} lg={8} xs={24} key={`image${index}`}>
+              <img src={img} alt="cnc-machining" className="h-[250px] w-full" />
             </Col>
           ))}
         </Row>

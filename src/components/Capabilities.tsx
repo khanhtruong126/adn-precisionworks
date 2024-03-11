@@ -2,9 +2,9 @@ import { Row, Col, Card } from "antd";
 import cncMachining from "../assets/cnc-machining/cnc-machining-background.jpg";
 import material from "../assets/material/material-background.jpg";
 import sheetMetal from "../assets/sheet-metal-fabrication/sheet-metal-fabrication-background.jpg";
-import { LeftOutlined, RightOutlined } from "@ant-design/icons";
+// import { LeftOutlined, RightOutlined } from "@ant-design/icons";
 import { useRef } from "react";
-import Slider from "react-slick";
+// import Slider from "react-slick";
 import styled from "styled-components";
 import { useNavigate } from "react-router-dom";
 import { CAPACITY_URLS, SECTION_ID } from "../router";
@@ -34,7 +34,7 @@ const CapacityCard = ({ title, description, cover, url }: CardProps) => {
             setTimeout(() => {
               const el = document.getElementById(url);
               if (el) {
-                  el.scrollIntoView({ behavior: "auto", block: "center" });
+                el.scrollIntoView({ behavior: "auto", block: "center" });
               }
             }, 0);
           }}
@@ -73,89 +73,91 @@ const Capabilities = () => {
 
   const carouselRef = useRef<any>();
 
-  const handleChangeCarousel = (type: "prev" | "next") => {
-    if (!carouselRef.current) return;
-    if (type === "next") {
-      carouselRef.current.slickNext();
-    } else {
-      carouselRef.current.slickPrev();
-    }
-  };
+  // const handleChangeCarousel = (type: "prev" | "next") => {
+  //   if (!carouselRef.current) return;
+  //   if (type === "next") {
+  //     carouselRef.current.slickNext();
+  //   } else {
+  //     carouselRef.current.slickPrev();
+  //   }
+  // };
 
-  const settings = {
-    dots: true,
-    infinite: true,
-    speed: 500,
-    prevArrow: <></>,
-    nextArrow: <></>,
-    slidesToShow: 3,
-    slidesToScroll: 1,
-    responsive: [
-      {
-        breakpoint: 1024,
-        settings: {
-          slidesToShow: 3,
-          slidesToScroll: 3,
-        },
-      },
-      {
-        breakpoint: 600,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 2,
-        },
-      },
-      {
-        breakpoint: 480,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
-        },
-      },
-    ],
-  };
+  // const settings = {
+  //   dots: true,
+  //   infinite: true,
+  //   speed: 500,
+  //   prevArrow: <></>,
+  //   nextArrow: <></>,
+  //   slidesToShow: 3,
+  //   slidesToScroll: 1,
+  //   responsive: [
+  //     {
+  //       breakpoint: 1024,
+  //       settings: {
+  //         slidesToShow: 3,
+  //         slidesToScroll: 3,
+  //       },
+  //     },
+  //     {
+  //       breakpoint: 600,
+  //       settings: {
+  //         slidesToShow: 2,
+  //         slidesToScroll: 2,
+  //       },
+  //     },
+  //     {
+  //       breakpoint: 480,
+  //       settings: {
+  //         slidesToShow: 1,
+  //         slidesToScroll: 1,
+  //       },
+  //     },
+  //   ],
+  // };
 
   return (
-    <div id={SECTION_ID.CAPABILITIES}>
+    <div id={SECTION_ID.CAPABILITIES} className="flex flex-col items-center">
       <SectionTitle title="Capabilities" />
       <Row
-        // gutter={30}
+        gutter={[25, 25]}
         justify="center"
         align="middle"
-        className="py-5"
+        className="py-5 w-[90%]"
       >
-        <Col span={1} lg={{ span: 1, offset: 0 }} xs={{ span: 3 }}>
+        {/* <Col span={1} lg={{ span: 1, offset: 0 }} xs={{ span: 3 }}>
           <LeftOutlined
             style={{ fontSize: "2rem" }}
             onClick={() => {
               handleChangeCarousel("prev");
             }}
           />
-        </Col>
+        </Col> */}
 
-        <Col span={18} className="max-w-[80vw]">
-          <SliderContainer>
+        {/* <Col span={18} className="max-w-[80vw]"> */}
+        {/* <SliderContainer>
             <Slider
               {...settings}
               ref={(ref) => {
                 carouselRef.current = ref;
               }}
-            >
-              {capacities.map((item) => (
-                <CapacityCard {...item} key={item.url} />
-              ))}
-            </Slider>
-          </SliderContainer>
-        </Col>
+            > */}
+        {capacities.map((item) => (
+          <Col span={8} lg={8} md={12} sm={24} xs={24}>
+            <CapacityCard {...item} key={item.url} />
+          </Col>
+        ))}
+        {/* </Slider> */}
+        {/* </SliderContainer> */}
+        {/* </Col> */}
 
-        <Col span={1} lg={{ span: 1, offset: 0 }} xs={{ span: 3, offset: 1 }}>
+        {/* <Col span={1} lg={{ span: 1, offset: 0 }} xs={{ span: 3, offset: 1 }}>
           <RightOutlined
             style={{ fontSize: "2rem" }}
             onClick={() => {
               handleChangeCarousel("next");
             }}
           />
-        </Col>
+        </Col> */}
       </Row>
     </div>
   );
@@ -163,21 +165,21 @@ const Capabilities = () => {
 
 export default Capabilities;
 
-const SliderContainer = styled.div`
-  width: 100%;
+// const SliderContainer = styled.div`
+//   width: 100%;
 
-  .slick-list {
-    .slick-track {
-      display: flex;
-      gap: 1rem;
+//   .slick-list {
+//     .slick-track {
+//       display: flex;
+//       gap: 1rem;
 
-      div.ant-card {
-        height: 370px !important;
-      }
-    }
-  }
+//       div.ant-card {
+//         height: 370px !important;
+//       }
+//     }
+//   }
 
-  .slick-dots {
-    bottom: -40px;
-  }
-`;
+//   .slick-dots {
+//     bottom: -40px;
+//   }
+// `;

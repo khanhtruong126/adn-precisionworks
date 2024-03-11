@@ -44,13 +44,13 @@ const SheetMetalFabrication = ({ id }: { id: string }) => {
             precision, resulting in components that meet the highest industry
             standards.
           </li>
-          <li>Factories are certified to ISO 9001: 2015</li>
+          <li>Factories are certified to <span className="highlight-title">ISO 9001: 2015</span></li>
         </ol>
       </div>
 
       <Row justify="space-between" gutter={[30, 30]} className="mt-8">
         {images.map((img, index) => (
-          <Col span={8} key={`image${index}`}>
+          <Col span={8} lg={8} xs={12} key={`image${index}`}>
             <img src={img} alt="sheet-metal-fabrication" className="h-[250px] w-full" />
           </Col>
         ))}

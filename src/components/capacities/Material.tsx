@@ -51,11 +51,11 @@ const Material = ({ id }: { id: string }) => {
         </div>
       </div>
 
-      <Row justify="space-between">
-        <Col span={11}>
+      <Row justify="space-between" gutter={[30, 30]}>
+        <Col span={12} lg={12} xs={24}>
           <img src={img1} alt="material"  className="h-[400px]" />
         </Col>
-        <Col span={11}>
+        <Col span={12} lg={12} xs={24}>
           <img src={img2} alt="material"  className="h-[400px]" />
         </Col>
       </Row>

@@ -12,14 +12,14 @@ import item from "../assets/home-image.png";
 const Home = () => {
   return (
     <HomeContanier id={SECTION_ID.HOME}>
-      <Row className="px-20">
+      <Row className="px-20 md:px-10 sm:px-5">
         <Col
           lg={14}
           md={24}
           sm={24}
           className="flex mb-5 md:justify-center sm:justify-center"
         >
-          <div id="home-contact" className="pl-20">
+          <div id="home-contact" className="pl-20 sm:pl-0">
             {/* <Title>ADN Precision Works</Title> */}
             {/* <Button size="large" className="p-0" onClick={handleClickScroll}>
               <Title level={4}>Contact Us</Title>
