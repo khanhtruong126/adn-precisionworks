@@ -1,6 +1,6 @@
 import { Row, Col } from "antd";
 import styled from "styled-components";
-import { SECTION_ID } from "../App";
+import { SECTION_ID } from "../router";
 import NetworkMap from "./NetworkMap";
 import SectionTitle from "./SectionTitle";
 import Capabilities from "./Capabilities";

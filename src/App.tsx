@@ -3,19 +3,12 @@ import { ConfigProvider, Layout, Menu } from "antd";
 import NavLogo from "./assets/nav-logo.svg";
 import { apwRed } from "./colors";
 import { Link, Route, Routes, useNavigate } from "react-router-dom";
-import { CAPACITY_URLS, router } from "./router";
+import { CAPACITY_URLS, SECTION_ID, router } from "./router";
 import "./fonts/Termina.ttf";
 
 const { Header, Content } = Layout;
 
-export const SECTION_ID = Object.freeze({
-  HOME: "home",
-  CAPABILITIES: "capabilities",
-  HOWITWORK: "howitwork",
-  ABOUT_US: "about-us",
-  GALLERY: "gallery",
-  CONTACT_US: "contact-us",
-});
+
 
 const items = [
   { key: SECTION_ID.HOME, label: "Home" },

@@ -1,5 +1,4 @@
 import { Row, Col, Card } from "antd";
-import { SECTION_ID } from "../App";
 import cncMachining from "../assets/cnc-machining/cnc-machining-background.jpg";
 import material from "../assets/material/material-background.jpg";
 import sheetMetal from "../assets/sheet-metal-fabrication/sheet-metal-fabrication-background.jpg";
@@ -8,7 +7,8 @@ import { useRef } from "react";
 import Slider from "react-slick";
 import styled from "styled-components";
 import { useNavigate } from "react-router-dom";
-import { CAPACITY_URLS } from "../router";
+import { CAPACITY_URLS, SECTION_ID } from "../router";
+import SectionTitle from "./SectionTitle";
 
 const { Meta } = Card;
 
@@ -116,9 +116,9 @@ const Capabilities = () => {
   };
 
   return (
-    <>
+    <div id={SECTION_ID.CAPABILITIES}>
+      <SectionTitle title="Capabilities" />
       <Row
-        id={SECTION_ID.CAPABILITIES}
         // gutter={30}
         justify="center"
         align="middle"
@@ -157,7 +157,7 @@ const Capabilities = () => {
           />
         </Col>
       </Row>
-    </>
+    </div>
   );
 };
 

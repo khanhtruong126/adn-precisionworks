@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import { apwRed, gray } from "../colors";
-import { SECTION_ID } from "../App";
+import { SECTION_ID } from "../router";
 import { Col, Row } from "antd";
 import NetworkMap from "./NetworkMap";
 

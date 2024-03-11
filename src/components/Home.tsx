@@ -2,7 +2,7 @@ import { Row, Col } from "antd";
 import styled from "styled-components";
 // import homeBackground from "../assets/home-background.png";
 // import hubCNC from "../assets/hubs_cnc.png";
-import { SECTION_ID } from "../App";
+import { SECTION_ID } from "../router";
 import { apwRed, gray } from "../colors";
 // import homeItem from "../assets/home-item.jpg";
 import AppLogo from "../assets/main-logo.svg";

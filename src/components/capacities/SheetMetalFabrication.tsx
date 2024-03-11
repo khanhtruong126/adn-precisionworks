@@ -48,9 +48,9 @@ const SheetMetalFabrication = ({ id }: { id: string }) => {
         </ol>
       </div>
 
-      <Row justify="space-between" className="mt-8 gap-y-5">
+      <Row justify="space-between" gutter={[30, 30]} className="mt-8">
         {images.map((img, index) => (
-          <Col span={7} key={`image${index}`}>
+          <Col span={8} key={`image${index}`}>
             <img src={img} alt="sheet-metal-fabrication" className="h-[250px] w-full" />
           </Col>
         ))}

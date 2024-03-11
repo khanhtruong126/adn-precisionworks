@@ -18,6 +18,17 @@ export const CAPACITY_URLS = Object.freeze({
   },
 });
 
+export const SECTION_ID = Object.freeze({
+  HOME: "home",
+  CAPABILITIES: "capabilities",
+  HOWITWORK: "howitwork",
+  ABOUT_US: "about-us",
+  GALLERY: "product-gallery",
+  CONTACT_US: "contact-us",
+});
+
+const routePath = (sectionId: string) => `/${sectionId}`
+
 export const router: RouteProps[] = [
   {
     path: `/capabilities/${CAPACITY_URLS.CNC_MACHINING.key}`,
@@ -35,22 +46,23 @@ export const router: RouteProps[] = [
     errorElement: <Error />,
   },
   {
-    path: "/howitwork",
+    path: routePath(SECTION_ID.HOWITWORK),
     element: <HowItWork />,
     errorElement: <Error />,
   },
   {
-    path: "/gallery",
+    path: routePath(SECTION_ID.GALLERY),
     element: <ProductGallery />,
     errorElement: <Error />,
   },
   {
-    path: "/contact-us",
+    path: routePath(SECTION_ID.CONTACT_US),
     element: <ContactUs />,
     errorElement: <Error />,
   },
+  //dev route
   {
-    path: "/adn-precisionworks",
+    path: routePath("/adn-precisionworks"),
     element: <Main />,
     errorElement: <Error />,
   },
