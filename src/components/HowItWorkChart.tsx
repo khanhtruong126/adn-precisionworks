@@ -9,7 +9,7 @@ import arrow from "../assets/arrow.svg";
 
 const { Meta } = Card;
 
-const HowItWorkHome = () => {
+const HowItWorkChart = () => {
   const cardData = [
     {
       title: "Request a quote",
@@ -66,4 +66,4 @@ const HowItWorkHome = () => {
   );
 };
 
-export default HowItWorkHome;
+export default HowItWorkChart;

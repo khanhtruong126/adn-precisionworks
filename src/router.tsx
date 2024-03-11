@@ -21,7 +21,7 @@ export const CAPACITY_URLS = Object.freeze({
 export const SECTION_ID = Object.freeze({
   HOME: "home",
   CAPABILITIES: "capabilities",
-  HOWITWORK: "howitwork",
+  HOWITWORK: "how-it-work",
   ABOUT_US: "about-us",
   GALLERY: "product-gallery",
   CONTACT_US: "contact-us",
