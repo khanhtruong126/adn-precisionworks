@@ -1,12 +1,13 @@
 {
   "files": {
-    "main.css": "/static/css/main.cb991263.css",
-    "main.js": "/static/js/main.c919f3b5.js",
+    "main.css": "/static/css/main.d5fcbc75.css",
+    "main.js": "/static/js/main.cc71e12a.js",
     "static/js/787.197b6eb6.chunk.js": "/static/js/787.197b6eb6.chunk.js",
+    "static/media/sheet-metal-fabrication-background.jpg": "/static/media/sheet-metal-fabrication-background.3bfb210bfa054fb6864f.jpg",
     "static/media/home-image.png": "/static/media/home-image.142352bb87341b000cd5.png",
-    "static/media/cnc_milling_capabilities__1_.png": "/static/media/cnc_milling_capabilities__1_.b8d2bd671ccb292893be.png",
-    "static/media/technologies_im_homepage.png": "/static/media/technologies_im_homepage.e95e84f25f726db1c8a8.png",
-    "static/media/sheet_metal_fabrication.png": "/static/media/sheet_metal_fabrication.4ea2bdb6aedfa74124d2.png",
+    "static/media/material-background.jpg": "/static/media/material-background.09f0cf8ddff6b72e875c.jpg",
+    "static/media/cnc-machining-background.jpg": "/static/media/cnc-machining-background.269e631547295ab57dc1.jpg",
+    "static/media/Capabilities-machinning.jpg": "/static/media/Capabilities-machinning.ab1acfe14f9bad986002.jpg",
     "static/media/Termina.ttf": "/static/media/Termina.a5fc85530cde5525bcd5.ttf",
     "static/media/app-map-marker.png": "/static/media/app-map-marker.de536b9e0dd0b952c036.png",
     "static/media/nav-logo.svg": "/static/media/nav-logo.8da0d5b58c6ab5f9e53063f8f58db226.svg",
@@ -17,12 +18,12 @@
     "static/media/slick.woff": "/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/index.html",
     "static/media/arrow.svg": "/static/media/arrow.8516489debb6abc3b5ff686c0ee4c62b.svg",
-    "main.cb991263.css.map": "/static/css/main.cb991263.css.map",
-    "main.c919f3b5.js.map": "/static/js/main.c919f3b5.js.map",
+    "main.d5fcbc75.css.map": "/static/css/main.d5fcbc75.css.map",
+    "main.cc71e12a.js.map": "/static/js/main.cc71e12a.js.map",
     "787.197b6eb6.chunk.js.map": "/static/js/787.197b6eb6.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.cb991263.css",
-    "static/js/main.c919f3b5.js"
+    "static/css/main.d5fcbc75.css",
+    "static/js/main.cc71e12a.js"
   ]
 }
