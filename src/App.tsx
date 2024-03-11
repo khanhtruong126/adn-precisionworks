@@ -85,7 +85,7 @@ const App: React.FC = () => {
               const el = document.getElementById(menuItem.key);
               if (el) {
                 setTimeout(() => {
-                  el.scrollIntoView({ behavior: "smooth", block: "end" });
+                  el.scrollIntoView({ behavior: "smooth", block: "center" });
                 }, 500);
               }
             }}
@@ -101,7 +101,7 @@ const App: React.FC = () => {
           >
             <Routes>
               {router.map((route) => (
-                <Route {...route} />
+                <Route {...route} key={route.path} />
               ))}
             </Routes>
           </div>

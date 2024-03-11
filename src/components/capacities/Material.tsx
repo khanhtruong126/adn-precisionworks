@@ -5,10 +5,10 @@ import img2 from '../../assets/material/material.jpg';
 
 const Material = ({ id }: { id: string }) => {
   return (
-    <div id={id} className="px-40 m-auto flex flex-col gap-5">
-      <h1 className="text-center">Material</h1>
+    <div className="px-40 m-auto flex flex-col gap-5">
+      <h1 id={id} className="text-center">Material</h1>
       <div className="text-lg text-justify">
-        <p className="mb-5">
+        <div className="mb-5">
           <CaretRightFilled />
           <span className="highlight-title">Materials Expertise</span>: Whether
           it's aluminum, steel, titanium, or exotic alloys, we have the
@@ -27,8 +27,8 @@ const Material = ({ id }: { id: string }) => {
               6061-T651, A1050, A5052, A6063, 7075 ( Sheet metal)
             </p>
           </div>
-        </p>
-        <p>
+        </div>
+        <div>
           <ol>
             <li>
               <CaretRightFilled />
@@ -48,7 +48,7 @@ const Material = ({ id }: { id: string }) => {
               every detail, making your components stand out in any application.
             </li>
           </ol>
-        </p>
+        </div>
       </div>
 
       <Row justify="space-between">

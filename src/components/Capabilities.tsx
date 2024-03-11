@@ -31,6 +31,12 @@ const CapacityCard = ({ title, description, cover, url }: CardProps) => {
           src={cover}
           onClick={() => {
             navigate("/capabilities/" + url);
+            setTimeout(() => {
+              const el = document.getElementById(url);
+              if (el) {
+                  el.scrollIntoView({ behavior: "auto", block: "center" });
+              }
+            }, 0);
           }}
         />
       }
@@ -136,7 +142,7 @@ const Capabilities = () => {
               }}
             >
               {capacities.map((item) => (
-                <CapacityCard {...item} />
+                <CapacityCard {...item} key={item.url} />
               ))}
             </Slider>
           </SliderContainer>

@@ -24,7 +24,7 @@ const Home = () => {
             {/* <Button size="large" className="p-0" onClick={handleClickScroll}>
               <Title level={4}>Contact Us</Title>
             </Button> */}
-            <p>
+            <div>
               <h3 className="mb-2">
                 Unlocking Vietnam's Precision: Your Gateway to Quality Machined
                 Parts
@@ -66,7 +66,7 @@ const Home = () => {
                   </div>
                 </div>
               </div>
-            </p>
+            </div>
           </div>
         </Col>
         <Col id="home-panel" offset={1} lg={9} md={24} sm={24}></Col>

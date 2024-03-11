@@ -11,8 +11,8 @@ const SheetMetalFabrication = ({ id }: { id: string }) => {
   const images = [img3, img1, img6, img4, img5, img2];
 
   return (
-    <div id={id} className="mx-5 lg:mx-40">
-      <h1 className="text-center">Sheet Metal Fabrication</h1>
+    <div className="mx-5 lg:mx-40">
+      <h1 id={id} className="text-center">Sheet Metal Fabrication</h1>
       <div className="mt-5 text-lg text-justify">
         <p className="mb-4">
           <CaretRightFilled />
@@ -49,8 +49,8 @@ const SheetMetalFabrication = ({ id }: { id: string }) => {
       </div>
 
       <Row justify="space-between" className="mt-8 gap-y-5">
-        {images.map((img) => (
-          <Col span={7}>
+        {images.map((img, index) => (
+          <Col span={7} key={`image${index}`}>
             <img src={img} alt="sheet-metal-fabrication" className="h-[250px] w-full" />
           </Col>
         ))}

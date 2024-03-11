@@ -9,8 +9,8 @@ import img3 from "../../assets/cnc-machining/img3.jpg";
 
 const CNCMachining = ({ id }: { id: string }) => {
   return (
-    <Container id={id}>
-      <h1 className="text-center">CNC Machining</h1>
+    <Container>
+      <h1 id={id} className="text-center">CNC Machining</h1>
       <div className="my-10 px-20">
         <Row align="middle">
           <Col span={16}>
@@ -83,8 +83,8 @@ const CNCMachining = ({ id }: { id: string }) => {
           </Col>
         </Row>
         <Row justify="space-between" className="mt-10">
-          {[img1, img2, img3].map((img) => (
-            <Col span={7} >
+          {[img1, img2, img3].map((img, index) => (
+            <Col span={7} key={`image${index}`} >
               <img src={img} alt="cnc-machining" className="h-[250px]" />
             </Col>
           ))}

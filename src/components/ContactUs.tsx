@@ -76,7 +76,7 @@ const ContactUs = () => {
         </div>
         <div className="text-base font-semibold">
           {data.map((item) => (
-            <Row>
+            <Row key={item.colName}>
               <Col span={4}>{item.colName}:</Col>
               <Col span={20}>{item.content}</Col>
             </Row>
