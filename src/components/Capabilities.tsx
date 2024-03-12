@@ -122,7 +122,7 @@ const Capabilities = () => {
         gutter={[25, 25]}
         justify="center"
         align="middle"
-        className="py-5 w-[90%]"
+        className="pt-10 w-[90%]"
       >
         {/* <Col span={1} lg={{ span: 1, offset: 0 }} xs={{ span: 3 }}>
           <LeftOutlined

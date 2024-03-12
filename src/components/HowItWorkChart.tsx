@@ -37,9 +37,9 @@ const HowItWorkChart = () => {
     },
   ];
   return (
-    <div className="px-20 mb-10">
+    <div className="px-10 mb-10">
       <h1 className="mb-5">How It Work</h1>
-      <Row gutter={50} justify="space-between" align="middle">
+      <Row gutter={50} justify="space-between" align="middle" className="px-10">
         {cardData.map((item, index) => (
           <>
             <Col span={5}>

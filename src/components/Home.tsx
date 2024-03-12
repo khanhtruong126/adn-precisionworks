@@ -8,18 +8,22 @@ import { apwRed, gray } from "../colors";
 import AppLogo from "../assets/main-logo.svg";
 import { CaretRightFilled } from "@ant-design/icons";
 import item from "../assets/home-image.png";
+import SendQuoteButton from "./SendQuoteButton";
 
 const Home = () => {
   return (
     <HomeContanier id={SECTION_ID.HOME}>
-      <Row className="px-20 md:px-10 sm:px-5">
+      <Row className="px-40 xl:px-40 md:px-10 sm:px-5">
         <Col
           lg={14}
           md={24}
           sm={24}
           className="flex mb-5 md:justify-center sm:justify-center"
         >
-          <div id="home-contact" className="pl-20 sm:pl-0">
+          <div
+            id="home-contact"
+            className="pl-20 sm:pl-0 flex flex-col justify-center"
+          >
             {/* <Title>ADN Precision Works</Title> */}
             {/* <Button size="large" className="p-0" onClick={handleClickScroll}>
               <Title level={4}>Contact Us</Title>
@@ -67,6 +71,9 @@ const Home = () => {
                 </div>
               </div>
             </div>
+            <div className="mt-3">
+              <SendQuoteButton />
+            </div>
           </div>
         </Col>
         <Col id="home-panel" offset={1} lg={9} md={24} sm={24}></Col>
@@ -87,27 +94,5 @@ const HomeContanier = styled.div`
     background: url(${item}) center no-repeat;
     background-size: 400px 550px;
     position: relative;
-  }
-
-  #home-contact {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-
-    h1,
-    h4 {
-      color: ${apwRed};
-    }
-
-    h4 {
-      margin-bottom: 0;
-    }
-
-    button:hover {
-      border: 1px solod ${apwRed};
-      h4 {
-        color: ${apwRed};
-      }
-    }
   }
 `;

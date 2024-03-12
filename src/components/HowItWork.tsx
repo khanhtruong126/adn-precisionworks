@@ -1,6 +1,7 @@
 import React from "react";
 import AppLogo from "../assets/main-logo.svg";
 import { Col, Row } from "antd";
+import SendQuoteButton from "./SendQuoteButton";
 
 const HowItWork = () => {
   const data = [
@@ -57,6 +58,9 @@ const HowItWork = () => {
           </Col>
         ))}
       </Row>
+      <div className="m-auto w-fit translate-y-[-50px]">
+        <SendQuoteButton />
+      </div>
     </div>
   );
 };
