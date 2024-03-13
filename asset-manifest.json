@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.23eab236.css",
-    "main.js": "/static/js/main.28bc6fcf.js",
+    "main.js": "/static/js/main.3b07be89.js",
     "static/js/787.197b6eb6.chunk.js": "/static/js/787.197b6eb6.chunk.js",
     "static/media/sheet-metal-fabrication-background.jpg": "/static/media/sheet-metal-fabrication-background.3bfb210bfa054fb6864f.jpg",
     "static/media/material.jpg": "/static/media/material.0fa2ba24d6077af9c5d0.jpg",
@@ -27,14 +27,14 @@
     "static/media/2.jpg": "/static/media/2.f75b22cedf375cbfccfb.jpg",
     "static/media/8.jpg": "/static/media/8.83d87762f29def4fa88f.jpg",
     "static/media/5.jpg": "/static/media/5.f349224e0fe834163277.jpg",
-    "static/media/yamaha.png": "/static/media/yamaha.c4ea053f6f81aa36469b.png",
-    "static/media/misumi.png": "/static/media/misumi.62363bdef65127b62f38.png",
-    "static/media/sumitomo_electric.png": "/static/media/sumitomo_electric.1b9b38db13ea7dcdf95e.png",
     "static/media/Termina.ttf": "/static/media/Termina.a5fc85530cde5525bcd5.ttf",
     "static/media/img4.jpg": "/static/media/img4.1952fd08ff5837cf79a1.jpg",
-    "static/media/panasonic.png": "/static/media/panasonic.23ca6300ce71c736bdd4.png",
-    "static/media/samsung.png": "/static/media/samsung.9c1aa16a829ea238a8d4.png",
-    "static/media/viettel.png": "/static/media/viettel.b146c6571f676411f314.png",
+    "static/media/panasonic.png": "/static/media/panasonic.8d6e79d13a6a2fa67387.png",
+    "static/media/viettel.png": "/static/media/viettel.fc3c86b36ee0e35c00f7.png",
+    "static/media/sumitomo_electric.png": "/static/media/sumitomo_electric.82cb13247e9529e1a8ce.png",
+    "static/media/samsung.png": "/static/media/samsung.bf5be2d619692532535e.png",
+    "static/media/yamaha.png": "/static/media/yamaha.3d4a8b67cc91b5f377d8.png",
+    "static/media/misumi.png": "/static/media/misumi.4398aa70c5b8ff62271d.png",
     "static/media/app-map-marker.png": "/static/media/app-map-marker.de536b9e0dd0b952c036.png",
     "static/media/nav-logo.svg": "/static/media/nav-logo.8da0d5b58c6ab5f9e53063f8f58db226.svg",
     "static/media/slick.svg": "/static/media/slick.2630a3e3eab21c607e21.svg",
@@ -45,11 +45,11 @@
     "index.html": "/index.html",
     "static/media/arrow.svg": "/static/media/arrow.8516489debb6abc3b5ff686c0ee4c62b.svg",
     "main.23eab236.css.map": "/static/css/main.23eab236.css.map",
-    "main.28bc6fcf.js.map": "/static/js/main.28bc6fcf.js.map",
+    "main.3b07be89.js.map": "/static/js/main.3b07be89.js.map",
     "787.197b6eb6.chunk.js.map": "/static/js/787.197b6eb6.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.23eab236.css",
-    "static/js/main.28bc6fcf.js"
+    "static/js/main.3b07be89.js"
   ]
 }
