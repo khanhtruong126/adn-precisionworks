@@ -1,6 +1,6 @@
 import { Row, Col, Card } from "antd";
 import cncMachining from "../assets/cnc-machining/cnc-machining-background.jpg";
-import material from "../assets/material/material-background.jpg";
+import material from "../assets/material/material_background.jpg";
 import sheetMetal from "../assets/sheet-metal-fabrication/sheet-metal-fabrication-background.jpg";
 // import { LeftOutlined, RightOutlined } from "@ant-design/icons";
 import { useRef } from "react";

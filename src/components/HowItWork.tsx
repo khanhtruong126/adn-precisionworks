@@ -1,7 +1,7 @@
-import React from "react";
 import AppLogo from "../assets/main-logo.svg";
 import { Col, Row } from "antd";
 import SendQuoteButton from "./SendQuoteButton";
+import AboutUs from "./AboutUs";
 
 const HowItWork = () => {
   const data = [
@@ -33,8 +33,9 @@ const HowItWork = () => {
   ];
 
   return (
-    <div className="px-10 py-6">
-      <h1 className="mb-5">How It Work</h1>
+    <div className="px-2 py-6 lg:px-10 sm:px-2">
+      <AboutUs />
+      <h1 className="mb-5 mt-10">How It Work</h1>
       <Row justify="space-between" gutter={[25, 25]} className="px-20">
         {data.map((item, index) => (
           <Col

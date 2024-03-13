@@ -1,6 +1,6 @@
 import { Col, Row } from "antd";
 import { CaretRightFilled } from "@ant-design/icons";
-import img1 from '../../assets/material/material-background.jpg';
+import img1 from '../../assets/material/material_background.jpg';
 import img2 from '../../assets/material/material.jpg';
 
 const Material = ({ id }: { id: string }) => {

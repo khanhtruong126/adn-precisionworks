@@ -14,6 +14,7 @@ import img11 from "../assets/product-gallery/11.jpg";
 import img12 from "../assets/product-gallery/12.jpg";
 import { SECTION_ID } from "../router";
 import { LoadingOutlined } from "@ant-design/icons";
+import Partners from "./Partners";
 
 const ProductGallery = () => {
   const images = [
@@ -32,6 +33,9 @@ const ProductGallery = () => {
   ];
   return (
     <div id={SECTION_ID.GALLERY}>
+      <div className="mb-5">
+        <Partners />
+      </div>
       <SectionTitle title="Product Gallery" />
       <div className="mx-20 my-10">
         <Row gutter={[30, 30]}>
@@ -42,7 +46,7 @@ const ProductGallery = () => {
                 width="100%"
                 height={300}
                 placeholder={
-                  <div className="flex justify-center items-center">
+                  <div className="flex justify-center items-center h-[300px]">
                     <LoadingOutlined className="text-[7rem]" />
                   </div>
                 }

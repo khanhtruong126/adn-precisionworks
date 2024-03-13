@@ -3,6 +3,7 @@ import Home from "./Home";
 import ContactUs from "./ContactUs";
 import Capabilities from "./Capabilities";
 import HowItWorkChart from "./HowItWorkChart";
+import Partners from "./Partners";
 
 const Main = () => {
   return (
@@ -10,6 +11,7 @@ const Main = () => {
       <Home />
       <Capabilities />
       <HowItWorkChart />
+      <Partners/>
       <ContactUs />
     </Space>
   );
