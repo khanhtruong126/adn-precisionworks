@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.23eab236.css",
-    "main.js": "/static/js/main.3006d31e.js",
+    "main.js": "/static/js/main.1e8cb083.js",
     "static/js/787.197b6eb6.chunk.js": "/static/js/787.197b6eb6.chunk.js",
     "static/media/sheet-metal-fabrication-background.jpg": "/static/media/sheet-metal-fabrication-background.3bfb210bfa054fb6864f.jpg",
     "static/media/material.jpg": "/static/media/material.0fa2ba24d6077af9c5d0.jpg",
@@ -12,7 +12,6 @@
     "static/media/img1.png": "/static/media/img1.23d33b8e215bbf516c2b.png",
     "static/media/11.jpg": "/static/media/11.aeedd45e7ade73f80652.jpg",
     "static/media/7.jpg": "/static/media/7.2af5d644e80e3a4f0d5e.jpg",
-    "static/media/rugged_video_logo.png": "/static/media/rugged_video_logo.f2c81009b019c3e5a494.png",
     "static/media/3.jpg": "/static/media/3.41351c481ee50f406fae.jpg",
     "static/media/cnc-machining-background.jpg": "/static/media/cnc-machining-background.269e631547295ab57dc1.jpg",
     "static/media/10.jpg": "/static/media/10.b28854edb783abebd125.jpg",
@@ -45,11 +44,11 @@
     "index.html": "/index.html",
     "static/media/arrow.svg": "/static/media/arrow.8516489debb6abc3b5ff686c0ee4c62b.svg",
     "main.23eab236.css.map": "/static/css/main.23eab236.css.map",
-    "main.3006d31e.js.map": "/static/js/main.3006d31e.js.map",
+    "main.1e8cb083.js.map": "/static/js/main.1e8cb083.js.map",
     "787.197b6eb6.chunk.js.map": "/static/js/787.197b6eb6.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.23eab236.css",
-    "static/js/main.3006d31e.js"
+    "static/js/main.1e8cb083.js"
   ]
 }
