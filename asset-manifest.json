@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/static/css/main.8aeffa51.css",
-    "main.js": "/static/js/main.be539c50.js",
+    "main.css": "/static/css/main.32deb6f3.css",
+    "main.js": "/static/js/main.c73b2e5f.js",
     "static/js/787.197b6eb6.chunk.js": "/static/js/787.197b6eb6.chunk.js",
     "static/media/sheet-metal-fabrication-background.jpg": "/static/media/sheet-metal-fabrication-background.3bfb210bfa054fb6864f.jpg",
-    "static/media/6325.png": "/static/media/6325.9b11c4892bdbf75ee517.png",
+    "static/media/home-item.png": "/static/media/home-item.9b11c4892bdbf75ee517.png",
     "static/media/material.jpg": "/static/media/material.0fa2ba24d6077af9c5d0.jpg",
     "static/media/img1.jpg": "/static/media/img1.7aca8f08aab159b43976.jpg",
     "static/media/material_background.jpg": "/static/media/material_background.752023738625758e4e2f.jpg",
@@ -18,7 +18,7 @@
     "static/media/1.jpg": "/static/media/1.535e456c69f9bf659ea6.jpg",
     "static/media/4.jpg": "/static/media/4.799b70a9a22811a685d7.jpg",
     "static/media/img6.jpg": "/static/media/img6.e2bbf0f24f1393a96c43.jpg",
-    "static/media/home-item.jpg": "/static/media/home-item.752240af7690bcd261d3.jpg",
+    "static/media/cnc-machining.jpg": "/static/media/cnc-machining.752240af7690bcd261d3.jpg",
     "static/media/img5.jpg": "/static/media/img5.8357670874a5a80b49bc.jpg",
     "static/media/img2.jpg": "/static/media/img2.19b4ccc15d5362e3b2c2.jpg",
     "static/media/9.jpg": "/static/media/9.757788444d87f1899961.jpg",
@@ -42,12 +42,12 @@
     "static/media/slick.woff": "/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/index.html",
     "static/media/arrow.svg": "/static/media/arrow.8516489debb6abc3b5ff686c0ee4c62b.svg",
-    "main.8aeffa51.css.map": "/static/css/main.8aeffa51.css.map",
-    "main.be539c50.js.map": "/static/js/main.be539c50.js.map",
+    "main.32deb6f3.css.map": "/static/css/main.32deb6f3.css.map",
+    "main.c73b2e5f.js.map": "/static/js/main.c73b2e5f.js.map",
     "787.197b6eb6.chunk.js.map": "/static/js/787.197b6eb6.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.8aeffa51.css",
-    "static/js/main.be539c50.js"
+    "static/css/main.32deb6f3.css",
+    "static/js/main.c73b2e5f.js"
   ]
 }
