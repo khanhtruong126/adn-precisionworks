@@ -1,9 +1,8 @@
-import React from "react";
 import yamaha from "../assets/partner_logos/yamaha.png";
-import sumitomo from "../assets/partner_logos/sumitomo_electric.png";
+// import sumitomo from "../assets/partner_logos/sumitomo_electric.png";
 import viettel from "../assets/partner_logos/viettel.png";
 import samsung from "../assets/partner_logos/samsung.png";
-import misumi from "../assets/partner_logos/misumi.png";
+// import misumi from "../assets/partner_logos/misumi.png";
 import panasonic from "../assets/partner_logos/panasonic.png";
 import { Col, Row } from "antd";
 
@@ -11,9 +10,9 @@ const Partners = () => {
   const partners = [
     { name: "yamaha", imgSrc: yamaha },
     { name: "viettel", imgSrc: viettel },
-    { name: "sumitomo", imgSrc: sumitomo },
+    // { name: "sumitomo", imgSrc: sumitomo },
     { name: "samsung", imgSrc: samsung },
-    { name: "misumi", imgSrc: misumi },
+    // { name: "misumi", imgSrc: misumi },
     { name: "panasonic", imgSrc: panasonic },
   ];
 
@@ -25,13 +24,13 @@ const Partners = () => {
         </span>
       </div>
       <Row
-        justify="center"
+        justify="space-between"
         align="middle"
-        gutter={[0, 10]}
-        className="px-5 py-2 bg-white rounded-md"
+        gutter={[20, 10]}
+        className="px-32 lg:px-5 sm:px-16 py-2 bg-white rounded-md"
       >
         {partners.map((partner) => (
-          <Col span={4}>
+          <Col span={12} xl={6} lg={6} >
             <img
               src={partner.imgSrc}
               alt={partner.name}

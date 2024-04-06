@@ -4,43 +4,40 @@ import NetworkMap from "./NetworkMap";
 import SendQuoteButton from "./SendQuoteButton";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
+  faEnvelope,
   faIndustry,
   faWarehouse,
-  faEnvelope,
 } from "@fortawesome/free-solid-svg-icons";
 import {
   faLinkedin,
   faSquareWhatsapp,
 } from "@fortawesome/free-brands-svg-icons";
 
-const ContactUs = () => {
+const Footer = () => {
   const data = ["ADN Precision Works, Ho Chi Minh City, Vietnam", "Est.2024"];
 
   return (
     <div
       id={SECTION_ID.ABOUT_US}
-      className="py-5 px-5 2xl:px-36 lg:px-10 sm:px-5 xs:px-4"
+      className="py-5 px-[20rem] lg:px-[20rem] sm:px-5 xs:px-2 bg-light-gray"
     >
-      <Row gutter={[25, 25]} align="middle" justify="center">
-        <Col span={16} lg={16} md={24} sm={24} xs={24}>
-          <div className="text-7xl highlight-title mb-2">LET'S CONNECT US</div>
-          <div className="text-lg font-semibold">
+      <Row gutter={[25, 25]} align="middle">
+        <Col span={24} lg={16} md={24} sm={24} xs={24}>
+          <div className="text-5xl highlight-title mb-2">LET'S CONNECT US</div>
+          <div className="text-base font-semibold">
             {data.map((item) => (
               <div>{item}</div>
             ))}
           </div>
-          <Space direction="vertical" size={[0, 15]} className="my-8 text-xl">
+          <Space direction="vertical" size={[0, 5]} className="my-2 text-base">
             <div className="flex items-center gap-1">
               <FontAwesomeIcon icon={faIndustry} />
-              <span>
-                <b>Delivery Center</b>: Thu Duc city, Ho Chi Minh, Vietnam
-              </span>
+              <span><b>Delivery Center</b>: Thu Duc city, Ho Chi Minh, Vietnam</span>
             </div>
             <div className="flex items-center gap-1">
               <FontAwesomeIcon icon={faWarehouse} />
               <span>
-                <b>Vendors Network</b>: Ho Chi Minh city , Binh Dương Province,
-                Ha Noi
+                <b>Vendors Network</b>: Ho Chi Minh city , Binh Dương Province, Ha Noi
               </span>
             </div>
             <div
@@ -49,7 +46,6 @@ const ContactUs = () => {
               className="flex items-center gap-1"
             >
               <FontAwesomeIcon icon={faEnvelope} />
-              {/* <MailOutlined className="text-base" /> */}
               <span>
                 <b>Email</b>: thaivu@adnprecisionworks.com
               </span>
@@ -80,12 +76,12 @@ const ContactUs = () => {
             <SendQuoteButton />
           </div>
         </Col>
-        <Col span={8} lg={8} md={24} sm={24} xs={24}>
-          <NetworkMap height="27rem" zoom={5} />
+        <Col span={24} lg={8} md={24} sm={24} xs={24}>
+          <NetworkMap />
         </Col>
       </Row>
     </div>
   );
 };
 
-export default ContactUs;
+export default Footer;

@@ -2,7 +2,7 @@ import { CaretRightFilled } from "@ant-design/icons";
 import { Col, Row } from "antd";
 import styled from "styled-components";
 import cncMachining from "../../assets/cnc-machining/cnc-machining-background.jpg";
-import image from "../../assets/home-item.jpg";
+import image from "../../assets/cnc-machining.jpg";
 import img1 from "../../assets/cnc-machining/img1.jpg";
 import img2 from "../../assets/cnc-machining/img2.jpg";
 import img3 from "../../assets/cnc-machining/img3.jpg";

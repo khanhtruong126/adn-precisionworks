@@ -1,14 +1,23 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { ConfigProvider, Layout, Menu } from "antd";
 import NavLogo from "./assets/nav-logo.svg";
 import { apwRed } from "./colors";
-import { Link, Route, Routes, useNavigate } from "react-router-dom";
-import { CAPACITY_URLS, SECTION_ID, router } from "./router";
+import {
+  Link,
+  Route,
+  Routes,
+  useLocation,
+  useNavigate,
+} from "react-router-dom";
+import { CAPACITY_URLS, GALLERY_URLs, SECTION_ID, router } from "./router";
 import "./fonts/Termina.ttf";
+import SendQuoteButton from "./components/SendQuoteButton";
+import ReactGA from "react-ga4";
+
+const MEASUREMENT_ID = "G-2325Q4CX55"; //GA4 EASUREMENT_ID
+ReactGA.initialize(MEASUREMENT_ID);
 
 const { Header, Content } = Layout;
-
-
 
 const items = [
   { key: SECTION_ID.HOME, label: "Home" },
@@ -21,13 +30,22 @@ const items = [
       CAPACITY_URLS.SHEET_METAL_FABRICATION,
     ],
   },
-  { key: SECTION_ID.HOWITWORK, label: "How It Work" },
-  { key: SECTION_ID.GALLERY, label: "Product Gallery" },
+  {
+    key: SECTION_ID.GALLERY,
+    label: "Gallery",
+    children: [GALLERY_URLs.CUSTOMERS, GALLERY_URLs.PRODUCT_GALLERY],
+  },
+  { key: SECTION_ID.ABOUT_US, label: "About Us" },
   { key: SECTION_ID.CONTACT_US, label: "Contact Us" },
 ];
 
 const App: React.FC = () => {
   const navigate = useNavigate();
+  const location = useLocation();
+
+  useEffect(() => {
+    ReactGA.send({ hitType: "pageview", page: location.pathname });
+  }, [location]);
 
   return (
     <ConfigProvider
@@ -44,6 +62,7 @@ const App: React.FC = () => {
     >
       <Layout className="overflow-visible max-w-[100vw]">
         <Header
+          className="px-[15px] lg:px-[90px] sm:px-[15px] xs:"
           style={{
             position: "sticky",
             top: 0,
@@ -60,17 +79,20 @@ const App: React.FC = () => {
             </Link>
           </div>
           <Menu
-            className="mx-5"
+            className="mx-5 font-semibold uppercase"
             mode="horizontal"
             defaultSelectedKeys={[SECTION_ID.HOME]}
             items={items}
             style={{
               flex: 1,
               minWidth: 0,
-              fontSize: "1.2rem",
+              fontSize: "1rem",
             }}
             onClick={(menuItem) => {
-              let path = menuItem.keyPath.reverse().join("/");
+              let path = menuItem.keyPath
+                .filter((path) => path !== "rc-menu-more") //avoid antd default collapsed menu class
+                .reverse()
+                .join("/");
               if (path === "home") {
                 path = "/";
               }
@@ -83,6 +105,9 @@ const App: React.FC = () => {
               }
             }}
           />
+          <div>
+            <SendQuoteButton />
+          </div>
         </Header>
         <Content>
           <div

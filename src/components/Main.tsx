@@ -1,9 +1,9 @@
 import { Space } from "antd";
 import Home from "./Home";
-import ContactUs from "./ContactUs";
 import Capabilities from "./Capabilities";
 import HowItWorkChart from "./HowItWorkChart";
 import Partners from "./Partners";
+import Footer from "./Footer";
 
 const Main = () => {
   return (
@@ -12,7 +12,7 @@ const Main = () => {
       <Capabilities />
       <HowItWorkChart />
       <Partners/>
-      <ContactUs />
+      <Footer />
     </Space>
   );
 };

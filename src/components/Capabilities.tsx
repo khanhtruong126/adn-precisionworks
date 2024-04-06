@@ -24,6 +24,7 @@ const CapacityCard = ({ title, description, cover, url }: CardProps) => {
 
   return (
     <Card
+      className="min-h-[470px]"
       hoverable
       cover={
         <img
@@ -41,7 +42,7 @@ const CapacityCard = ({ title, description, cover, url }: CardProps) => {
         />
       }
     >
-      <Meta title={title} description={description} />
+      <Meta title={title} description={<p className="text-justify">{description}</p>} />
     </Card>
   );
 };
@@ -51,21 +52,21 @@ const Capabilities = () => {
     {
       title: CAPACITY_URLS.CNC_MACHINING.label,
       description:
-        "description description description description description",
+        "Our CNC Milling/Turning process produces custom prototypes and end-use production parts from 7days to 21days bases on the design. We use 3-axis milling and 3 +1 axis, 5 axis indexed milling processes to manufacture parts.",
       cover: cncMachining,
       url: CAPACITY_URLS.CNC_MACHINING.key,
     },
     {
       title: CAPACITY_URLS.SHEET_METAL_FABRICATION.label,
       description:
-        "description description description description description",
+       "We take pride in offering a comprehensive range of sheet metal solutions tailored to meet the diverse needs of industries ranging from construction and automotive to electronics and beyond.",
       cover: sheetMetal,
       url: CAPACITY_URLS.SHEET_METAL_FABRICATION.key,
     },
     {
       title: CAPACITY_URLS.MATERIAL.label,
       description:
-        "description description description description description",
+        "Whether it's aluminum, steel, titanium, or exotic alloys, we have the expertise to work with a wide range of materials. Our CNC precision service ensures that your components maintain their integrity and quality, regardless of the material specifications.",
       cover: material,
       url: CAPACITY_URLS.MATERIAL.key,
     },

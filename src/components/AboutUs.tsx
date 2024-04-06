@@ -1,9 +1,10 @@
 import { CaretRightFilled } from "@ant-design/icons";
+import SectionTitle from "./SectionTitle";
 
 const AboutUs = () => {
   return (
     <div className="mb-5">
-      <h1 className="mb-5 text-center">About Us</h1>
+      <SectionTitle title="About Us"/>
       <div className="text-justify text-lg w-[85vw] lg:w-[85vw] sm:w-[95vw] m-auto">
         <div className="indent-10">
           <p>

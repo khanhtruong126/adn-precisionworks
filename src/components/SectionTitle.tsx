@@ -1,24 +1,11 @@
-import { apwRed } from "../colors";
-import styled from "styled-components";
-
 const SectionTitle = ({ title }: { title: string }) => {
   return (
-    <Container>
-      <div className="text-center text-4xl py-2 font-bold">
+    <div className="text-center mb-10">
+      <span className="text-3xl pb-2 font-bold border-b-[5px] border-app-red">
         {title}
-      </div>
-    </Container>
+      </span>
+    </div>
   );
 };
 
 export default SectionTitle;
-
-const Container = styled.div`
-  width: 100%;
-  padding: 0 2rem;
-
-  div {
-    background-color: ${apwRed};
-    color: white;
-  }
-`;

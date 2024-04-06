@@ -21,7 +21,7 @@
   }
 
   h3 {
-    @apply highlight-title text-xl;
+    @apply highlight-title text-base;
   }
 }
 

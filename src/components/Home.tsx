@@ -1,21 +1,16 @@
 import { Row, Col } from "antd";
 import styled from "styled-components";
-// import homeBackground from "../assets/home-background.png";
-// import hubCNC from "../assets/hubs_cnc.png";
 import { SECTION_ID } from "../router";
-import { apwRed, gray } from "../colors";
-// import homeItem from "../assets/home-item.jpg";
 import AppLogo from "../assets/main-logo.svg";
 import { CaretRightFilled } from "@ant-design/icons";
-import item from "../assets/home-image.png";
-import SendQuoteButton from "./SendQuoteButton";
+import item from "../assets/home-item.png";
 
 const Home = () => {
   return (
     <HomeContanier id={SECTION_ID.HOME}>
-      <Row className="px-40 xl:px-40 md:px-10 sm:px-5">
+      <Row className="px-24 xl:px-24 md:px-10 sm:px-5">
         <Col
-          lg={14}
+          lg={16}
           md={24}
           sm={24}
           className="flex mb-5 md:justify-center sm:justify-center"
@@ -29,12 +24,12 @@ const Home = () => {
               <Title level={4}>Contact Us</Title>
             </Button> */}
             <div>
-              <h3 className="mb-2">
-                Unlocking Vietnam's Precision: Your Gateway to Quality Machined
-                Parts
-              </h3>
+              <h2 className="mb-2">
+                Unlocking Vietnam's Precision <br /> Your Gateway to Quality
+                Machined Parts
+              </h2>
               <div className="text-lg text-justify">
-                <p className="mb-2">
+                <p className="mb-2 indent-10">
                   ADN Precision works (
                   <span className="highlight-title">ADN</span>), your premier
                   partner in procuring high-quality machined parts from the
@@ -55,28 +50,45 @@ const Home = () => {
                   <CaretRightFilled />
                   <b>At ADN</b>, our responsible to delivery to customers
                 </div>
-                <div className="ml-5 mt-2">
-                  <div className="flex gap-2">
-                    <img src={AppLogo} alt="main_logo" width={15} height={15} />
-                    <h3>HIGH QUALITY PRODUCTS</h3>
-                  </div>
-                  <div className="flex gap-2">
-                    <img src={AppLogo} alt="main_logo" width={15} height={15} />
-                    <h3>FASTER</h3>
-                  </div>
-                  <div className="flex gap-2">
-                    <img src={AppLogo} alt="main_logo" width={15} height={15} />
-                    <h3>REASONABLE COST</h3>
-                  </div>
-                </div>
+                <Row justify="space-between" align="middle">
+                  <Col className="ml-5 mt-2">
+                    <div className="flex gap-2">
+                      <img
+                        src={AppLogo}
+                        alt="main_logo"
+                        width={10}
+                        height={10}
+                      />
+                      <h3>HIGH QUALITY PRODUCTS</h3>
+                    </div>
+                    <div className="flex gap-2">
+                      <img
+                        src={AppLogo}
+                        alt="main_logo"
+                        width={10}
+                        height={10}
+                      />
+                      <h3>FASTER</h3>
+                    </div>
+                    <div className="flex gap-2">
+                      <img
+                        src={AppLogo}
+                        alt="main_logo"
+                        width={10}
+                        height={10}
+                      />
+                      <h3>REASONABLE COST</h3>
+                    </div>
+                  </Col>
+                  {/* <Col className="mt-3">
+                    <SendQuoteButton />
+                  </Col> */}
+                </Row>
               </div>
-            </div>
-            <div className="mt-3">
-              <SendQuoteButton />
             </div>
           </div>
         </Col>
-        <Col id="home-panel" offset={1} lg={9} md={24} sm={24}></Col>
+        <Col id="home-panel" offset={0} lg={8} md={24} sm={24}></Col>
       </Row>
     </HomeContanier>
   );
@@ -85,13 +97,13 @@ const Home = () => {
 export default Home;
 
 const HomeContanier = styled.div`
-  background-color: ${gray};
+  background-color: #fafafa;
   padding: 2rem 0;
 
   #home-panel {
     width: 100%;
     height: 22rem;
-    background: url(${item}) center no-repeat;
+    background: url(${item}) right no-repeat;
     background-size: 400px 550px;
     position: relative;
   }
