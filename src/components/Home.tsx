@@ -25,30 +25,28 @@ const Home = () => {
             </Button> */}
             <div>
               <h2 className="mb-2">
-                Unlocking Vietnam's Precision <br /> Your Gateway to Quality
-                Machined Parts
+                ADN PRECISION WOKRS <br /> Your trusted CNC Machining partner
+                from Vietnam.
               </h2>
               <div className="text-lg text-justify">
                 <p className="mb-2 indent-10">
-                  ADN Precision works (
-                  <span className="highlight-title">ADN</span>), your premier
-                  partner in procuring high-quality machined parts from the
-                  heart of Vietnam. With a commitment to excellence and a
-                  network of trusted manufacturing partners, we are your trusted
-                  source for precision-engineered components that meet and
-                  exceed industry standards.
+                  We offer precision CNC machining services to meet your custom
+                  part manufacturing needs. Utilizing state-of-the-art CNC
+                  machines and experienced CNC manufacturers from Vietnam, we
+                  can produce high-quality, prototype to production, accurate
+                  parts with tight tolerances.
                 </p>
-                <div className="flex">
+                {/* <div className="flex">
                   <CaretRightFilled />
                   <span>
                     We do service{" "}
                     <span className="highlight-title">from prototype</span>{" "}
                     <b>to productions</b>
                   </span>
-                </div>
+                </div> */}
                 <div className="flex">
                   <CaretRightFilled />
-                  <b>At ADN</b>, our responsible to delivery to customers
+                  Values to customers
                 </div>
                 <Row justify="space-between" align="middle">
                   <Col className="ml-5 mt-2">
@@ -59,7 +57,7 @@ const Home = () => {
                         width={10}
                         height={10}
                       />
-                      <h3>HIGH QUALITY PRODUCTS</h3>
+                      <h3>Quality focus</h3>
                     </div>
                     <div className="flex gap-2">
                       <img
@@ -68,7 +66,7 @@ const Home = () => {
                         width={10}
                         height={10}
                       />
-                      <h3>FASTER</h3>
+                      <h3>Make it fast</h3>
                     </div>
                     <div className="flex gap-2">
                       <img
@@ -77,13 +75,18 @@ const Home = () => {
                         width={10}
                         height={10}
                       />
-                      <h3>REASONABLE COST</h3>
+                      <h3>Reasonable price</h3>
                     </div>
                   </Col>
                   {/* <Col className="mt-3">
                     <SendQuoteButton />
                   </Col> */}
                 </Row>
+                <p className="mt-3">
+                  With our diversity vendors networks , Our capabilities are
+                  including CNC Maching including Milling and Turning, Sheet
+                  Metal fabrication and Auto lathes Swiss machines
+                </p>
               </div>
             </div>
           </div>

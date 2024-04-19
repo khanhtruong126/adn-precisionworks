@@ -19,12 +19,15 @@ const CNCMachining = ({ id }: { id: string }) => {
             <div className="text-justify mt-7 text-lg">
               <p>
                 <CaretRightFilled />
-                Take advantage of our multi-axis machining capabilities that
-                enable us to handle intricate and three-dimensional components.
-                This allows us to achieve superior precision in every dimension,
-                bringing your designs to life with exceptional accuracy.
+                Take advantage of our multi-axis machining capabilities from
+                well experiences and qualifed{" "}
+                <span className="highlight-title">
+                  CNC Manufactures Vietnam
+                </span>
+                , that enable us to handle intricate and three-dimensional
+                components, delivery high quality in a short production leadtime
               </p>
-              <p>
+              {/* <p>
                 <CaretRightFilled />
                 <span className="highlight-title">Custom Solutions</span>: No
                 two projects are alike, and we understand the importance of
@@ -32,7 +35,7 @@ const CNCMachining = ({ id }: { id: string }) => {
                 with you to understand your specific requirements, offering
                 customized CNC precision services that meet and exceed your
                 expectations.
-              </p>
+              </p> */}
             </div>
           </Col>
           <Col span={8} lg={8} xs={24}>
