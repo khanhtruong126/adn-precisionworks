@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.0acd5d4f.css",
-    "main.js": "/static/js/main.057a0de2.js",
+    "main.css": "/static/css/main.d9a8e7ae.css",
+    "main.js": "/static/js/main.ea656b9a.js",
     "static/js/787.197b6eb6.chunk.js": "/static/js/787.197b6eb6.chunk.js",
     "static/media/sheet-metal-fabrication-background.jpg": "/static/media/sheet-metal-fabrication-background.3bfb210bfa054fb6864f.jpg",
     "static/media/home-item.png": "/static/media/home-item.9b11c4892bdbf75ee517.png",
@@ -43,12 +43,12 @@
     "static/media/main-logo.svg": "/static/media/main-logo.ddff1d2ed508e9f88a77d5eb1fa0e3b7.svg",
     "index.html": "/index.html",
     "static/media/slick.woff": "/static/media/slick.295183786cd8a1389865.woff",
-    "main.0acd5d4f.css.map": "/static/css/main.0acd5d4f.css.map",
-    "main.057a0de2.js.map": "/static/js/main.057a0de2.js.map",
+    "main.d9a8e7ae.css.map": "/static/css/main.d9a8e7ae.css.map",
+    "main.ea656b9a.js.map": "/static/js/main.ea656b9a.js.map",
     "787.197b6eb6.chunk.js.map": "/static/js/787.197b6eb6.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.0acd5d4f.css",
-    "static/js/main.057a0de2.js"
+    "static/css/main.d9a8e7ae.css",
+    "static/js/main.ea656b9a.js"
   ]
 }
