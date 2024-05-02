@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.d9a8e7ae.css",
-    "main.js": "/static/js/main.ea656b9a.js",
+    "main.css": "/static/css/main.12b8bb73.css",
+    "main.js": "/static/js/main.d408b79f.js",
     "static/js/787.197b6eb6.chunk.js": "/static/js/787.197b6eb6.chunk.js",
     "static/media/sheet-metal-fabrication-background.jpg": "/static/media/sheet-metal-fabrication-background.3bfb210bfa054fb6864f.jpg",
     "static/media/home-item.png": "/static/media/home-item.9b11c4892bdbf75ee517.png",
@@ -33,6 +33,7 @@
     "static/media/misumi.png": "/static/media/misumi.900286a1db97a3ec1214.png",
     "static/media/panasonic.png": "/static/media/panasonic.3d2ed19b58b83dce45d6.png",
     "static/media/viettel.png": "/static/media/viettel.fef3fd16f75e74298761.png",
+    "static/media/whatsapp-QR.jpg": "/static/media/whatsapp-QR.16e4df4a5e1a55021fff.jpg",
     "static/media/samsung.png": "/static/media/samsung.ac807342c36894b9607e.png",
     "static/media/app-map-marker.png": "/static/media/app-map-marker.de536b9e0dd0b952c036.png",
     "static/media/yamaha.png": "/static/media/yamaha.eb346a26fd4a395f22fc.png",
@@ -43,12 +44,12 @@
     "static/media/main-logo.svg": "/static/media/main-logo.ddff1d2ed508e9f88a77d5eb1fa0e3b7.svg",
     "index.html": "/index.html",
     "static/media/slick.woff": "/static/media/slick.295183786cd8a1389865.woff",
-    "main.d9a8e7ae.css.map": "/static/css/main.d9a8e7ae.css.map",
-    "main.ea656b9a.js.map": "/static/js/main.ea656b9a.js.map",
+    "main.12b8bb73.css.map": "/static/css/main.12b8bb73.css.map",
+    "main.d408b79f.js.map": "/static/js/main.d408b79f.js.map",
     "787.197b6eb6.chunk.js.map": "/static/js/787.197b6eb6.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.d9a8e7ae.css",
-    "static/js/main.ea656b9a.js"
+    "static/css/main.12b8bb73.css",
+    "static/js/main.d408b79f.js"
   ]
 }
