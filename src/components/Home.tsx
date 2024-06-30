@@ -8,34 +8,37 @@ import item from "../assets/home-item.png";
 const Home = () => {
   return (
     <HomeContanier id={SECTION_ID.HOME}>
-      <Row className="px-24 xl:px-24 md:px-10 sm:px-5">
+      <Row className="px-10 lg:px-24 md:px-10 sm:px-5">
         <Col
           lg={16}
           md={24}
           sm={24}
           className="flex mb-5 md:justify-center sm:justify-center"
         >
-          <div
-            id="home-contact"
-            className="pl-20 sm:pl-0 flex flex-col justify-center"
-          >
+          <div id="home-contact" className="flex flex-col justify-center">
             {/* <Title>ADN Precision Works</Title> */}
             {/* <Button size="large" className="p-0" onClick={handleClickScroll}>
               <Title level={4}>Contact Us</Title>
             </Button> */}
             <div>
               <h2 className="mb-2">
-                ADN PRECISION WOKRS <br /> Your trusted CNC Machining partner
-                from Vietnam.
+                ADN precision Works LLC, We provide CNC Machining Services
               </h2>
+              <p>
+                <b className="text-xl">
+                  ADN, we provide one-stop CNC Machining Service to ensure all
+                  our customers will receive the best quality products in a
+                  timely manners.
+                </b>
+              </p>
               <div className="text-lg text-justify">
-                <p className="mb-2 indent-10">
+                {/* <p className="mb-2 indent-10">
                   We offer precision CNC machining services to meet your custom
                   part manufacturing needs. Utilizing state-of-the-art CNC
                   machines and experienced CNC manufacturers from Vietnam, we
                   can produce high-quality, prototype to production, accurate
                   parts with tight tolerances.
-                </p>
+                </p> */}
                 {/* <div className="flex">
                   <CaretRightFilled />
                   <span>
@@ -44,49 +47,64 @@ const Home = () => {
                     <b>to productions</b>
                   </span>
                 </div> */}
-                <div className="flex">
+                {/* <div className="flex">
                   <CaretRightFilled />
                   Values to customers
-                </div>
+                </div> */}
                 <Row justify="space-between" align="middle">
                   <Col className="ml-5 mt-2">
                     <div className="flex gap-2">
                       <img
                         src={AppLogo}
                         alt="main_logo"
-                        width={10}
-                        height={10}
+                        width={15}
+                        height={15}
                       />
-                      <h3>Quality focus</h3>
+                      <h3>
+                        Capability diversity , our supplier diversity will help
+                        unlock the benefit of manufacturing parts. By identify
+                        the appropriate production method and manufacture, will
+                        help to optimize cost and production leadtime.
+                      </h3>
                     </div>
                     <div className="flex gap-2">
                       <img
                         src={AppLogo}
                         alt="main_logo"
-                        width={10}
-                        height={10}
+                        width={15}
+                        height={15}
                       />
-                      <h3>Make it fast</h3>
+                      <h3>
+                        Skilled Engineers including Engineers, Technicians will
+                        prior review technical drawings and communicate toward
+                        solution, to ensure the production run smoothly.
+                      </h3>
                     </div>
                     <div className="flex gap-2">
                       <img
                         src={AppLogo}
                         alt="main_logo"
-                        width={10}
-                        height={10}
+                        width={15}
+                        height={15}
                       />
-                      <h3>Reasonable price</h3>
+                      <h3>
+                        Monitor priority detail every single project from start
+                        to end by sale Engineer, including planning, follow up,
+                        production walk in, regular Audits, communicate the
+                        chances, deviations in a timely manner to avoid
+                        unnecessary delays.
+                      </h3>
                     </div>
                   </Col>
                   {/* <Col className="mt-3">
                     <SendQuoteButton />
                   </Col> */}
                 </Row>
-                <p className="mt-3">
+                {/* <p className="mt-3">
                   With our diversity vendors networks , Our capabilities are
                   including CNC Maching including Milling and Turning, Sheet
                   Metal fabrication and Auto lathes Swiss machines
-                </p>
+                </p> */}
               </div>
             </div>
           </div>

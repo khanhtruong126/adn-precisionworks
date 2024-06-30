@@ -17,11 +17,11 @@
   }
 
   h2 {
-    @apply highlight-title text-3xl;
+    @apply text-app-red text-3xl;
   }
 
   h3 {
-    @apply highlight-title text-base;
+    @apply text-lg;
   }
 }
 
@@ -34,6 +34,7 @@
 body {
   margin: 0;
   font-size: 12px;
+  color: #383838;
   /* font-family: -apple-system, BlinkMacSystemFont, "Termina"; */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;

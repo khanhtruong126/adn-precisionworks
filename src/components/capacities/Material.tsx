@@ -5,7 +5,7 @@ import img2 from '../../assets/material/material.jpg';
 
 const Material = ({ id }: { id: string }) => {
   return (
-    <div className="px-40 m-auto flex flex-col gap-5">
+    <div className="px-5 lg:px-40 m-auto flex flex-col gap-5">
       <h1 id={id} className="text-center">Material</h1>
       <div className="text-lg text-justify">
         <div className="mb-5">
@@ -53,10 +53,10 @@ const Material = ({ id }: { id: string }) => {
 
       <Row justify="space-between" gutter={[30, 30]}>
         <Col span={12} lg={12} xs={24}>
-          <img src={img1} alt="material"  className="h-[400px]" />
+          <img src={img1} alt="material"  className="max-h-[400px]" />
         </Col>
         <Col span={12} lg={12} xs={24}>
-          <img src={img2} alt="material"  className="h-[400px]" />
+          <img src={img2} alt="material"  className="max-h-[400px]" />
         </Col>
       </Row>
     </div>

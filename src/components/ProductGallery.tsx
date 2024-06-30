@@ -37,14 +37,14 @@ const ProductGallery = () => {
         <Partners />
       </div>
       <SectionTitle title="Product Gallery" />
-      <div className="mx-20 my-10">
+      <div className="mx-5 lg:mx-20 my-10">
         <Row gutter={[30, 30]}>
           {images.map((img, index) => (
             <Col key={`img${index}`} span={8} lg={8} md={12} sm={24}>
               <Image
                 src={img}
                 width="100%"
-                height={300}
+                height="100%"
                 placeholder={
                   <div className="flex justify-center items-center h-[300px]">
                     <LoadingOutlined className="text-[7rem]" />

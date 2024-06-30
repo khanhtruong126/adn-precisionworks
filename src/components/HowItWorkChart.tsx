@@ -44,13 +44,13 @@ const HowItWorkChart = () => {
         gutter={[50, 30]}
         justify="space-between"
         align="middle"
-        className="px-10 md:justify-center sm:justify-center xs:justify-center"
+        className="px-2 lg:px-10 md:px-5 md:justify-center sm:justify-center xs:justify-center"
       >
         {cardData.map((item, index) => (
           <>
-            <Col span={5} xl={5} lg={6} md={16} sm={16} xs={16}>
+            <Col span={5} xl={5} lg={6} md={20} sm={24} xs={24}>
               <Card
-                className="text-center cursor-default min-h-[350px] 2xl:min-h-[300px] lg:min-h-[450px] md:min-h-[200px] xs:min-h-[100px] border-[2px]"
+                className="text-center cursor-default min-h-[300px] 2xl:min-h-[300px] lg:min-h-[450px] border-[2px]"
                 hoverable
                 cover={
                   <div className="text-5xl pt-4 text-app-red">
@@ -73,7 +73,7 @@ const HowItWorkChart = () => {
             {index !== cardData.length - 1 && (
               <Col
                 span={1}
-                className="!px-0 block xl:block md:hidden sm:hidden xs:hidden"
+                className="!px-0 hidden lg:!block"
               >
                 <img src={arrow} alt="arrow" />
               </Col>

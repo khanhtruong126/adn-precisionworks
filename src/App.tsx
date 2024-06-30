@@ -60,14 +60,13 @@ const App: React.FC = () => {
         },
       }}
     >
-      <Layout className="overflow-visible max-w-[100vw]">
+      <Layout className="overflow-visible w-fit">
         <Header
-          className="px-[15px] lg:px-[90px] sm:px-[15px] xs:"
+          className="px-[15px] lg:px-[90px] sm:px-[15px] w-full"
           style={{
             position: "sticky",
             top: 0,
             zIndex: 1,
-            width: "100%",
             display: "flex",
             alignItems: "center",
             backgroundColor: "white",
@@ -79,7 +78,7 @@ const App: React.FC = () => {
             </Link>
           </div>
           <Menu
-            className="mx-5 font-semibold uppercase"
+            className="lg:mx-5 font-semibold uppercase"
             mode="horizontal"
             defaultSelectedKeys={[SECTION_ID.HOME]}
             items={items}

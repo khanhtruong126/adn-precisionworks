@@ -9,11 +9,11 @@ import img3 from "../../assets/cnc-machining/img3.jpg";
 
 const CNCMachining = ({ id }: { id: string }) => {
   return (
-    <Container>
+    <Container className="px-5 lg:px-20">
       <h1 id={id} className="text-center">
         CNC Machining
       </h1>
-      <div className="my-10 px-20">
+      <div className="my-2 lg:my-10">
         <Row align="middle" gutter={[30, 30]} className="mb-5">
           <Col span={16} lg={16} xs={24}>
             <div className="text-justify mt-7 text-lg">
@@ -42,13 +42,17 @@ const CNCMachining = ({ id }: { id: string }) => {
             <img
               src={cncMachining}
               alt="cnc-machining"
-              className="float-right h-[250px] w-full"
+              className="float-right max-h-[250px] w-full"
             />
           </Col>
         </Row>
         <Row align="middle" gutter={[30, 30]}>
           <Col span={8} lg={8} xs={24}>
-            <img src={image} alt="cnc-machining" className="w-full h-[250px]" />
+            <img
+              src={image}
+              alt="cnc-machining"
+              className="w-full max-h-[250px]"
+            />
           </Col>
           <Col span={16} lg={16} xs={24}>
             <div className="text-justify mt-5 text-lg">
@@ -90,7 +94,11 @@ const CNCMachining = ({ id }: { id: string }) => {
         <Row justify="space-between" gutter={[30, 30]} className="mt-10">
           {[img1, img2, img3].map((img, index) => (
             <Col span={8} lg={8} xs={24} key={`image${index}`}>
-              <img src={img} alt="cnc-machining" className="h-[250px] w-full" />
+              <img
+                src={img}
+                alt="cnc-machining"
+                className="max-h-[250px] w-full"
+              />
             </Col>
           ))}
         </Row>

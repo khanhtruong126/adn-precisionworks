@@ -5,7 +5,7 @@ const AboutUs = () => {
   return (
     <div className="mb-5">
       <SectionTitle title="About Us"/>
-      <div className="text-justify text-lg w-[85vw] lg:w-[85vw] sm:w-[95vw] m-auto">
+      <div className="text-justify text-lg px-5 lg:px-20">
         <div className="indent-10">
           <p>
             <CaretRightFilled />
@@ -26,7 +26,7 @@ const AboutUs = () => {
             and accuracy.
           </p>
         </div>
-        <div className="mx-16 lg:mx-16 sm:mx-4 mt-5">
+        <div className="px-6 lg:px-16 mt-5">
           <ol className="list-decimal">
             <li>
               <b>Cost-Effective Solutions</b>: Our procurement service is not

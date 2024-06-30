@@ -2,7 +2,7 @@ import yamaha from "../assets/partner_logos/yamaha.png";
 // import sumitomo from "../assets/partner_logos/sumitomo_electric.png";
 import viettel from "../assets/partner_logos/viettel.png";
 import samsung from "../assets/partner_logos/samsung.png";
-// import misumi from "../assets/partner_logos/misumi.png";
+import misumi from "../assets/partner_logos/misumi.png";
 import panasonic from "../assets/partner_logos/panasonic.png";
 import { Col, Row } from "antd";
 
@@ -12,7 +12,7 @@ const Partners = () => {
     { name: "viettel", imgSrc: viettel },
     // { name: "sumitomo", imgSrc: sumitomo },
     { name: "samsung", imgSrc: samsung },
-    // { name: "misumi", imgSrc: misumi },
+    { name: "misumi", imgSrc: misumi },
     { name: "panasonic", imgSrc: panasonic },
   ];
 
@@ -27,14 +27,14 @@ const Partners = () => {
         justify="space-between"
         align="middle"
         gutter={[20, 10]}
-        className="px-32 lg:px-5 sm:px-16 py-2 bg-white rounded-md"
+        className="lg:px-5 py-2 bg-white rounded-md"
       >
         {partners.map((partner) => (
-          <Col span={12} xl={6} lg={6} >
+          <Col span={12} xl={4} lg={4} >
             <img
               src={partner.imgSrc}
               alt={partner.name}
-              className="m-auto shrink-0 origin-0 max-w-[200px] max-h-[100px]"
+              className="m-auto shrink-0 origin-0 max-w-[80%] max-h-[100px]"
             />
           </Col>
         ))}
