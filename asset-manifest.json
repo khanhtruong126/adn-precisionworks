@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.ea6d9a82.css",
-    "main.js": "/static/js/main.66055035.js",
+    "main.css": "/static/css/main.b78354aa.css",
+    "main.js": "/static/js/main.9e06bc76.js",
     "static/js/787.197b6eb6.chunk.js": "/static/js/787.197b6eb6.chunk.js",
     "static/media/sheet-metal-fabrication-background.jpg": "/static/media/sheet-metal-fabrication-background.3bfb210bfa054fb6864f.jpg",
     "static/media/home-item.png": "/static/media/home-item.9b11c4892bdbf75ee517.png",
@@ -30,9 +30,14 @@
     "static/media/reliable-network.png": "/static/media/reliable-network.a559c0127cfa7684e2d0.png",
     "static/media/Termina.ttf": "/static/media/Termina.a5fc85530cde5525bcd5.ttf",
     "static/media/img4.jpg": "/static/media/img4.1952fd08ff5837cf79a1.jpg",
+    "static/media/step-3.png": "/static/media/step-3.872a471c9cc36ed5faae.png",
     "static/media/quick-quote.png": "/static/media/quick-quote.563aed481be37e28a48c.png",
+    "static/media/step-2.png": "/static/media/step-2.563aed481be37e28a48c.png",
     "static/media/become-partner.png": "/static/media/become-partner.7257da4bfb8cc4388590.png",
     "static/media/misumi.png": "/static/media/misumi.900286a1db97a3ec1214.png",
+    "static/media/step-1.png": "/static/media/step-1.f710f5f001d67d04ffbc.png",
+    "static/media/step-5.png": "/static/media/step-5.1b2cb4566e53d15bf785.png",
+    "static/media/step-4.png": "/static/media/step-4.32c85e8179d4febcbccc.png",
     "static/media/panasonic.png": "/static/media/panasonic.3d2ed19b58b83dce45d6.png",
     "static/media/viettel.png": "/static/media/viettel.fef3fd16f75e74298761.png",
     "static/media/whatsapp-QR.jpg": "/static/media/whatsapp-QR.16e4df4a5e1a55021fff.jpg",
@@ -43,12 +48,12 @@
     "static/media/effective-price.svg": "/static/media/effective-price.b529b620b4adccc30479d579b8f39d41.svg",
     "static/media/main-logo.svg": "/static/media/main-logo.ddff1d2ed508e9f88a77d5eb1fa0e3b7.svg",
     "index.html": "/index.html",
-    "main.ea6d9a82.css.map": "/static/css/main.ea6d9a82.css.map",
-    "main.66055035.js.map": "/static/js/main.66055035.js.map",
+    "main.b78354aa.css.map": "/static/css/main.b78354aa.css.map",
+    "main.9e06bc76.js.map": "/static/js/main.9e06bc76.js.map",
     "787.197b6eb6.chunk.js.map": "/static/js/787.197b6eb6.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.ea6d9a82.css",
-    "static/js/main.66055035.js"
+    "static/css/main.b78354aa.css",
+    "static/js/main.9e06bc76.js"
   ]
 }
