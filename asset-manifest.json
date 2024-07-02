@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.8fa55356.css",
-    "main.js": "/static/js/main.8b667398.js",
+    "main.css": "/static/css/main.33f9d6a9.css",
+    "main.js": "/static/js/main.2e0ffa68.js",
     "static/js/787.197b6eb6.chunk.js": "/static/js/787.197b6eb6.chunk.js",
     "static/media/sheet-metal-fabrication-background.jpg": "/static/media/sheet-metal-fabrication-background.3bfb210bfa054fb6864f.jpg",
     "static/media/home-item.png": "/static/media/home-item.9b11c4892bdbf75ee517.png",
@@ -9,6 +9,7 @@
     "static/media/img1.jpg": "/static/media/img1.7aca8f08aab159b43976.jpg",
     "static/media/material_background.jpg": "/static/media/material_background.752023738625758e4e2f.jpg",
     "static/media/img3.jpg": "/static/media/img3.dec61ee3e24c2018877e.jpg",
+    "static/media/cnc-machining.jpg": "/static/media/cnc-machining.752240af7690bcd261d3.jpg",
     "static/media/img1.png": "/static/media/img1.23d33b8e215bbf516c2b.png",
     "static/media/11.jpg": "/static/media/11.aeedd45e7ade73f80652.jpg",
     "static/media/7.jpg": "/static/media/7.2af5d644e80e3a4f0d5e.jpg",
@@ -18,7 +19,6 @@
     "static/media/1.jpg": "/static/media/1.535e456c69f9bf659ea6.jpg",
     "static/media/4.jpg": "/static/media/4.799b70a9a22811a685d7.jpg",
     "static/media/img6.jpg": "/static/media/img6.e2bbf0f24f1393a96c43.jpg",
-    "static/media/cnc-machining.jpg": "/static/media/cnc-machining.752240af7690bcd261d3.jpg",
     "static/media/img5.jpg": "/static/media/img5.8357670874a5a80b49bc.jpg",
     "static/media/img2.jpg": "/static/media/img2.19b4ccc15d5362e3b2c2.jpg",
     "static/media/9.jpg": "/static/media/9.757788444d87f1899961.jpg",
@@ -38,6 +38,7 @@
     "static/media/step-1.png": "/static/media/step-1.f710f5f001d67d04ffbc.png",
     "static/media/step-5.png": "/static/media/step-5.1b2cb4566e53d15bf785.png",
     "static/media/step-4.png": "/static/media/step-4.32c85e8179d4febcbccc.png",
+    "static/media/injection-molding.jpg": "/static/media/injection-molding.49eb1199f99c06e3e752.jpg",
     "static/media/panasonic.png": "/static/media/panasonic.3d2ed19b58b83dce45d6.png",
     "static/media/viettel.png": "/static/media/viettel.fef3fd16f75e74298761.png",
     "static/media/whatsapp-QR.jpg": "/static/media/whatsapp-QR.16e4df4a5e1a55021fff.jpg",
@@ -49,12 +50,12 @@
     "static/media/main-logo.svg": "/static/media/main-logo.ddff1d2ed508e9f88a77d5eb1fa0e3b7.svg",
     "static/media/logo-white.svg": "/static/media/logo-white.fe608011bcf1f931dda0f28ae1d8e7a4.svg",
     "index.html": "/index.html",
-    "main.8fa55356.css.map": "/static/css/main.8fa55356.css.map",
-    "main.8b667398.js.map": "/static/js/main.8b667398.js.map",
+    "main.33f9d6a9.css.map": "/static/css/main.33f9d6a9.css.map",
+    "main.2e0ffa68.js.map": "/static/js/main.2e0ffa68.js.map",
     "787.197b6eb6.chunk.js.map": "/static/js/787.197b6eb6.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.8fa55356.css",
-    "static/js/main.8b667398.js"
+    "static/css/main.33f9d6a9.css",
+    "static/js/main.2e0ffa68.js"
   ]
 }
