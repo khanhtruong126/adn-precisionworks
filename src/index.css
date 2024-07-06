@@ -44,3 +44,16 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+.bg-gray {
+  background-color: #fafafa;
+}
+
+* {
+  scroll-margin-top: 70px;
+  scroll-behavior: smooth;
+}
+
+.ant-btn-primary {
+  background-color: #BB401D;
+}

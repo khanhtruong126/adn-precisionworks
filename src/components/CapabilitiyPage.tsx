@@ -5,9 +5,9 @@ import SheetMetalFabrication from "./capacities/SheetMetalFabrication";
 
 const Capabilitiy = () => {
   return (
-    <div className="max-w-full flex flex-col gap-8 pb-5">
+    <div className="max-w-full gap-8 pb-5">
       <CNCMachining id={CAPACITY_URLS.CNC_MACHINING.key} />
-      <Material id={CAPACITY_URLS.MATERIAL.key} />
+      <Material id={CAPACITY_URLS.INJECTION_MOLDING.key} />
       <SheetMetalFabrication id={CAPACITY_URLS.SHEET_METAL_FABRICATION.key} />
     </div>
   );

@@ -16,10 +16,8 @@ import styled from "styled-components";
 import WhatsappQR from "../assets/whatsapp-QR.jpg";
 
 const Footer = () => {
-  const data = ["ADN Precision Works, Ho Chi Minh City, Vietnam", "Est.2024"];
-
   return (
-    <div
+    <section
       id={SECTION_ID.ABOUT_US}
       className="py-5 px-[2rem] lg:px-[12rem] sm:px-5 bg-light-gray"
     >
@@ -34,9 +32,9 @@ const Footer = () => {
         >
           <div className="text-5xl highlight-title mb-2">LET'S CONNECT US</div>
           <div className="text-base font-semibold">
-            {data.map((item) => (
-              <div>{item}</div>
-            ))}
+            <p>
+              ADN Precision Works, Ho Chi Minh City, Vietnam", "Est.2024
+            </p>
           </div>
           <SpaceContainer
             direction="vertical"
@@ -115,7 +113,7 @@ const Footer = () => {
           </div>
         </Col>
       </Row>
-    </div>
+    </section>
   );
 };
 

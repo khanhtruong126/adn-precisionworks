@@ -33,7 +33,7 @@ const ProductGallery = () => {
   ];
   return (
     <div id={SECTION_ID.GALLERY}>
-      <div className="mb-5">
+      <div className="py-5">
         <Partners />
       </div>
       <SectionTitle title="Product Gallery" />

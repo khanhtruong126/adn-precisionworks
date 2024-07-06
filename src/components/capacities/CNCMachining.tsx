@@ -2,15 +2,15 @@ import { CaretRightFilled } from "@ant-design/icons";
 import { Col, Row } from "antd";
 import styled from "styled-components";
 import cncMachining from "../../assets/cnc-machining/cnc-machining-background.jpg";
-import image from "../../assets/cnc-machining.jpg";
+import image from "../../assets/cnc-machining/cnc-machining.jpg";
 import img1 from "../../assets/cnc-machining/img1.jpg";
 import img2 from "../../assets/cnc-machining/img2.jpg";
 import img3 from "../../assets/cnc-machining/img3.jpg";
 
 const CNCMachining = ({ id }: { id: string }) => {
   return (
-    <Container className="px-5 lg:px-20">
-      <h1 id={id} className="text-center">
+    <Container className="pt-5 px-5 lg:px-20" id={id}>
+      <h1 className="text-center">
         CNC Machining
       </h1>
       <div className="my-2 lg:my-10">
@@ -42,7 +42,7 @@ const CNCMachining = ({ id }: { id: string }) => {
             <img
               src={cncMachining}
               alt="cnc-machining"
-              className="float-right max-h-[250px] w-full"
+              className="float-right max-h-[400px] lg:h-[250px] w-full"
             />
           </Col>
         </Row>
@@ -51,7 +51,7 @@ const CNCMachining = ({ id }: { id: string }) => {
             <img
               src={image}
               alt="cnc-machining"
-              className="w-full max-h-[250px]"
+              className="w-full max-h-[400px] lg:h-[250px]"
             />
           </Col>
           <Col span={16} lg={16} xs={24}>
@@ -97,7 +97,7 @@ const CNCMachining = ({ id }: { id: string }) => {
               <img
                 src={img}
                 alt="cnc-machining"
-                className="max-h-[250px] w-full"
+                className="max-h-[400px] lg:h-[250px] w-full"
               />
             </Col>
           ))}

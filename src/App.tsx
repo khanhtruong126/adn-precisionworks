@@ -13,6 +13,7 @@ import { CAPACITY_URLS, GALLERY_URLs, SECTION_ID, router } from "./router";
 import "./fonts/Termina.ttf";
 import SendQuoteButton from "./components/SendQuoteButton";
 import ReactGA from "react-ga4";
+import { MenuOutlined } from "@ant-design/icons";
 
 const MEASUREMENT_ID = "G-2325Q4CX55"; //GA4 EASUREMENT_ID
 ReactGA.initialize(MEASUREMENT_ID);
@@ -26,8 +27,8 @@ const items = [
     label: "Capabilities",
     children: [
       CAPACITY_URLS.CNC_MACHINING,
-      CAPACITY_URLS.MATERIAL,
       CAPACITY_URLS.SHEET_METAL_FABRICATION,
+      CAPACITY_URLS.INJECTION_MOLDING,
     ],
   },
   {
@@ -60,9 +61,9 @@ const App: React.FC = () => {
         },
       }}
     >
-      <Layout className="overflow-visible w-fit">
+      <Layout className="overflow-visible w-full">
         <Header
-          className="px-[15px] lg:px-[90px] sm:px-[15px] w-full"
+          className="px-5 xl:px-[90px] lg:px-6 w-full justify-between"
           style={{
             position: "sticky",
             top: 0,
@@ -72,46 +73,45 @@ const App: React.FC = () => {
             backgroundColor: "white",
           }}
         >
-          <div>
+          <div className="flex items-center flex-1 justify-between md:justify-start">
             <Link to="/">
               <img src={NavLogo} alt="App Logo" width={150} />
             </Link>
+            <Menu
+              className="lg:mx-5 font-semibold uppercase w-[45px] md:w-auto flex-initial md:flex-1"
+              mode="horizontal"
+              overflowedIndicator={<MenuOutlined className="!text-2xl" />}
+              defaultSelectedKeys={[SECTION_ID.HOME]}
+              items={items}
+              style={{
+                fontSize: "1rem",
+              }}
+              onClick={(menuItem) => {
+                let path = menuItem.keyPath
+                  .filter((path) => path !== "rc-menu-more") //avoid antd default collapsed menu class
+                  .reverse()
+                  .join("/");
+                if (path === "home") {
+                  path = "/";
+                }
+                navigate(path);
+                const el = document.getElementById(menuItem.key);
+                if (el) {
+                  setTimeout(() => {
+                    el.scrollIntoView({ behavior: "smooth", block: "start" });
+                  }, 500);
+                }
+              }}
+            />
           </div>
-          <Menu
-            className="lg:mx-5 font-semibold uppercase"
-            mode="horizontal"
-            defaultSelectedKeys={[SECTION_ID.HOME]}
-            items={items}
-            style={{
-              flex: 1,
-              minWidth: 0,
-              fontSize: "1rem",
-            }}
-            onClick={(menuItem) => {
-              let path = menuItem.keyPath
-                .filter((path) => path !== "rc-menu-more") //avoid antd default collapsed menu class
-                .reverse()
-                .join("/");
-              if (path === "home") {
-                path = "/";
-              }
-              navigate(path);
-              const el = document.getElementById(menuItem.key);
-              if (el) {
-                setTimeout(() => {
-                  el.scrollIntoView({ behavior: "smooth", block: "center" });
-                }, 500);
-              }
-            }}
-          />
-          <div>
+
+          <div className="hidden md:block">
             <SendQuoteButton />
           </div>
         </Header>
         <Content>
           <div
             style={{
-              paddingTop: "2rem",
               minHeight: 380,
               backgroundColor: "white",
             }}

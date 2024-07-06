@@ -6,10 +6,13 @@ module.exports = {
   theme: {
     extend: {},
     colors: {
-      'white': '#ffffff',
+      'white': '#fff',
       'app-red': '#BB401D',
       'light-gray': '#eaeaea',
-      'gray': 'rgb(80 80 80)'
+      'gray': 'rgb(80 80 80)',
+      'gray-700': 'rgb(55 65 81)',
+      'gray-950': 'rgb(3 7 18)',
+      'black': '#000'
     },
     fontFamily: {
       'termina': ['Termina']

@@ -1,7 +1,5 @@
 import { SECTION_ID } from "../router";
 import { Col, Row, Space } from "antd";
-import NetworkMap from "./NetworkMap";
-import SendQuoteButton from "./SendQuoteButton";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faIndustry,
@@ -12,27 +10,31 @@ import {
   faLinkedin,
   faSquareWhatsapp,
 } from "@fortawesome/free-brands-svg-icons";
+import SubmitForm from "./SubmitQuoteForm";
 import WhatsappQR from "../assets/whatsapp-QR.jpg";
 
 const ContactUs = () => {
-  const data = ["ADN Precision Works, Ho Chi Minh City, Vietnam", "Est.2024"];
-
   return (
-    <div id={SECTION_ID.ABOUT_US} className="pt-0 pb-5 w-[100vw]">
+    <div id={SECTION_ID.ABOUT_US} className="pt-5 pb-10 w-[100vw]">
       <Row
-        gutter={[25, 25]}
-        align="middle"
-        justify="center"
-        className="m-auto px-[3rem] lg:px-[15rem]"
+        gutter={[0, 25]}
+        justify="space-between"
+        className="m-auto px-[1rem] lg:px-[3rem] max-w-full"
       >
-        <Col span={16} lg={16} md={24} sm={24} xs={24}>
+        <Col
+          span={11}
+          lg={11}
+          md={24}
+          sm={24}
+          xs={24}
+          className="!px-4 md:!px-10"
+        >
           <div className="text-[8vw] lg:text-5xl highlight-title mb-2">
             LET'S CONNECT US
           </div>
           <div className="text-lg font-semibold">
-            {data.map((item) => (
-              <div>{item}</div>
-            ))}
+            <div>ADN Precision Works, Ho Chi Minh City, Vietnam</div>
+            <div>Est.2024</div>
           </div>
           <Space
             direction="vertical"
@@ -85,19 +87,20 @@ const ContactUs = () => {
               </span>
             </a>
           </Space>
-          <div>
-            <SendQuoteButton />
+          <div className="flex flex-col items-center">
+            <p className="text-center text-lg font-semibold">Whatsapp Contact</p>
+            <img
+              src={WhatsappQR}
+              alt="connect-to-whatsapp"
+              className="max-h-[250px] aspect-square"
+            />
           </div>
         </Col>
-        <Col span={8} lg={8} md={24} sm={24} xs={24}>
-          <NetworkMap height="22rem" zoom={5} />
+        <Col span={12} lg={13} md={24} sm={24} xs={24}>
+          <div className="mt-[-40px] lg:mt-[-30px] h-[1000px] md:h-[710px] overflow-y-hidden">
+            <SubmitForm />
+          </div>
         </Col>
-      </Row>
-      <Row justify="center" align="middle" className="mt-5">
-        <div className="max-h-[300px]">
-          <p className="text-center text-lg">Whatsapp Contact</p>
-          <img src={WhatsappQR} alt="connect-to-whatsapp" className="max-h-inherit" />
-        </div>
       </Row>
     </div>
   );

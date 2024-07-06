@@ -5,8 +5,8 @@ import img2 from '../../assets/material/material.jpg';
 
 const Material = ({ id }: { id: string }) => {
   return (
-    <div className="px-5 lg:px-40 m-auto flex flex-col gap-5">
-      <h1 id={id} className="text-center">Material</h1>
+    <div id={id} className="px-5 lg:px-40 m-auto flex flex-col gap-5">
+      <h1 className="text-center">Material</h1>
       <div className="text-lg text-justify">
         <div className="mb-5">
           <CaretRightFilled />

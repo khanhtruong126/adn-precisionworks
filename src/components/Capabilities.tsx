@@ -1,11 +1,8 @@
 import { Row, Col, Card } from "antd";
-import cncMachining from "../assets/cnc-machining/cnc-machining-background.jpg";
-import material from "../assets/material/material_background.jpg";
+import cncMachining from "../assets/capabilities/cnc-machining.jpg";
 import sheetMetal from "../assets/sheet-metal-fabrication/sheet-metal-fabrication-background.jpg";
-// import { LeftOutlined, RightOutlined } from "@ant-design/icons";
-import { useRef } from "react";
-// import Slider from "react-slick";
-import styled from "styled-components";
+import injectionMolding from "../assets/capabilities/injection-molding.jpg";
+import { ReactNode } from "react";
 import { useNavigate } from "react-router-dom";
 import { CAPACITY_URLS, SECTION_ID } from "../router";
 import SectionTitle from "./SectionTitle";
@@ -14,7 +11,7 @@ const { Meta } = Card;
 
 interface CardProps {
   title: string;
-  description: string;
+  description: string | ReactNode;
   cover: string;
   url: string;
 }
@@ -24,10 +21,11 @@ const CapacityCard = ({ title, description, cover, url }: CardProps) => {
 
   return (
     <Card
-      className="min-h-[470px]"
+      className="min-h-[450px]"
       hoverable
       cover={
         <img
+          className="max-h-[230px] aspect-[5/3]"
           alt={title}
           src={cover}
           onClick={() => {
@@ -35,14 +33,19 @@ const CapacityCard = ({ title, description, cover, url }: CardProps) => {
             setTimeout(() => {
               const el = document.getElementById(url);
               if (el) {
-                el.scrollIntoView({ behavior: "auto", block: "center" });
+                el.scrollIntoView({ block: "start" });
               }
-            }, 0);
+            }, 50);
           }}
         />
       }
     >
-      <Meta title={title} description={<p className="text-justify">{description}</p>} />
+      <Meta
+        title={title}
+        description={
+          <ul className="list-disc ml-4 text-black">{description}</ul>
+        }
+      />
     </Card>
   );
 };
@@ -51,136 +54,69 @@ const Capabilities = () => {
   const capacities = [
     {
       title: CAPACITY_URLS.CNC_MACHINING.label,
-      description:
-        "Our CNC Milling/Turning process produces custom prototypes and end-use production parts from 7days to 21days bases on the design. We use 3-axis milling and 3 +1 axis, 5 axis indexed milling processes to manufacture parts.",
+      description: (
+        <>
+          <li>Custom to complex parts</li>
+          <li>Tolerance max +/- 0.001mm</li>
+          <li>Rapid production as required </li>
+          <li>Secondary process </li>
+          <li>Alumium, Steel, Plastic, Titanum…</li>
+        </>
+      ),
       cover: cncMachining,
       url: CAPACITY_URLS.CNC_MACHINING.key,
     },
     {
       title: CAPACITY_URLS.SHEET_METAL_FABRICATION.label,
-      description:
-       "We take pride in offering a comprehensive range of sheet metal solutions tailored to meet the diverse needs of industries ranging from construction and automotive to electronics and beyond.",
+      description: (
+        <>
+          <li>Laser cutting, bending, post-processing</li>
+          <li>Tolerance +/-0.05mm</li>
+          <li>Prototy[e] to High quantity</li>
+        </>
+      ),
       cover: sheetMetal,
       url: CAPACITY_URLS.SHEET_METAL_FABRICATION.key,
     },
     {
-      title: CAPACITY_URLS.MATERIAL.label,
-      description:
-        "Whether it's aluminum, steel, titanium, or exotic alloys, we have the expertise to work with a wide range of materials. Our CNC precision service ensures that your components maintain their integrity and quality, regardless of the material specifications.",
-      cover: material,
-      url: CAPACITY_URLS.MATERIAL.key,
+      title: CAPACITY_URLS.INJECTION_MOLDING.label,
+      description: (
+        <>
+          <li>
+            Application on consumer products, automotive, electronic components
+          </li>
+          <li>
+            Compatible with a wide range of materials, including thermoplastics,
+            thermosetting polymers, and some elastomers.
+          </li>
+          <li> Full quallify from T0 to mass production </li>
+        </>
+      ),
+      cover: injectionMolding,
+      url: CAPACITY_URLS.INJECTION_MOLDING.key,
     },
   ];
 
-  const carouselRef = useRef<any>();
-
-  // const handleChangeCarousel = (type: "prev" | "next") => {
-  //   if (!carouselRef.current) return;
-  //   if (type === "next") {
-  //     carouselRef.current.slickNext();
-  //   } else {
-  //     carouselRef.current.slickPrev();
-  //   }
-  // };
-
-  // const settings = {
-  //   dots: true,
-  //   infinite: true,
-  //   speed: 500,
-  //   prevArrow: <></>,
-  //   nextArrow: <></>,
-  //   slidesToShow: 3,
-  //   slidesToScroll: 1,
-  //   responsive: [
-  //     {
-  //       breakpoint: 1024,
-  //       settings: {
-  //         slidesToShow: 3,
-  //         slidesToScroll: 3,
-  //       },
-  //     },
-  //     {
-  //       breakpoint: 600,
-  //       settings: {
-  //         slidesToShow: 2,
-  //         slidesToScroll: 2,
-  //       },
-  //     },
-  //     {
-  //       breakpoint: 480,
-  //       settings: {
-  //         slidesToShow: 1,
-  //         slidesToScroll: 1,
-  //       },
-  //     },
-  //   ],
-  // };
-
   return (
-    <div id={SECTION_ID.CAPABILITIES} className="flex flex-col items-center">
-      <SectionTitle title="Capabilities" />
+    <section
+      id={SECTION_ID.CAPABILITIES}
+      className="py-5 flex flex-col items-center"
+    >
+      <SectionTitle title="Our Services" />
       <Row
-        gutter={[25, 25]}
+        gutter={[50, 25]}
         justify="center"
         align="middle"
-        className="pt-10 w-[90%]"
+        className=" w-[90%]"
       >
-        {/* <Col span={1} lg={{ span: 1, offset: 0 }} xs={{ span: 3 }}>
-          <LeftOutlined
-            style={{ fontSize: "2rem" }}
-            onClick={() => {
-              handleChangeCarousel("prev");
-            }}
-          />
-        </Col> */}
-
-        {/* <Col span={18} className="max-w-[80vw]"> */}
-        {/* <SliderContainer>
-            <Slider
-              {...settings}
-              ref={(ref) => {
-                carouselRef.current = ref;
-              }}
-            > */}
         {capacities.map((item) => (
-          <Col span={8} lg={8} md={12} sm={24} xs={24}>
+          <Col key={item.url} span={7} lg={7} md={12} sm={24} xs={24}>
             <CapacityCard {...item} key={item.url} />
           </Col>
         ))}
-        {/* </Slider> */}
-        {/* </SliderContainer> */}
-        {/* </Col> */}
-
-        {/* <Col span={1} lg={{ span: 1, offset: 0 }} xs={{ span: 3, offset: 1 }}>
-          <RightOutlined
-            style={{ fontSize: "2rem" }}
-            onClick={() => {
-              handleChangeCarousel("next");
-            }}
-          />
-        </Col> */}
       </Row>
-    </div>
+    </section>
   );
 };
 
 export default Capabilities;
-
-// const SliderContainer = styled.div`
-//   width: 100%;
-
-//   .slick-list {
-//     .slick-track {
-//       display: flex;
-//       gap: 1rem;
-
-//       div.ant-card {
-//         height: 370px !important;
-//       }
-//     }
-//   }
-
-//   .slick-dots {
-//     bottom: -40px;
-//   }
-// `;

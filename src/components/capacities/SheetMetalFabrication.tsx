@@ -11,8 +11,8 @@ const SheetMetalFabrication = ({ id }: { id: string }) => {
   const images = [img3, img1, img6, img4, img5, img2];
 
   return (
-    <div className="px-5 lg:px-40">
-      <h1 id={id} className="text-center">Sheet Metal Fabrication</h1>
+    <div id={id} className="px-5 lg:px-40 mt-8">
+      <h1 className="text-center">Sheet Metal Fabrication</h1>
       <div className="mt-5 text-lg text-justify">
         <p className="mb-4">
           <CaretRightFilled />

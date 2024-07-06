@@ -4,7 +4,8 @@ import Main from "./components/Main";
 import HowItWork from "./components/HowItWork";
 import ContactUs from "./components/ContactUs";
 import ProductGallery from "./components/ProductGallery";
-import Capabilitiy from "./components/Capabilitiy";
+import Capabilitiy from "./components/CapabilitiyPage";
+import GetAQuote from "./components/capacities/GetAQuote";
 
 export const SECTION_ID = Object.freeze({
   HOME: "home",
@@ -15,6 +16,8 @@ export const SECTION_ID = Object.freeze({
   PRODUCTS: "products",
   CUSTOMER: "our-customer",
   CONTACT_US: "contact-us",
+  ACCELERATE_MANUFACTURING: 'accelerate-manufacturing',
+  GET_A_QUOTE: 'get-a-quote'
 });
 
 export const CAPACITY_URLS = Object.freeze({
@@ -26,6 +29,10 @@ export const CAPACITY_URLS = Object.freeze({
   MATERIAL: {
     key: "material-and-coating-finishing",
     label: "Material and Coating/Finising",
+  },
+  INJECTION_MOLDING: {
+    key: "injection_molding",
+    label: "Injection Molding",
   },
 });
 
@@ -51,7 +58,7 @@ export const router: RouteProps[] = [
     errorElement: <Error />,
   },
   {
-    path: `/capabilities/${CAPACITY_URLS.MATERIAL.key}`,
+    path: `/capabilities/${CAPACITY_URLS.INJECTION_MOLDING.key}`,
     element: <Capabilitiy />,
     errorElement: <Error />,
   },
@@ -73,6 +80,11 @@ export const router: RouteProps[] = [
   {
     path: routePath(SECTION_ID.CONTACT_US),
     element: <ContactUs />,
+    errorElement: <Error />,
+  },
+  {
+    path: routePath(SECTION_ID.GET_A_QUOTE),
+    element: <GetAQuote />,
     errorElement: <Error />,
   },
   //dev route

@@ -17,7 +17,7 @@ const Partners = () => {
   ];
 
   return (
-    <div className="mx-10 ">
+    <section className="mx-10">
       <div className="text-center mb-10">
         <span className="text-3xl pb-2 font-bold border-b-[5px] border-app-red">
           Our Customers
@@ -30,7 +30,7 @@ const Partners = () => {
         className="lg:px-5 py-2 bg-white rounded-md"
       >
         {partners.map((partner) => (
-          <Col span={12} xl={4} lg={4} >
+          <Col span={12} xl={4} lg={4} key={partner.name} >
             <img
               src={partner.imgSrc}
               alt={partner.name}
@@ -39,7 +39,7 @@ const Partners = () => {
           </Col>
         ))}
       </Row>
-    </div>
+    </section>
   );
 };
 
