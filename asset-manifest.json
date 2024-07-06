@@ -1,15 +1,12 @@
 {
   "files": {
     "main.css": "/static/css/main.7895c3b9.css",
-    "main.js": "/static/js/main.86c09eca.js",
+    "main.js": "/static/js/main.1c851261.js",
     "static/js/787.197b6eb6.chunk.js": "/static/js/787.197b6eb6.chunk.js",
-    "static/media/sheet-metal-fabrication-background.jpg": "/static/media/sheet-metal-fabrication-background.3bfb210bfa054fb6864f.jpg",
-    "static/media/home-item.png": "/static/media/home-item.9b11c4892bdbf75ee517.png",
     "static/media/material.jpg": "/static/media/material.0fa2ba24d6077af9c5d0.jpg",
     "static/media/img1.jpg": "/static/media/img1.7aca8f08aab159b43976.jpg",
     "static/media/material_background.jpg": "/static/media/material_background.752023738625758e4e2f.jpg",
     "static/media/img3.jpg": "/static/media/img3.dec61ee3e24c2018877e.jpg",
-    "static/media/cnc-machining.jpg": "/static/media/cnc-machining.752240af7690bcd261d3.jpg",
     "static/media/img1.png": "/static/media/img1.23d33b8e215bbf516c2b.png",
     "static/media/11.jpg": "/static/media/11.aeedd45e7ade73f80652.jpg",
     "static/media/7.jpg": "/static/media/7.2af5d644e80e3a4f0d5e.jpg",
@@ -19,6 +16,7 @@
     "static/media/1.jpg": "/static/media/1.535e456c69f9bf659ea6.jpg",
     "static/media/4.jpg": "/static/media/4.799b70a9a22811a685d7.jpg",
     "static/media/img6.jpg": "/static/media/img6.e2bbf0f24f1393a96c43.jpg",
+    "static/media/cnc-machining.jpg": "/static/media/cnc-machining.752240af7690bcd261d3.jpg",
     "static/media/img5.jpg": "/static/media/img5.8357670874a5a80b49bc.jpg",
     "static/media/img2.jpg": "/static/media/img2.19b4ccc15d5362e3b2c2.jpg",
     "static/media/9.jpg": "/static/media/9.757788444d87f1899961.jpg",
@@ -27,12 +25,14 @@
     "static/media/2.jpg": "/static/media/2.f75b22cedf375cbfccfb.jpg",
     "static/media/8.jpg": "/static/media/8.83d87762f29def4fa88f.jpg",
     "static/media/5.jpg": "/static/media/5.f349224e0fe834163277.jpg",
+    "static/media/home-item.png": "/static/media/home-item.ac420a3d696700fd800b.png",
     "static/media/vendor1.jpg": "/static/media/vendor1.39f19f84f40936e4f485.jpg",
     "static/media/vendor2.jpg": "/static/media/vendor2.d9dba853795af960cca5.jpg",
     "static/media/vendor6.jpg": "/static/media/vendor6.ce742c3fb83f59c9c75d.jpg",
     "static/media/vendor3.jpg": "/static/media/vendor3.f55072c2bc7e80aec383.jpg",
     "static/media/vendor5.jpg": "/static/media/vendor5.b996bda16a5c7a33d741.jpg",
     "static/media/vendor4.jpg": "/static/media/vendor4.352e8b68742e20ae97d2.jpg",
+    "static/media/sheet-metal-fabrication-background.jpeg": "/static/media/sheet-metal-fabrication-background.73318da3638f1be6eeab.jpeg",
     "static/media/reliable-network.png": "/static/media/reliable-network.a559c0127cfa7684e2d0.png",
     "static/media/Termina.ttf": "/static/media/Termina.a5fc85530cde5525bcd5.ttf",
     "static/media/img4.jpg": "/static/media/img4.1952fd08ff5837cf79a1.jpg",
@@ -45,6 +45,7 @@
     "static/media/step-5.png": "/static/media/step-5.1b2cb4566e53d15bf785.png",
     "static/media/step-4.png": "/static/media/step-4.32c85e8179d4febcbccc.png",
     "static/media/injection-molding.jpg": "/static/media/injection-molding.49eb1199f99c06e3e752.jpg",
+    "static/media/cnc-machining.jpeg": "/static/media/cnc-machining.2c8e9c6c4f6d70d3c15e.jpeg",
     "static/media/panasonic.png": "/static/media/panasonic.3d2ed19b58b83dce45d6.png",
     "static/media/viettel.png": "/static/media/viettel.fef3fd16f75e74298761.png",
     "static/media/whatsapp-QR.jpg": "/static/media/whatsapp-QR.16e4df4a5e1a55021fff.jpg",
@@ -61,11 +62,11 @@
     "index.html": "/index.html",
     "static/media/slick.woff": "/static/media/slick.295183786cd8a1389865.woff",
     "main.7895c3b9.css.map": "/static/css/main.7895c3b9.css.map",
-    "main.86c09eca.js.map": "/static/js/main.86c09eca.js.map",
+    "main.1c851261.js.map": "/static/js/main.1c851261.js.map",
     "787.197b6eb6.chunk.js.map": "/static/js/787.197b6eb6.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.7895c3b9.css",
-    "static/js/main.86c09eca.js"
+    "static/js/main.1c851261.js"
   ]
 }
