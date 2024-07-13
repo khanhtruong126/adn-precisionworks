@@ -1,10 +1,10 @@
 {
   "files": {
     "main.css": "/static/css/main.831e3c11.css",
-    "main.js": "/static/js/main.f4f8c539.js",
-    "static/js/643.ee80d5d4.chunk.js": "/static/js/643.ee80d5d4.chunk.js",
+    "main.js": "/static/js/main.d7638e41.js",
+    "static/js/643.2d5cae5b.chunk.js": "/static/js/643.2d5cae5b.chunk.js",
     "static/js/242.75d91209.chunk.js": "/static/js/242.75d91209.chunk.js",
-    "static/js/219.aea381c5.chunk.js": "/static/js/219.aea381c5.chunk.js",
+    "static/js/219.1874c24d.chunk.js": "/static/js/219.1874c24d.chunk.js",
     "static/js/761.87dd5558.chunk.js": "/static/js/761.87dd5558.chunk.js",
     "static/js/893.45ab60ff.chunk.js": "/static/js/893.45ab60ff.chunk.js",
     "static/js/121.9dbc26f6.chunk.js": "/static/js/121.9dbc26f6.chunk.js",
@@ -13,7 +13,7 @@
     "static/js/93.9b0c740f.chunk.js": "/static/js/93.9b0c740f.chunk.js",
     "static/js/825.c1a21c87.chunk.js": "/static/js/825.c1a21c87.chunk.js",
     "static/js/187.c468c2c9.chunk.js": "/static/js/187.c468c2c9.chunk.js",
-    "static/js/313.e35ae75b.chunk.js": "/static/js/313.e35ae75b.chunk.js",
+    "static/js/313.34f3c069.chunk.js": "/static/js/313.34f3c069.chunk.js",
     "static/js/514.76ca94cb.chunk.js": "/static/js/514.76ca94cb.chunk.js",
     "static/js/546.e805dbcc.chunk.js": "/static/js/546.e805dbcc.chunk.js",
     "static/js/956.0058017a.chunk.js": "/static/js/956.0058017a.chunk.js",
@@ -65,8 +65,8 @@
     "static/media/cnc-machining.jpeg": "/static/media/cnc-machining.2c8e9c6c4f6d70d3c15e.jpeg",
     "static/media/panasonic.png": "/static/media/panasonic.3d2ed19b58b83dce45d6.png",
     "static/media/viettel.png": "/static/media/viettel.fef3fd16f75e74298761.png",
-    "static/media/whatsapp-QR.jpg": "/static/media/whatsapp-QR.16e4df4a5e1a55021fff.jpg",
     "static/media/samsung.png": "/static/media/samsung.ac807342c36894b9607e.png",
+    "static/media/whatsapp-QR.jpeg": "/static/media/whatsapp-QR.a5a3a2c4e4334af4de54.jpeg",
     "static/media/app-map-marker.png": "/static/media/app-map-marker.de536b9e0dd0b952c036.png",
     "static/media/yamaha.png": "/static/media/yamaha.eb346a26fd4a395f22fc.png",
     "static/media/nav-logo.svg": "/static/media/nav-logo.8da0d5b58c6ab5f9e53063f8f58db226.svg",
@@ -79,10 +79,10 @@
     "index.html": "/index.html",
     "static/media/slick.woff": "/static/media/slick.295183786cd8a1389865.woff",
     "main.831e3c11.css.map": "/static/css/main.831e3c11.css.map",
-    "main.f4f8c539.js.map": "/static/js/main.f4f8c539.js.map",
-    "643.ee80d5d4.chunk.js.map": "/static/js/643.ee80d5d4.chunk.js.map",
+    "main.d7638e41.js.map": "/static/js/main.d7638e41.js.map",
+    "643.2d5cae5b.chunk.js.map": "/static/js/643.2d5cae5b.chunk.js.map",
     "242.75d91209.chunk.js.map": "/static/js/242.75d91209.chunk.js.map",
-    "219.aea381c5.chunk.js.map": "/static/js/219.aea381c5.chunk.js.map",
+    "219.1874c24d.chunk.js.map": "/static/js/219.1874c24d.chunk.js.map",
     "761.87dd5558.chunk.js.map": "/static/js/761.87dd5558.chunk.js.map",
     "893.45ab60ff.chunk.js.map": "/static/js/893.45ab60ff.chunk.js.map",
     "121.9dbc26f6.chunk.js.map": "/static/js/121.9dbc26f6.chunk.js.map",
@@ -91,7 +91,7 @@
     "93.9b0c740f.chunk.js.map": "/static/js/93.9b0c740f.chunk.js.map",
     "825.c1a21c87.chunk.js.map": "/static/js/825.c1a21c87.chunk.js.map",
     "187.c468c2c9.chunk.js.map": "/static/js/187.c468c2c9.chunk.js.map",
-    "313.e35ae75b.chunk.js.map": "/static/js/313.e35ae75b.chunk.js.map",
+    "313.34f3c069.chunk.js.map": "/static/js/313.34f3c069.chunk.js.map",
     "514.76ca94cb.chunk.js.map": "/static/js/514.76ca94cb.chunk.js.map",
     "546.e805dbcc.chunk.js.map": "/static/js/546.e805dbcc.chunk.js.map",
     "956.0058017a.chunk.js.map": "/static/js/956.0058017a.chunk.js.map",
@@ -101,6 +101,6 @@
   },
   "entrypoints": [
     "static/css/main.831e3c11.css",
-    "static/js/main.f4f8c539.js"
+    "static/js/main.d7638e41.js"
   ]
 }
