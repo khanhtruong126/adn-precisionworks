@@ -3,7 +3,7 @@ import styled from "styled-components";
 import { SECTION_ID } from "../router";
 import item from "../assets/home-item.png";
 import SendQuoteButton from "./SendQuoteButton";
-import whiteLogo from "../assets/logo-white.svg"
+import whiteLogo from "../assets/logo-white.svg";
 import { apwRed } from "../colors";
 
 const Home = () => {
@@ -39,6 +39,7 @@ const Home = () => {
                     {features.map((feature, index) => (
                       <div key={index} className="flex gap-2">
                         <img
+                          loading="lazy"
                           src={whiteLogo}
                           alt="main_logo"
                           width={15}
@@ -56,7 +57,19 @@ const Home = () => {
             </div>
           </div>
         </Col>
-        <Col id="home-panel" offset={0} lg={8} md={24} sm={24}></Col>
+        <Col
+          lg={8}
+          md={24}
+          sm={24}
+          className="flex justify-center lg:justify-end"
+        >
+          <img
+            src={item}
+            width={300}
+            height={450}
+            alt="adn-precision-product"
+          />
+        </Col>
       </Row>
     </HomeContanier>
   );
@@ -66,12 +79,4 @@ export default Home;
 
 const HomeContanier = styled.section`
   padding: 2rem 0;
-
-  #home-panel {
-    width: 100%;
-    height: 22rem;
-    background: url(${item}) right no-repeat;
-    background-size: 300px 450px;
-    position: relative;
-  }
 `;

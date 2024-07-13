@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { Suspense, useEffect } from "react";
 import { ConfigProvider, Layout, Menu } from "antd";
 import NavLogo from "./assets/nav-logo.svg";
 import { apwRed } from "./colors";
@@ -10,7 +10,6 @@ import {
   useNavigate,
 } from "react-router-dom";
 import { CAPACITY_URLS, GALLERY_URLs, SECTION_ID, router } from "./router";
-import "./fonts/Termina.ttf";
 import SendQuoteButton from "./components/SendQuoteButton";
 import ReactGA from "react-ga4";
 import { MenuOutlined } from "@ant-design/icons";
@@ -61,7 +60,7 @@ const App: React.FC = () => {
         },
       }}
     >
-      <Layout className="overflow-visible w-full">
+      <Layout className="overflow-visible w-full bg-white">
         <Header
           className="px-5 xl:px-[90px] lg:px-6 w-full justify-between"
           style={{
@@ -116,11 +115,13 @@ const App: React.FC = () => {
               backgroundColor: "white",
             }}
           >
-            <Routes>
-              {router.map((route) => (
-                <Route {...route} key={route.path} />
-              ))}
-            </Routes>
+            <Suspense>
+              <Routes>
+                {router.map((route) => (
+                  <Route {...route} key={route.path} />
+                ))}
+              </Routes>
+            </Suspense>
           </div>
         </Content>
         {/* <Footer style={{ textAlign: "center", paddingTop: 0 }}>ADN Precision Works</Footer> */}

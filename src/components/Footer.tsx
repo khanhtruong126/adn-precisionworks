@@ -109,7 +109,7 @@ const Footer = () => {
         <Col span={24} lg={6} xs={24} className="lg:!pl-10">
           <div className="p-20 py-5 lg:!p-0 max-w-full">
             {/* <p className="text-center pb-3">Whatsapp Contact</p> */}
-            <img src={WhatsappQR} alt="connect-to-whatsapp" />
+            <img src={WhatsappQR} alt="connect-to-whatsapp" loading="lazy" />
           </div>
         </Col>
       </Row>

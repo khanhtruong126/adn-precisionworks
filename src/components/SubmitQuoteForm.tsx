@@ -1,15 +1,9 @@
-// import { Helmet } from "react-helmet";
-
 const SubmitForm = () => {
   const jotFormUrl = "https://form.jotform.com/241824783120453";
   const iframeId = "JotFormIFrame-241824783120453";
 
   return (
     <>
-      {/* <Helmet>
-        <script src="https://cdn.jotfor.ms/s/umd/latest/for-form-embed-handler.js" />
-        <script>{`window.jotformEmbedHandler("iframe[id='<span class="math-inline">\{iframeId\}'\]", "</span>{jotFormUrl}")`}</script>
-      </Helmet> */}
       <div className="w-full lg:w-[700px]">
         <iframe
           id={iframeId}

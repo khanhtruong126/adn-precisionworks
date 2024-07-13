@@ -32,6 +32,7 @@ const Partners = () => {
         {partners.map((partner) => (
           <Col span={12} xl={4} lg={4} key={partner.name} >
             <img
+              loading="lazy"
               src={partner.imgSrc}
               alt={partner.name}
               className="m-auto shrink-0 origin-0 max-w-[80%] max-h-[100px]"

@@ -6,11 +6,6 @@
 @import "slick-carousel/slick/slick-theme.css";
 @import "leaflet/dist/leaflet.css";
 
-@font-face {
-  font-family: "Termina";
-  src: local("Termina"), url("./fonts/Termina.ttf") format("truetype");
-}
-
 @layer base {
   h1 {
     @apply highlight-title text-5xl;
@@ -35,14 +30,9 @@ body {
   margin: 0;
   font-size: 12px;
   color: #383838;
-  /* font-family: -apple-system, BlinkMacSystemFont, "Termina"; */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-}
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+  font-display: swap;
 }
 
 .bg-gray {
@@ -55,5 +45,5 @@ code {
 }
 
 .ant-btn-primary {
-  background-color: #BB401D;
+  background-color: #bb401d;
 }

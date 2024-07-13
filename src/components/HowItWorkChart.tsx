@@ -52,7 +52,7 @@ const HowItWorkChart = () => {
         <Row gutter={25} justify="space-between" align="middle">
           {items.map((item, index) => (
             <Col span={4} key={index}>
-              <img src={item.imgSrc} alt={item.title} className="w-12 ml-[1.75rem]" />
+              <img loading="lazy" src={item.imgSrc} alt={item.title} className="w-12 ml-[1.75rem]" />
             </Col>
           ))}
         </Row>
@@ -81,7 +81,7 @@ const HowItWorkChart = () => {
             key={index}
             className="relative p-5 border-l-2 border-gray-700/50"
           >
-            <img src={item.imgSrc} alt={item.title} className="w-40 p-5" />
+            <img loading="lazy" src={item.imgSrc} alt={item.title} className="w-40 p-5" />
             <div className="absolute bg-gray-950 w-[8px] h-[8px] rounded-full top-[35%] left-[-0.3rem]"></div>
             <span className="block font-semibold text-base">{item.title}</span>
             <ul className="list-disc ml-4">

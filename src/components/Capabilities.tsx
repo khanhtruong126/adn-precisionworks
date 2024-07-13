@@ -1,6 +1,6 @@
 import { Row, Col, Card } from "antd";
-import cncMachining from "../assets/capabilities/cnc-machining.jpg";
-import sheetMetal from "../assets/sheet-metal-fabrication/sheet-metal-fabrication-background.jpg";
+import cncMachining from "../assets/capabilities/cnc-machining.jpeg";
+import sheetMetal from "../assets/sheet-metal-fabrication/sheet-metal-fabrication-background.jpeg";
 import injectionMolding from "../assets/capabilities/injection-molding.jpg";
 import { ReactNode } from "react";
 import { useNavigate } from "react-router-dom";
@@ -26,6 +26,7 @@ const CapacityCard = ({ title, description, cover, url }: CardProps) => {
       cover={
         <img
           className="max-h-[230px] aspect-[5/3]"
+          loading="lazy"
           alt={title}
           src={cover}
           onClick={() => {

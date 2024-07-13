@@ -1,10 +1,10 @@
 import { useRef } from "react";
-import vendor1 from "../assets/inside-our-vender/vendor1.jpg";
-import vendor2 from "../assets/inside-our-vender/vendor2.jpg";
-import vendor3 from "../assets/inside-our-vender/vendor3.jpg";
-import vendor4 from "../assets/inside-our-vender/vendor4.jpg";
-import vendor5 from "../assets/inside-our-vender/vendor5.jpg";
-import vendor6 from "../assets/inside-our-vender/vendor6.jpg";
+import vendor1 from "../assets/inside-our-vender/vendor1.jpeg";
+import vendor2 from "../assets/inside-our-vender/vendor2.jpeg";
+import vendor3 from "../assets/inside-our-vender/vendor3.jpeg";
+import vendor4 from "../assets/inside-our-vender/vendor4.jpeg";
+import vendor5 from "../assets/inside-our-vender/vendor5.jpeg";
+import vendor6 from "../assets/inside-our-vender/vendor6.jpeg";
 import SectionTitle from "./SectionTitle";
 import { Col, Row } from "antd";
 import styled from "styled-components";
@@ -60,7 +60,7 @@ const InsideOurVendor = () => {
   return (
     <section
       id="inside-our-vender"
-      className="pt-5 pb-8 flex flex-col items-center"
+      className="pt-5 pb-12 flex flex-col items-center"
     >
       <SectionTitle title="Inside Our Vendor" />
       <Row gutter={25} justify="space-between" align="middle" className="w-full px-10">
@@ -84,6 +84,7 @@ const InsideOurVendor = () => {
               {vendorImages.map((item, index) => (
                 <div key={index} className="!w-fit">
                   <img
+                    loading="lazy"
                     src={item}
                     alt={`vendir${index}`}
                     className="h-[200px] w-[300px]"
@@ -129,6 +130,6 @@ const SliderContainer = styled.div`
   }
 
   .slick-dots {
-    bottom: -40px;
+    bottom: -30px;
   }
 `;

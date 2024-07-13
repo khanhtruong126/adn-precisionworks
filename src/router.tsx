@@ -1,11 +1,13 @@
 import { RouteProps } from "react-router-dom";
 import Error from "./Error";
-import Main from "./components/Main";
-import HowItWork from "./components/HowItWork";
-import ContactUs from "./components/ContactUs";
-import ProductGallery from "./components/ProductGallery";
-import Capabilitiy from "./components/CapabilitiyPage";
-import GetAQuote from "./components/capacities/GetAQuote";
+import { lazy } from "react";
+
+const Main = lazy(() => import("./components/Main"));
+const HowItWork = lazy(() => import("./components/HowItWork"));
+const ContactUs = lazy(() => import("./components/ContactUs"));
+const ProductGallery = lazy(() => import("./components/ProductGallery"));
+const Capabilitiy = lazy(() => import("./components/CapabilitiyPage"));
+const GetAQuote = lazy(() => import("./components/GetAQuote"));
 
 export const SECTION_ID = Object.freeze({
   HOME: "home",

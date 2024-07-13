@@ -3,9 +3,9 @@ import { Col, Row } from "antd";
 import styled from "styled-components";
 import cncMachining from "../../assets/cnc-machining/cnc-machining-background.jpg";
 import image from "../../assets/cnc-machining/cnc-machining.jpg";
-import img1 from "../../assets/cnc-machining/img1.jpg";
-import img2 from "../../assets/cnc-machining/img2.jpg";
-import img3 from "../../assets/cnc-machining/img3.jpg";
+import img1 from "../../assets/cnc-machining/img1.jpeg";
+import img2 from "../../assets/cnc-machining/img2.jpeg";
+import img3 from "../../assets/cnc-machining/img3.jpeg";
 
 const CNCMachining = ({ id }: { id: string }) => {
   return (
@@ -41,6 +41,7 @@ const CNCMachining = ({ id }: { id: string }) => {
           <Col span={8} lg={8} xs={24}>
             <img
               src={cncMachining}
+              loading="lazy"
               alt="cnc-machining"
               className="float-right max-h-[400px] lg:h-[250px] w-full"
             />
@@ -50,6 +51,7 @@ const CNCMachining = ({ id }: { id: string }) => {
           <Col span={8} lg={8} xs={24}>
             <img
               src={image}
+              loading="lazy"
               alt="cnc-machining"
               className="w-full max-h-[400px] lg:h-[250px]"
             />
@@ -96,6 +98,7 @@ const CNCMachining = ({ id }: { id: string }) => {
             <Col span={8} lg={8} xs={24} key={`image${index}`}>
               <img
                 src={img}
+                loading="lazy"
                 alt="cnc-machining"
                 className="max-h-[400px] lg:h-[250px] w-full"
               />

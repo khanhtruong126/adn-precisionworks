@@ -1,7 +1,7 @@
 import { Col, Row } from "antd";
 import { CaretRightFilled } from "@ant-design/icons";
-import img1 from '../../assets/material/material_background.jpg';
-import img2 from '../../assets/material/material.jpg';
+import img1 from '../../assets/material/material_background.jpeg';
+import img2 from '../../assets/material/material.jpeg';
 
 const Material = ({ id }: { id: string }) => {
   return (
@@ -53,10 +53,10 @@ const Material = ({ id }: { id: string }) => {
 
       <Row justify="space-between" gutter={[30, 30]}>
         <Col span={12} lg={12} xs={24}>
-          <img src={img1} alt="material"  className="max-h-[400px]" />
+          <img loading="lazy" src={img1} alt="material"  className="max-h-[400px]" />
         </Col>
         <Col span={12} lg={12} xs={24}>
-          <img src={img2} alt="material"  className="max-h-[400px]" />
+          <img loading="lazy" src={img2} alt="material"  className="max-h-[400px]" />
         </Col>
       </Row>
     </div>

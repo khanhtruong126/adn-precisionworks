@@ -14,9 +14,6 @@ module.exports = {
       'gray-950': 'rgb(3 7 18)',
       'black': '#000'
     },
-    fontFamily: {
-      'termina': ['Termina']
-    },
     screens: {
       'xs': '480px',
       'sm': '576px',

@@ -18,7 +18,7 @@ const CapacityCard = ({ title, description, cover }: CardProps) => {
   return (
     <Card className="min-h-[300px] lg:min-h-[430px] rounded-[10px]">
       <div className="flex flex-col items-center lg:items-start">
-        <img src={cover} alt={title} height={100} width={100} />
+        <img loading="lazy" src={cover} alt={title} height={100} width={100} />
         <h3 className="mt-3 mb-6 font-bold">{title}</h3>
         <ul className="list-disc ml-4">{description}</ul>
       </div>

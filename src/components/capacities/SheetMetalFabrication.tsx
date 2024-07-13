@@ -1,6 +1,6 @@
 import { CaretRightFilled } from "@ant-design/icons";
 import { Col, Row } from "antd";
-import img1 from "../../assets/sheet-metal-fabrication/img1.png";
+import img1 from "../../assets/sheet-metal-fabrication/img1.jpeg";
 import img2 from "../../assets/sheet-metal-fabrication/img2.jpg";
 import img3 from "../../assets/sheet-metal-fabrication/img3.jpg";
 import img4 from "../../assets/sheet-metal-fabrication/img4.jpg";
@@ -51,7 +51,7 @@ const SheetMetalFabrication = ({ id }: { id: string }) => {
       <Row justify="space-between" gutter={[30, 30]} className="mt-8">
         {images.map((img, index) => (
           <Col span={8} lg={8} xs={12} key={`image${index}`}>
-            <img src={img} alt="sheet-metal-fabrication" className="max-h-[250px] w-full" />
+            <img loading="lazy" src={img} alt="sheet-metal-fabrication" className="max-h-[250px] w-full" />
           </Col>
         ))}
       </Row>
