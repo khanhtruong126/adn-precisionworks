@@ -13,7 +13,7 @@ import {
   faSquareWhatsapp,
 } from "@fortawesome/free-brands-svg-icons";
 import styled from "styled-components";
-import WhatsappQR from "../assets/whatsapp-QR.jpg";
+import WhatsappQR from "../assets/whatsapp-QR.jpeg";
 
 const Footer = () => {
   return (

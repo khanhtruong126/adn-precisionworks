@@ -1,5 +1,4 @@
 import { Row, Col } from "antd";
-import styled from "styled-components";
 import { SECTION_ID } from "../router";
 import item from "../assets/home-item.png";
 import SendQuoteButton from "./SendQuoteButton";
@@ -14,7 +13,7 @@ const Home = () => {
     "Cost effective, Quality and Leadtime focused.",
   ];
   return (
-    <HomeContanier id={SECTION_ID.HOME} className="bg-app-red !text-white">
+    <section id={SECTION_ID.HOME} className="bg-app-red !text-white pt-8">
       <Row className="px-10 lg:px-24 md:px-10 sm:px-5">
         <Col
           lg={16}
@@ -22,7 +21,7 @@ const Home = () => {
           sm={24}
           className="flex mb-5 md:justify-center sm:justify-center"
         >
-          <div id="home-contact" className="flex flex-col justify-center">
+          <div className="flex flex-col justify-center">
             <div>
               <h2 className="text-4xl mb-2 text-white">
                 Manufacturing on Demand partner from Asia
@@ -64,6 +63,7 @@ const Home = () => {
           className="flex justify-center lg:justify-end"
         >
           <img
+            loading="lazy"
             src={item}
             width={300}
             height={450}
@@ -71,12 +71,8 @@ const Home = () => {
           />
         </Col>
       </Row>
-    </HomeContanier>
+    </section>
   );
 };
 
 export default Home;
-
-const HomeContanier = styled.section`
-  padding: 2rem 0;
-`;
