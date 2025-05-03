@@ -1,13 +1,13 @@
-import { Space } from "antd";
-import Home from "./Home";
-import AccelerateManufactoring from "./AccelerateManufactoring";
-import { lazy, Suspense } from "react";
+import { Space } from 'antd';
+import Home from './Home';
+import AccelerateManufactoring from './AccelerateManufactoring';
+import { lazy, Suspense } from 'react';
 
-const Capabilities = lazy(() => import("./Capabilities"));
-const HowItWorkChart = lazy(() => import("./HowItWorkChart"));
-const Partners = lazy(() => import("./Partners"));
-const InsideOurVendor = lazy(() => import("./InsideOurVendor"));
-const Footer = lazy(() => import("./Footer"));
+const Capabilities = lazy(() => import('./Capabilities'));
+// const HowItWorkChart = lazy(() => import("./HowItWorkChart"));
+// const Partners = lazy(() => import('./Partners'));
+const InsideOurVendor = lazy(() => import('./InsideOurVendor'));
+// const Footer = lazy(() => import('./Footer'));
 
 const Main = () => {
   return (
@@ -16,10 +16,10 @@ const Main = () => {
       <AccelerateManufactoring />
       <Suspense>
         <Capabilities />
-        <HowItWorkChart />
-        <Partners />
+        {/* <HowItWorkChart /> */}
+        {/* <Partners /> */}
         <InsideOurVendor />
-        <Footer />
+        {/* <Footer /> */}
       </Suspense>
     </Space>
   );

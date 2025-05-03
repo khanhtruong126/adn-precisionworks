@@ -1,11 +1,11 @@
-import { Row, Col, Card } from "antd";
-import cncMachining from "../assets/capabilities/cnc-machining.jpeg";
-import sheetMetal from "../assets/sheet-metal-fabrication/sheet-metal-fabrication-background.jpeg";
-import injectionMolding from "../assets/capabilities/injection-molding.jpg";
-import { ReactNode } from "react";
-import { useNavigate } from "react-router-dom";
-import { CAPACITY_URLS, SECTION_ID } from "../router";
-import SectionTitle from "./SectionTitle";
+import { Row, Col, Card } from 'antd';
+import cncMachining from '../assets/capabilities/cnc-machining.jpeg';
+import sheetMetal from '../assets/sheet-metal-fabrication/sheet-metal-fabrication-background.jpeg';
+import injectionMolding from '../assets/capabilities/injection-molding.jpg';
+import { ReactNode } from 'react';
+import { useNavigate } from 'react-router-dom';
+import { CAPACITY_URLS, SECTION_ID } from '../router';
+import SectionTitle from './SectionTitle';
 
 const { Meta } = Card;
 
@@ -30,11 +30,11 @@ const CapacityCard = ({ title, description, cover, url }: CardProps) => {
           alt={title}
           src={cover}
           onClick={() => {
-            navigate("/capabilities/" + url);
+            navigate('/capabilities/' + url);
             setTimeout(() => {
               const el = document.getElementById(url);
               if (el) {
-                el.scrollIntoView({ block: "start" });
+                el.scrollIntoView({ block: 'start' });
               }
             }, 50);
           }}
@@ -101,14 +101,14 @@ const Capabilities = () => {
   return (
     <section
       id={SECTION_ID.CAPABILITIES}
-      className="py-5 flex flex-col items-center"
+      className="bg-gray py-5 flex flex-col items-center"
     >
-      <SectionTitle title="Our Services" />
+      <SectionTitle title="Our Capabilities" />
       <Row
         gutter={[50, 25]}
         justify="center"
         align="middle"
-        className=" w-[90%]"
+        className="w-[90%] max-w-[1200px]"
       >
         {capacities.map((item) => (
           <Col key={item.url} span={7} lg={7} md={12} sm={24} xs={24}>

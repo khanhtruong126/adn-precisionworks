@@ -1,23 +1,23 @@
-import { useRef } from "react";
-import vendor1 from "../assets/inside-our-vender/vendor1.jpeg";
-import vendor2 from "../assets/inside-our-vender/vendor2.jpeg";
-import vendor3 from "../assets/inside-our-vender/vendor3.jpeg";
-import vendor4 from "../assets/inside-our-vender/vendor4.jpeg";
-import vendor5 from "../assets/inside-our-vender/vendor5.jpeg";
-import vendor6 from "../assets/inside-our-vender/vendor6.jpeg";
-import SectionTitle from "./SectionTitle";
-import { Col, Row } from "antd";
-import styled from "styled-components";
-import { LeftOutlined, RightOutlined } from "@ant-design/icons";
-import Slider from "react-slick";
+import { useRef } from 'react';
+import vendor1 from '../assets/inside-our-vender/vendor1.jpeg';
+import vendor2 from '../assets/inside-our-vender/vendor2.jpeg';
+import vendor3 from '../assets/inside-our-vender/vendor3.jpeg';
+import vendor4 from '../assets/inside-our-vender/vendor4.jpeg';
+import vendor5 from '../assets/inside-our-vender/vendor5.jpeg';
+import vendor6 from '../assets/inside-our-vender/vendor6.jpeg';
+import SectionTitle from './SectionTitle';
+import { Col, Row } from 'antd';
+import styled from 'styled-components';
+import { LeftOutlined, RightOutlined } from '@ant-design/icons';
+import Slider from 'react-slick';
 
 const InsideOurVendor = () => {
   const vendorImages = [vendor1, vendor2, vendor3, vendor4, vendor5, vendor6];
   const carouselRef = useRef<any>();
 
-  const handleChangeCarousel = (type: "prev" | "next") => {
+  const handleChangeCarousel = (type: 'prev' | 'next') => {
     if (!carouselRef.current) return;
-    if (type === "next") {
+    if (type === 'next') {
       carouselRef.current.slickNext();
     } else {
       carouselRef.current.slickPrev();
@@ -63,12 +63,17 @@ const InsideOurVendor = () => {
       className="pt-5 pb-12 flex flex-col items-center"
     >
       <SectionTitle title="Inside Our Vendor" />
-      <Row gutter={25} justify="space-between" align="middle" className="w-full px-10">
+      <Row
+        gutter={25}
+        justify="space-between"
+        align="middle"
+        className="w-full px-10"
+      >
         <Col span={1} lg={1} xs={{ span: 3 }} className="text-end">
           <LeftOutlined
-            style={{ fontSize: "2rem" }}
+            style={{ fontSize: '2rem' }}
             onClick={() => {
-              handleChangeCarousel("prev");
+              handleChangeCarousel('prev');
             }}
           />
         </Col>
@@ -97,9 +102,9 @@ const InsideOurVendor = () => {
 
         <Col span={1} lg={1} xs={{ span: 3 }}>
           <RightOutlined
-            style={{ fontSize: "2rem" }}
+            style={{ fontSize: '2rem' }}
             onClick={() => {
-              handleChangeCarousel("next");
+              handleChangeCarousel('next');
             }}
           />
         </Col>
@@ -110,7 +115,7 @@ const InsideOurVendor = () => {
 
 export default InsideOurVendor;
 
-const SliderContainer = styled.div`
+export const SliderContainer = styled.div`
   width: 100%;
 
   .slick-list {
@@ -123,7 +128,7 @@ const SliderContainer = styled.div`
         justify-content: center;
 
         & > div {
-            width: fit-content;
+          width: fit-content;
         }
       }
     }
