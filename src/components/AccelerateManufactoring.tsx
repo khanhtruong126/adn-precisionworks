@@ -3,7 +3,7 @@ import quickQuote from '../assets/accelerate-manufactoring/quick-quote.png';
 import effectivePrice from '../assets/accelerate-manufactoring/effective-price.svg';
 import reliableNetwork from '../assets/accelerate-manufactoring/reliable-network.png';
 // import becomeParter from '../assets/accelerate-manufactoring/become-partner.png';
-import { ReactNode } from 'react';
+// import { ReactNode } from 'react';
 import { SECTION_ID } from '../router';
 import SectionTitle from './SectionTitle';
 
