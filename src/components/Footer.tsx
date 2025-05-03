@@ -1,25 +1,25 @@
-import { SECTION_ID } from "../router";
-import { Col, Row, Space } from "antd";
-import NetworkMap from "./NetworkMap";
-import SendQuoteButton from "./SendQuoteButton";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { SECTION_ID } from '../router';
+import { Col, Row, Space } from 'antd';
+import NetworkMap from './NetworkMap';
+import SendQuoteButton from './SendQuoteButton';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
   faEnvelope,
   faIndustry,
   faWarehouse,
-} from "@fortawesome/free-solid-svg-icons";
+} from '@fortawesome/free-solid-svg-icons';
 import {
   faLinkedin,
   faSquareWhatsapp,
-} from "@fortawesome/free-brands-svg-icons";
-import styled from "styled-components";
-import WhatsappQR from "../assets/whatsapp-QR.jpeg";
+} from '@fortawesome/free-brands-svg-icons';
+import styled from 'styled-components';
+import WhatsappQR from '../assets/whatsapp-QR.jpeg';
 
 const Footer = () => {
   return (
-    <section
+    <footer
       id={SECTION_ID.ABOUT_US}
-      className="py-5 px-[2rem] lg:px-[12rem] sm:px-5 bg-light-gray"
+      className="py-10 px-[2rem] lg:px-[12rem] sm:px-5 bg-light-gray"
     >
       <Row gutter={[25, 25]} align="middle">
         <Col
@@ -30,10 +30,13 @@ const Footer = () => {
           xs={24}
           className="text-center lg:text-start"
         >
-          <div className="text-5xl highlight-title mb-2">LET'S CONNECT US</div>
+          <div className="text-5xl highlight-title mb-2">
+            Let’s Work Together
+          </div>
           <div className="text-base font-semibold">
             <p>
-              ADN Precision Works, Ho Chi Minh City, Vietnam", "Est.2024
+              Looking for a Vietnam-based sourcing partner who understands
+              quality and reliability?
             </p>
           </div>
           <SpaceContainer
@@ -74,14 +77,14 @@ const Footer = () => {
             </Row>
             <Row
               align="middle"
-              // href="tel:+84 355 689098"
+              // href="tel:+84 908629977"
             >
               <Col span={6} lg={6} xs={24}>
                 <FontAwesomeIcon icon={faSquareWhatsapp} className="mr-1" />
                 <b>Whatsapp:</b>
               </Col>
               <Col span={18} lg={18} xs={24}>
-                +84 355 689098
+                +84 908629977
               </Col>
             </Row>
             <a
@@ -113,7 +116,7 @@ const Footer = () => {
           </div>
         </Col>
       </Row>
-    </section>
+    </footer>
   );
 };
 

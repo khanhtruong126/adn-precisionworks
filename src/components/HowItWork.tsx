@@ -1,70 +1,75 @@
-import AppLogo from "../assets/main-logo.svg";
-import { Col, Row } from "antd";
-import SendQuoteButton from "./SendQuoteButton";
-import AboutUs from "./AboutUs";
-import SectionTitle from "./SectionTitle";
+// import AppLogo from '../assets/main-logo.svg';
+// import { Col, Row } from 'antd';
+// import SendQuoteButton from './SendQuoteButton';
+import AboutUs from './AboutUs';
+import TeamMember from './TeamMember';
+// import SectionTitle from './SectionTitle';
 
 const HowItWork = () => {
-  const lgData = [
-    {
-      title: "1. Request a quote",
-      content:
-        "Send ADN team your design including PDF and CADs files. Let us know your additional requests",
-    },
-    {
-      title: "3.1. Virtual Approval prior shipment",
-      content:
-        "Sale rep will send products’ video prior shipment 1-2days for customer approval.\nFirst Article Report provide if need\nNote: this apply for Test orders (1-2 first orders) only to save time for production, this could be skipped.",
-    },
-    {
-      title: "2. Project Consultation",
-      content:
-        "Within 48hrs, we will send you a quotation after Our engineers understanding your project requirements, specifications, and quality standards. Select the most suitable vendors for your specific needs.",
-    },
-    {
-      title: "4. Parts are shipped to customer",
-      content:
-        "We handle the logistics efficiently, ensuring that your machined parts are delivered on time and in optimal condition.\nDHL/Fedex/Air Freight",
-    },
-    {
-      title: "3. Production",
-      content:
-        "Our team actively manages the production process, providing oversight to guarantee that the machined parts adhere to your specifications and quality standards. Regular updates keep you informed every step of the way",
-    },
-  ];
+  // const lgData = [
+  //   {
+  //     title: "1. Request a quote",
+  //     content:
+  //       "Send ADN team your design including PDF and CADs files. Let us know your additional requests",
+  //   },
+  //   {
+  //     title: "3.1. Virtual Approval prior shipment",
+  //     content:
+  //       "Sale rep will send products’ video prior shipment 1-2days for customer approval.\nFirst Article Report provide if need\nNote: this apply for Test orders (1-2 first orders) only to save time for production, this could be skipped.",
+  //   },
+  //   {
+  //     title: "2. Project Consultation",
+  //     content:
+  //       "Within 48hrs, we will send you a quotation after Our engineers understanding your project requirements, specifications, and quality standards. Select the most suitable vendors for your specific needs.",
+  //   },
+  //   {
+  //     title: "4. Parts are shipped to customer",
+  //     content:
+  //       "We handle the logistics efficiently, ensuring that your machined parts are delivered on time and in optimal condition.\nDHL/Fedex/Air Freight",
+  //   },
+  //   {
+  //     title: "3. Production",
+  //     content:
+  //       "Our team actively manages the production process, providing oversight to guarantee that the machined parts adhere to your specifications and quality standards. Regular updates keep you informed every step of the way",
+  //   },
+  // ];
 
-  const xsData = [
-    {
-      title: "1. Request a quote",
-      content:
-        "Send ADN team your design including PDF and CADs files. Let us know your additional requests",
-    },
-    {
-      title: "2. Project Consultation",
-      content:
-        "Within 48hrs, we will send you a quotation after Our engineers understanding your project requirements, specifications, and quality standards. Select the most suitable vendors for your specific needs.",
-    },
-    {
-      title: "3.1. Virtual Approval prior shipment",
-      content:
-        "Sale rep will send products’ video prior shipment 1-2days for customer approval.\nFirst Article Report provide if need\nNote: this apply for Test orders (1-2 first orders) only to save time for production, this could be skipped.",
-    },
-    {
-      title: "3. Production",
-      content:
-        "Our team actively manages the production process, providing oversight to guarantee that the machined parts adhere to your specifications and quality standards. Regular updates keep you informed every step of the way",
-    },
-    {
-      title: "4. Parts are shipped to customer",
-      content:
-        "We handle the logistics efficiently, ensuring that your machined parts are delivered on time and in optimal condition.\nDHL/Fedex/Air Freight",
-    },
-  ];
+  // const xsData = [
+  //   {
+  //     title: "1. Request a quote",
+  //     content:
+  //       "Send ADN team your design including PDF and CADs files. Let us know your additional requests",
+  //   },
+  //   {
+  //     title: "2. Project Consultation",
+  //     content:
+  //       "Within 48hrs, we will send you a quotation after Our engineers understanding your project requirements, specifications, and quality standards. Select the most suitable vendors for your specific needs.",
+  //   },
+  //   {
+  //     title: "3.1. Virtual Approval prior shipment",
+  //     content:
+  //       "Sale rep will send products’ video prior shipment 1-2days for customer approval.\nFirst Article Report provide if need\nNote: this apply for Test orders (1-2 first orders) only to save time for production, this could be skipped.",
+  //   },
+  //   {
+  //     title: "3. Production",
+  //     content:
+  //       "Our team actively manages the production process, providing oversight to guarantee that the machined parts adhere to your specifications and quality standards. Regular updates keep you informed every step of the way",
+  //   },
+  //   {
+  //     title: "4. Parts are shipped to customer",
+  //     content:
+  //       "We handle the logistics efficiently, ensuring that your machined parts are delivered on time and in optimal condition.\nDHL/Fedex/Air Freight",
+  //   },
+  // ];
 
   return (
-    <div className="px-2 py-6 lg:px-10 sm:px-2">
+    <div className="px-5 pt-5 pb-10 lg:px-32">
       <AboutUs />
-      <SectionTitle title="How It Works" />
+      <div className="mt-20">
+        <TeamMember />
+      </div>
+
+      {/* <SectionTitle title="How It Works" />
       <Row
         justify="space-between"
         gutter={[25, 25]}
@@ -108,10 +113,7 @@ const HowItWork = () => {
             </p>
           </Col>
         ))}
-      </Row>
-      <div className="m-auto w-fit translate-y-[10x] lg:translate-y-[-50px]">
-        <SendQuoteButton />
-      </div>
+      </Row> */}
     </div>
   );
 };

@@ -1,20 +1,20 @@
-import { Col, Image, Row } from "antd";
-import SectionTitle from "./SectionTitle";
-import img1 from "../assets/product-gallery/1.jpeg";
-import img2 from "../assets/product-gallery/2.jpeg";
-import img3 from "../assets/product-gallery/3.jpeg";
-import img4 from "../assets/product-gallery/4.jpeg";
-import img5 from "../assets/product-gallery/5.jpeg";
-import img6 from "../assets/product-gallery/6.jpeg";
-import img7 from "../assets/product-gallery/7.jpeg";
-import img8 from "../assets/product-gallery/8.jpeg";
-import img9 from "../assets/product-gallery/9.jpeg";
-import img10 from "../assets/product-gallery/10.jpeg";
-import img11 from "../assets/product-gallery/11.jpeg";
-import img12 from "../assets/product-gallery/12.jpeg";
-import { SECTION_ID } from "../router";
-import { LoadingOutlined } from "@ant-design/icons";
-import Partners from "./Partners";
+import { Col, Image, Row } from 'antd';
+import SectionTitle from './SectionTitle';
+import img1 from '../assets/product-gallery/1.jpeg';
+import img2 from '../assets/product-gallery/2.jpeg';
+import img3 from '../assets/product-gallery/3.jpeg';
+import img4 from '../assets/product-gallery/4.jpeg';
+import img5 from '../assets/product-gallery/5.jpeg';
+import img6 from '../assets/product-gallery/6.jpeg';
+import img7 from '../assets/product-gallery/7.jpeg';
+import img8 from '../assets/product-gallery/8.jpeg';
+import img9 from '../assets/product-gallery/9.jpeg';
+import img10 from '../assets/product-gallery/10.jpeg';
+import img11 from '../assets/product-gallery/11.jpeg';
+import img12 from '../assets/product-gallery/12.jpeg';
+import { SECTION_ID } from '../router';
+import { LoadingOutlined } from '@ant-design/icons';
+// import Partners from "./Partners";
 
 const ProductGallery = () => {
   const images = [
@@ -33,9 +33,9 @@ const ProductGallery = () => {
   ];
   return (
     <div id={SECTION_ID.GALLERY}>
-      <div className="py-5">
+      {/* <div className="py-5">
         <Partners />
-      </div>
+      </div> */}
       <SectionTitle title="Product Gallery" />
       <div className="mx-5 lg:mx-20 my-10">
         <Row gutter={[30, 30]}>

@@ -1,16 +1,16 @@
-import { Row, Col } from "antd";
-import { SECTION_ID } from "../router";
-import item from "../assets/home-item.png";
-import SendQuoteButton from "./SendQuoteButton";
-import whiteLogo from "../assets/logo-white.svg";
-import { apwRed } from "../colors";
+import { Row, Col } from 'antd';
+import { SECTION_ID } from '../router';
+import item from '../assets/home-item.png';
+import SendQuoteButton from './SendQuoteButton';
+import whiteLogo from '../assets/logo-white.svg';
+import { apwRed } from '../colors';
 
 const Home = () => {
   const features = [
-    "CNC Machining; Sheet Metal Fabrication, Injection Molding.",
-    "Prototypes, Custom components, and Unique designs",
-    "15 reliable vendors, located Industrial parks in big cites in Vietnam.",
-    "Cost effective, Quality and Leadtime focused.",
+    'CNC Machining; Sheet Metal Fabrication, Injection Molding.',
+    'Prototypes, Custom components, and Unique designs',
+    '15 reliable vendors, located Industrial parks in big cites in Vietnam.',
+    'Cost effective, Quality and Leadtime focused.',
   ];
   return (
     <section id={SECTION_ID.HOME} className="bg-app-red !text-white pt-8">
@@ -24,13 +24,14 @@ const Home = () => {
           <div className="flex flex-col justify-center">
             <div>
               <h2 className="text-4xl mb-2 text-white">
-                Manufacturing on Demand partner from Asia
+                Precision Sourcing from Vietnam — Built on 20 Years of Quality
+                Expertise
               </h2>
               <p className="text-xl indent-10 text-justify my-3">
-                We specialize in delivering high-quality CNC machining services
-                on demand from Vietnam. Our experienced vendors networks and
-                skilled team ensure precision, speed, and cost-efficiency in
-                every project we undertake.
+                We help U.S., Canada, Australia, and EU buyers source
+                high-quality CNC, sheet metal, and injection mold parts directly
+                from trusted Vietnamese manufacturers — with full quality
+                assurance and personal support.
               </p>
               <div className="text-lg text-start md:text-justify">
                 <Row justify="space-between" align="middle">

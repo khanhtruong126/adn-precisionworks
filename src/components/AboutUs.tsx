@@ -1,56 +1,64 @@
-import { CaretRightFilled } from "@ant-design/icons";
-import SectionTitle from "./SectionTitle";
+import SectionTitle from './SectionTitle';
+import placeholder from '../assets/image-placeholder.svg';
+import AppLogo from '../assets/main-logo.svg';
 
 const AboutUs = () => {
   return (
     <div className="mb-5">
-      <SectionTitle title="About Us"/>
-      <div className="text-justify text-lg px-5 lg:px-20">
+      <SectionTitle title="About Us" />
+      <p className="text-center mb-5">
+        <h2 className="highlight-title">Your Trusted Partner in Vietnam</h2>
+      </p>
+      <div className="text-justify text-lg px-16">
         <div className="indent-10">
-          <p>
-            <CaretRightFilled />
-            <span className="highlight-title">ADN Precision Works (ADN)</span>,
-            your premier partner in procuring high-quality machined parts from
-            the heart of Vietnam. With a commitment to excellence and a network
-            of trusted manufacturing partners, we are your trusted source for
-            precision-engineered components that meet and exceed industry
-            standards.
+          <p className="mb-5">
+            <img
+              className="inline mr-1 mb-1"
+              src={AppLogo}
+              alt="main_logo"
+              width={20}
+              height={20}
+            />
+            With over 20 years of experience in quality management for the
+            mechanical industry and a strong background in chemistry, we
+            specialize in helping international clients source{' '}
+            <span className="font-semibold">
+              high-quality CNC-machined and precision-engineered components
+            </span>{' '}
+            from trusted Vietnamese manufacturers.
           </p>
           <p>
-            <CaretRightFilled />
-            <span className="highlight-title">Vietnamese Expertise</span>:
-            Vietnam has emerged as a hub for precision manufacturing, and we
-            leverage the country's rich engineering talent and state-of-the-art
-            facilities to deliver machined parts of the highest quality. Benefit
-            from the expertise of skilled professionals dedicated to precision
-            and accuracy.
+            <img
+              className="inline mr-1 mb-1"
+              src={AppLogo}
+              alt="main_logo"
+              width={20}
+              height={20}
+            />
+            We don’t just connect you with suppliers — we manage every step of
+            the process with a focus on{' '}
+            <span className="font-semibold">
+              quality assurance, transparency, and long-term partnership.
+            </span>
           </p>
         </div>
-        <div className="px-6 lg:px-16 mt-5">
-          <ol className="list-decimal">
-            <li>
-              <b>Cost-Effective Solutions</b>: Our procurement service is not
-              just about quality; it's also about cost-effectiveness. Vietnam's
-              competitive manufacturing landscape allows us to provide you with
-              exceptional value without compromising on the precision and
-              quality of the machined parts.
-            </li>
-            <li className="my-5">
-              <b>Diverse Manufacturing Capabilities</b>: Whether you require CNC
-              machined components, turned parts, or complex assemblies, our
-              procurement service covers a wide range of manufacturing
-              capabilities. We work with a diverse array of materials, meeting
-              the specifications of your projects with versatility and
-              efficiency.
-            </li>
-            <li>
-              <b>Quality Assurance</b>: Your satisfaction is our priority. Our
-              stringent quality control processes ensure that each machined part
-              meets rigorous standards. We collaborate closely with our
-              manufacturing partners to guarantee that the finished products
-              align with your exact specifications.
-            </li>
-          </ol>
+        <div className="px-5 w-full lg:w-[70%] pt-5 mx-auto">
+          <p className="mb-2 text-xl">
+            <b className="highlight-title">Why work with us?</b>
+          </p>
+          <div className="flex gap-20">
+            <div>
+              <img src={placeholder} alt="" width={120} />
+            </div>
+            <ol className="list-decimal">
+              <li>Wide network of verified Vietnamese suppliers</li>
+              <li>Personal support, real-time updates, and full QC services</li>
+              <li>Fast response, flexible quantities, clear communication</li>
+              <li>
+                Trusted by clients in the U.S., Canada, Germany & Australia
+              </li>
+            </ol>
+          </div>
         </div>
       </div>
     </div>

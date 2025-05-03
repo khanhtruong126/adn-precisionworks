@@ -1,17 +1,17 @@
-import { SECTION_ID } from "../router";
-import { Col, Row, Space } from "antd";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { SECTION_ID } from '../router';
+import { Col, Row, Space } from 'antd';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
   faIndustry,
   faWarehouse,
   faEnvelope,
-} from "@fortawesome/free-solid-svg-icons";
+} from '@fortawesome/free-solid-svg-icons';
 import {
   faLinkedin,
   faSquareWhatsapp,
-} from "@fortawesome/free-brands-svg-icons";
-import SubmitForm from "./SubmitQuoteForm";
-import WhatsappQR from "../assets/whatsapp-QR.jpeg";
+} from '@fortawesome/free-brands-svg-icons';
+import SubmitForm from './SubmitQuoteForm';
+import WhatsappQR from '../assets/whatsapp-QR.jpeg';
 
 const ContactUs = () => {
   return (
@@ -67,11 +67,11 @@ const ContactUs = () => {
             </div>
             <div
               className="flex items-center gap-1"
-              // href="tel:+84 355 689098"
+              // href="tel:+84 908629977"
             >
               <FontAwesomeIcon icon={faSquareWhatsapp} />
               <span>
-                <b>Whatsapp</b>: +84 355 689098"
+                <b>Whatsapp</b>: +84 908629977"
               </span>
             </div>
             <a
@@ -88,7 +88,9 @@ const ContactUs = () => {
             </a>
           </Space>
           <div className="flex flex-col items-center">
-            <p className="text-center text-lg font-semibold">Whatsapp Contact</p>
+            <p className="text-center text-lg font-semibold">
+              Whatsapp Contact
+            </p>
             <img
               src={WhatsappQR}
               alt="connect-to-whatsapp"

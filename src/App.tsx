@@ -1,29 +1,30 @@
-import React, { Suspense, useEffect } from "react";
-import { ConfigProvider, Layout, Menu } from "antd";
-import NavLogo from "./assets/nav-logo.svg";
-import { apwRed } from "./colors";
+import React, { Suspense, useEffect } from 'react';
+import { ConfigProvider, Layout, Menu } from 'antd';
+import NavLogo from './assets/nav-logo.svg';
+import { apwRed } from './colors';
 import {
   Link,
   Route,
   Routes,
   useLocation,
   useNavigate,
-} from "react-router-dom";
-import { CAPACITY_URLS, GALLERY_URLs, SECTION_ID, router } from "./router";
-import SendQuoteButton from "./components/SendQuoteButton";
-import ReactGA from "react-ga4";
-import { MenuOutlined } from "@ant-design/icons";
+} from 'react-router-dom';
+import { CAPACITY_URLS, SECTION_ID, router } from './router';
+import SendQuoteButton from './components/SendQuoteButton';
+import ReactGA from 'react-ga4';
+import { MenuOutlined } from '@ant-design/icons';
+import Footer from './components/Footer';
 
-const MEASUREMENT_ID = "G-2325Q4CX55"; //GA4 EASUREMENT_ID
+const MEASUREMENT_ID = 'G-2325Q4CX55'; //GA4 EASUREMENT_ID
 ReactGA.initialize(MEASUREMENT_ID);
 
 const { Header, Content } = Layout;
 
 const items = [
-  { key: SECTION_ID.HOME, label: "Home" },
+  // { key: SECTION_ID.HOME, label: 'Home' },
   {
     key: SECTION_ID.CAPABILITIES,
-    label: "Capabilities",
+    label: 'Capabilities',
     children: [
       CAPACITY_URLS.CNC_MACHINING,
       CAPACITY_URLS.SHEET_METAL_FABRICATION,
@@ -32,11 +33,11 @@ const items = [
   },
   {
     key: SECTION_ID.GALLERY,
-    label: "Gallery",
-    children: [GALLERY_URLs.CUSTOMERS, GALLERY_URLs.PRODUCT_GALLERY],
+    label: 'Gallery',
+    // children: [GALLERY_URLs.CUSTOMERS, GALLERY_URLs.PRODUCT_GALLERY],
   },
-  { key: SECTION_ID.ABOUT_US, label: "About Us" },
-  { key: SECTION_ID.CONTACT_US, label: "Contact Us" },
+  { key: SECTION_ID.ABOUT_US, label: 'About Us' },
+  { key: SECTION_ID.CONTACT_US, label: 'Contact Us' },
 ];
 
 const App: React.FC = () => {
@@ -44,7 +45,7 @@ const App: React.FC = () => {
   const location = useLocation();
 
   useEffect(() => {
-    ReactGA.send({ hitType: "pageview", page: location.pathname });
+    ReactGA.send({ hitType: 'pageview', page: location.pathname });
   }, [location]);
 
   return (
@@ -56,7 +57,7 @@ const App: React.FC = () => {
           borderRadius: 2,
 
           // Alias Token
-          colorBgContainer: "#fff",
+          colorBgContainer: '#fff',
         },
       }}
     >
@@ -64,12 +65,12 @@ const App: React.FC = () => {
         <Header
           className="px-5 xl:px-[90px] lg:px-6 w-full justify-between"
           style={{
-            position: "sticky",
+            position: 'sticky',
             top: 0,
             zIndex: 1,
-            display: "flex",
-            alignItems: "center",
-            backgroundColor: "white",
+            display: 'flex',
+            alignItems: 'center',
+            backgroundColor: 'white',
           }}
         >
           <div className="flex items-center flex-1 justify-between md:justify-start">
@@ -83,21 +84,21 @@ const App: React.FC = () => {
               defaultSelectedKeys={[SECTION_ID.HOME]}
               items={items}
               style={{
-                fontSize: "1rem",
+                fontSize: '1rem',
               }}
               onClick={(menuItem) => {
                 let path = menuItem.keyPath
-                  .filter((path) => path !== "rc-menu-more") //avoid antd default collapsed menu class
+                  .filter((path) => path !== 'rc-menu-more') //avoid antd default collapsed menu class
                   .reverse()
-                  .join("/");
-                if (path === "home") {
-                  path = "/";
-                }
+                  .join('/');
+                // if (path === 'home') {
+                //   path = '/';
+                // }
                 navigate(path);
                 const el = document.getElementById(menuItem.key);
                 if (el) {
                   setTimeout(() => {
-                    el.scrollIntoView({ behavior: "smooth", block: "start" });
+                    el.scrollIntoView({ behavior: 'smooth', block: 'start' });
                   }, 500);
                 }
               }}
@@ -112,7 +113,7 @@ const App: React.FC = () => {
           <div
             style={{
               minHeight: 380,
-              backgroundColor: "white",
+              backgroundColor: 'white',
             }}
           >
             <Suspense>
@@ -124,7 +125,7 @@ const App: React.FC = () => {
             </Suspense>
           </div>
         </Content>
-        {/* <Footer style={{ textAlign: "center", paddingTop: 0 }}>ADN Precision Works</Footer> */}
+        <Footer />
       </Layout>
     </ConfigProvider>
   );
