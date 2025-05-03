@@ -7,12 +7,12 @@ import { ReactNode } from 'react';
 import { SECTION_ID } from '../router';
 import SectionTitle from './SectionTitle';
 
-interface CardProps {
-  id: number;
-  title: string;
-  description: string | ReactNode;
-  cover: string;
-}
+// interface CardProps {
+//   id: number;
+//   title: string;
+//   description: string | ReactNode;
+//   cover: string;
+// }
 
 // const CapacityCard = ({ title, description, cover }: CardProps) => {
 //   return (
